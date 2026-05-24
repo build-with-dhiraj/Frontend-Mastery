@@ -10,12 +10,12 @@
     {
       "id": "app-shell",
       "interactionId": "layout.app-shell",
-      "standardIds": ["component-canonical-base", "principle-state-completeness"],
+      "standardIds": ["component-canonical-base", "principle-saas-density", "component-sidebar-nav"],
       "layer": "base",
-      "purpose": "Stable page frame with skip link, header, main, footer, and responsive spacing.",
+      "purpose": "Stable page frame. Desktop: Sidebar Nav (240-280px). Mobile: Bottom Tab Bar or Drawer. Includes Skip Link.",
       "states": ["default", "mobile", "desktop", "reduced-motion"],
       "motionIds": ["page-entrance"],
-      "visual": "Unframed layout with constrained content, no nested cards, clear content bands."
+      "visual": "Dense SaaS layout (Linear style). Hairline borders. Radius 8px. Clear content bands."
     },
     {
       "id": "navigation-header",

@@ -282,7 +282,7 @@
       "url": "https://stripe.com/dashboard",
       "stack": ["react", "custom css", "internal framework"],
       "patterns": ["closeness to sql", "documentation-as-product", "micro-animations", "multi-layered gradients"]
-    },
+    }
   ],
   "summary": {
     "rows": 36,

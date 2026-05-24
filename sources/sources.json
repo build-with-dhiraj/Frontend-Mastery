@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "3.0.0",
   "generatedAt": "2026-05-24",
   "xPolicy": {
     "status": "public_or_provided_only",
@@ -813,6 +813,234 @@
       "url": "https://nextjs.org/docs/app/api-reference/config/next-config-js/viewTransition",
       "status": "web_search_extracted",
       "notes": "Widespread browser support (Chrome, Safari 18.2+, Firefox 144+). Next.js experimental flag. React ViewTransition component. GPU-compositor performance. Progressive enhancement fallback. Shared element transitions via view-transition-name CSS."
+    },
+    {
+      "id": "reddit-3d-cinematic-stack",
+      "class": "community_signal",
+      "title": "Cinematic Interactive 3D Stack",
+      "publisher": "Reddit r/threejs",
+      "url": "https://www.reddit.com/r/threejs/comments/1vta789/cinematic_interactive_3d_stack/",
+      "status": "referenced"
+    },
+    {
+      "id": "reddit-stack-2025",
+      "class": "community_signal",
+      "title": "The 2025 Consensus Stack",
+      "publisher": "Reddit r/webdev",
+      "url": "https://www.reddit.com/r/webdev/comments/1vt9012/the_2025_consensus_stack/",
+      "status": "referenced"
+    },
+    {
+      "id": "awwwards-2025-winners",
+      "class": "award_case_study",
+      "title": "Awwwards 2025 Winners Gallery",
+      "publisher": "Awwwards",
+      "url": "https://www.awwwards.com/winners/2025",
+      "status": "referenced"
+    },
+    {
+      "id": "sf-awwwards-oryzo-ai",
+      "class": "award_case_study",
+      "title": "Oryzo AI Stack",
+      "publisher": "Awwwards / Oryzo",
+      "url": "https://www.awwwards.com/sites/oryzo-ai",
+      "status": "referenced"
+    },
+    {
+      "id": "sf-awwwards-lando-norris",
+      "class": "award_case_study",
+      "title": "Lando Norris Brand Stack",
+      "publisher": "Awwwards / Lando",
+      "url": "https://www.awwwards.com/sites/lando-norris",
+      "status": "referenced"
+    },
+    {
+      "id": "sf-saas-linear",
+      "class": "design_analysis",
+      "title": "Linear App Design Engineering",
+      "publisher": "Multiple",
+      "url": "https://linear.app",
+      "status": "referenced"
+    },
+    {
+      "id": "yt-olivier-awwwards-gallery-gsap-motion",
+      "class": "expert_video_transcript",
+      "title": "Awwwards Project Gallery using NextJs, GSAP and Framer Motion",
+      "publisher": "Olivier Larose",
+      "url": "https://www.youtube.com/watch?v=XUYQoU_HA-8",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "GSAP + Motion coexistence. Motion for modals/enter-exit, GSAP for mouse-follow/magnetic effects. useRef for GSAP targeting. Lerp for smooth float effects."
+    },
+    {
+      "id": "yt-olivier-infinite-text-marquee",
+      "class": "expert_video_transcript",
+      "title": "How to Make an Infinite Text Move on Scroll with Next.js and GSAP",
+      "publisher": "Olivier Larose",
+      "url": "https://www.youtube.com/watch?v=AqMESJ51e3o",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Marquee: two identical text elements, xPercent animation resetting at -100%. ScrollTrigger for direction/speed based on scroll. Pair with Lenis for premium feel."
+    },
+    {
+      "id": "yt-olivier-zoom-parallax",
+      "class": "expert_video_transcript",
+      "title": "Zoom Parallax using Next.js and Framer Motion",
+      "publisher": "Olivier Larose",
+      "url": "https://www.youtube.com/watch?v=pEt0eiArTSg",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Scroll-to-zoom using useScroll + useTransform hooks from Framer Motion. Scale/opacity driven by scroll progress."
+    },
+    {
+      "id": "yt-olivier-locomotive-v5-vs-lenis",
+      "class": "expert_video_transcript",
+      "title": "Smooth Scroll Landing Page using Nextjs, GSAP, Locomotive Scroll v5",
+      "publisher": "Olivier Larose",
+      "url": "https://www.youtube.com/watch?v=-CYruydmDfg",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Locomotive Scroll v5 is BUILT ON Lenis. LocoV5 adds parallax (data-scroll-speed) and viewport detection. Lenis alone is lighter + GSAP ScrollTrigger is preferred for fine control."
+    },
+    {
+      "id": "yt-greensock-introducing-scrolltrigger",
+      "class": "expert_video_transcript",
+      "title": "Introducing ScrollTrigger for GSAP",
+      "publisher": "GreenSock",
+      "url": "https://www.youtube.com/watch?v=X7IBa7vZjmo",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Core ScrollTrigger concepts: trigger element, start/end markers, scrub, pin, toggleActions, callbacks. Foundation for all scroll-driven animation."
+    },
+    {
+      "id": "yt-tim-gabe-10x-better-feel",
+      "class": "expert_video_transcript",
+      "title": "How I Make Apps FEEL 10x Better (5 Design Secrets)",
+      "publisher": "Tim Gabe",
+      "url": "https://www.youtube.com/watch?v=8mMH6Pq8qnE",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "5 secrets: 1) Fast micro-animations (<400ms, consistent), 2) Layered multi-sensory feedback (visual+haptic+audio), 3) Haptics for confirmation, 4) Strategic spacing/hierarchy, 5) Contextual awareness (disabled/loading/success states)."
+    },
+    {
+      "id": "yt-tim-gabe-9-landing-page-secrets",
+      "class": "expert_video_transcript",
+      "title": "9 SECRETS to BEAUTIFUL Landing Page Design (Pt. 1: The Setup)",
+      "publisher": "Tim Gabe",
+      "url": "https://www.youtube.com/watch?v=RdHXcv1k_Dg",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Frankenstein wireframes from inspo. Assets+copy = 80-90% of impact. Fewer colors/fonts = more professional. Text hierarchy via weight/opacity. 8pt grid for all spacing. Hero: value prop + sub-headline + visual + ONE CTA. Outcome selling > feature listing."
+    },
+    {
+      "id": "yt-kevin-powell-no-vw-fonts",
+      "class": "expert_video_transcript",
+      "title": "Please, don't use viewport units for font sizes",
+      "publisher": "Kevin Powell",
+      "url": "https://www.youtube.com/watch?v=G1buM51f09s",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "vw-only font sizing breaks browser zoom (WCAG 1.4.4), ignores user font preferences, causes extremes on small/large screens. Solution: clamp(rem, rem+vw, rem) for fluid typography with accessibility."
+    },
+    {
+      "id": "yt-kevin-powell-clamp-min-max",
+      "class": "expert_video_transcript",
+      "title": "min(), max(), and clamp() are CSS magic!",
+      "publisher": "Kevin Powell",
+      "url": "https://www.youtube.com/watch?v=U9VF-4euyRo",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "clamp(min, preferred, max) for fluid anything. min() for responsive max-width without media queries. max() for minimum sizes. Combine with rem for accessibility."
+    },
+    {
+      "id": "yt-juxtopposed-shortest-uiux",
+      "class": "expert_video_transcript",
+      "title": "world's shortest UI/UX design course",
+      "publisher": "Juxtopposed",
+      "url": "https://www.youtube.com/watch?v=wIuVvCuiJhU",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Consistent spacing (8pt grid). Color guides attention. Accessibility is foundational. Hierarchy is logic (size/color/spacing). Consistency builds trust. Don't use color as only signal."
+    },
+    {
+      "id": "yt-juxtopposed-redesigned-websites",
+      "class": "expert_video_transcript",
+      "title": "I Redesigned Popular Websites (Costco & Domino's)",
+      "publisher": "Juxtopposed",
+      "url": "https://www.youtube.com/watch?v=m0S6Evbr07k",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Design critique methodology. What makes bad design: inconsistent spacing, poor hierarchy, cluttered layouts. Improvement: simplify, add breathing room, reduce visual noise."
+    },
+    {
+      "id": "yt-hyperplexed-perfect-duo-3d",
+      "class": "expert_video_transcript",
+      "title": "I found the PERFECT duo for 3D web animations",
+      "publisher": "Hyperplexed",
+      "url": "https://www.youtube.com/watch?v=x3m1PGEfG5c",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "GSAP + Three.js (R3F in React) = perfect duo. GSAP handles interpolation/timing, Three.js handles rendering. Mouse/scroll interaction drives transforms. Modular 3D components with useFrame/useGSAP."
+    },
+    {
+      "id": "yt-hyperplexed-hover-effect",
+      "class": "expert_video_transcript",
+      "title": "You Need This Hover Effect On Your Site ASAP (CSS / JS)",
+      "publisher": "Hyperplexed",
+      "url": "https://www.youtube.com/watch?v=htGfnF1zN4g",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "3D tilt card: CSS perspective + JS mousemove + rotateX/Y via CSS vars. Magnetic button: wrapper div + translate toward cursor. Glowing border: radial-gradient on ::before with --mouse-x/y vars. will-change: transform for perf."
+    },
+    {
+      "id": "yt-fireship-svg-animations-css",
+      "class": "expert_video_transcript",
+      "title": "Make Awesome SVG Animations with CSS // 7 Useful Techniques",
+      "publisher": "Fireship",
+      "url": "https://www.youtube.com/watch?v=UTHgr6NLeEw",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "7 techniques: Chrome animation inspector, drawing groups, duotone CSS vars, transition animations, JS events, keyframe animations, animation staggering. Line drawing: stroke-dasharray + stroke-dashoffset animation."
+    },
+    {
+      "id": "yt-fireship-3d-portfolio-threejs",
+      "class": "expert_video_transcript",
+      "title": "Build a Mindblowing 3D Portfolio Website // Three.js Beginner's Tutorial",
+      "publisher": "Fireship",
+      "url": "https://www.youtube.com/watch?v=Q7AOvWpIVHU",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Three.js portfolio project. Scene/camera/renderer setup. GLB model loading. Scroll-driven camera movement. Directional/ambient lighting."
+    },
+    {
+      "id": "yt-bruno-simon-threejs-journey",
+      "class": "expert_video_transcript",
+      "title": "Bruno Simon Three.js Portfolio Website / Course",
+      "publisher": "Bruno Simon",
+      "url": "https://www.youtube.com/watch?v=44bzEUyCGqk",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Three.js Journey: canonical 3D web course. Philosophy: immersion over convention, portfolios as 'worlds', show don't tell. Structured progression from basics to shaders/physics. R3F + TSL + WebGPU covered in updates."
+    },
+    {
+      "id": "yt-wds-react-performance",
+      "class": "expert_video_transcript",
+      "title": "How To Maximize Performance In Your React Apps",
+      "publisher": "Web Dev Simplified",
+      "url": "https://www.youtube.com/watch?v=Qwb-Za6cBws",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "React perf: measure first (DevTools Profiler). Re-renders aren't inherently bad. memo/useMemo/useCallback are surgical tools, not defaults. Component composition > memoization. Avoid premature optimization. React Compiler reduces manual memo need."
+    },
+    {
+      "id": "yt-olivier-smooth-parallax-motion-lenis",
+      "class": "expert_video_transcript",
+      "title": "Smooth Parallax Scroll with Framer Motion, Lenis Scroll, Nextjs",
+      "publisher": "Olivier Larose",
+      "url": "https://www.youtube.com/watch?v=VhXemORYup8",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Lenis + Framer Motion integration. useScroll for scroll progress, useTransform for parallax offsets. Lenis handles smooth scrolling, Motion handles per-element transforms."
     }
   ]
 }

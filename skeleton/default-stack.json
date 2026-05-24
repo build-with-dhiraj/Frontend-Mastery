@@ -48,6 +48,18 @@
         "standardIds": ["principle-dark-light-theme"]
       }
     ],
+    "database_auth": [
+      {
+        "package": "better-auth",
+        "reason": "Rising star 2025: open-source, extensible, and RSC-native auth.",
+        "standardIds": ["pkg-better-auth"]
+      },
+      {
+        "package": "drizzle-orm @neondatabase/serverless",
+        "reason": "Performance-first serverless data access with SQL-closeness.",
+        "standardIds": ["pkg-drizzle"]
+      }
+    ],
     "forms": [
       {
         "package": "react-hook-form zod @hookform/resolvers",

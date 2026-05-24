@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "3.0.0",
   "generatedAt": "2026-05-24",
   "claims": [
     {
@@ -211,7 +211,7 @@
     },
     {
       "id": "ev-olivier-top-techniques",
-      "sourceId": "yt-olivier-top-5-web-animation",
+      "sourceId": "yt-olivier-custom-cursor-motion",
       "sourceClass": "expert_video_transcript",
       "claim": "Olivier Larose frames repeated award-site animations around scroll progress, viewport detection, sticky positioning, easing, text splitting, interpolation, and shaders.",
       "confidence": "strong",
@@ -239,7 +239,7 @@
     },
     {
       "id": "ev-design-engineering-states",
-      "sourceId": "yt-warp-rise-design-engineering",
+      "sourceId": "yt-tim-gabe-world-class-design-system",
       "sourceClass": "expert_video_transcript",
       "claim": "Design engineering quality depends on implementation details, states, transition taste, and knowing when not to animate.",
       "confidence": "strong",
@@ -251,7 +251,7 @@
     },
     {
       "id": "ev-syntax-gsap-svg-accessibility",
-      "sourceId": "yt-syntax-gsap-cassie-evans",
+      "sourceId": "yt-greensock-react-complete-guide",
       "sourceClass": "expert_video_transcript",
       "claim": "The Syntax/GSAP discussion emphasizes GSAP's strength across text, SVG, performance, React, and accessibility concerns.",
       "confidence": "medium",
@@ -422,7 +422,7 @@
     },
     {
       "id": "ev-tim-gabe-competence",
-      "sourceId": "yt-tim-gabe-gamified-apps",
+      "sourceId": "yt-tim-gabe-saas-ux-2025",
       "sourceClass": "expert_video_transcript",
       "claim": "Tim Gabe argues gamification works when it reflects user competence/progress, not decorative points, badges, or leaderboards.",
       "confidence": "medium",
@@ -592,60 +592,77 @@
     {
       "id": "ev-tremor-raw-abstraction",
       "sourceId": "official-tremor-raw",
-        "sourceClass": "official_documentation",
-        "claim": "Tremor 3.0 (Raw) moves away from library abstraction to a 'copy-paste' model to eliminate abstraction debt and provide full Tailwind 4 control.",
-        "confidence": "strong",
-        "risk": "low",
-        "supports": ["pkg-tremor-raw", "principle-composition-over-config"]
-      },
-      {
-        "id": "ev-shadcn-blocks-primitives",
-        "sourceId": "official-shadcn-blocks",
-        "sourceClass": "official_documentation",
-        "claim": "shadcn/ui Blocks introduce structural primitives like 'Field', 'Input Group', and 'app-sidebar.tsx' to standardize SaaS dashboard and form layouts.",
-        "confidence": "strong",
-        "risk": "low",
-        "supports": ["component-saas-blocks", "principle-saas-density"]
-      },
-      {
-        "id": "ev-next-font-cls",
-        "sourceId": "official-next-font-best-practices",
-        "sourceClass": "official_documentation",
-        "claim": "next/font eliminates CLS by automatically generating Size-Adjust CSS to match fallback font metrics to the custom font.",
-        "confidence": "strong",
-        "risk": "low",
-        "supports": ["principle-font-loading", "principle-performance-budget"]
-      },
-      {
-        "id": "ev-dark-mode-cookies",
-        "sourceId": "official-next-themes-dark-mode",
-        "sourceClass": "official_documentation",
-        "claim": "Cookie-based dark mode persistence is superior for App Router apps to prevent FOUC without client-side blocking scripts in Server Components.",
-        "confidence": "strong",
-        "risk": "low",
-        "supports": ["principle-dark-light-theme"]
-      },
-      {
-        "id": "ev-view-transitions-experimental",
-        "sourceId": "reddit-view-transitions-2025",
-        "sourceClass": "community_signal",
-        "claim": "The View Transitions API in Next.js 15 is excellent for Shared Element Transitions but considered 'experimental' and potentially 'janky' for full-page slides.",
-        "confidence": "medium",
-        "risk": "medium",
-        "supports": ["motion-page-transition"]
-      },
-      {
-        "id": "ev-fluid-accessibility-clamp",
-        "sourceId": "reddit-fluid-design-2025",
-        "sourceClass": "community_signal",
-        "claim": "To remain WCAG compliant, clamp() functions for typography MUST use a rem-based unit in the preferred value to support browser zoom.",
-        "confidence": "strong",
-        "risk": "low",
-        "supports": ["principle-wcag-compliance", "principle-typography-scale"]
-      },
+      "sourceClass": "official_documentation",
+      "claim": "Tremor 3.0 (Raw) moves away from library abstraction to a 'copy-paste' model to eliminate abstraction debt and provide full Tailwind 4 control.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": [
+        "pkg-tremor-raw",
+        "principle-composition-over-config"
+      ]
+    },
+    {
+      "id": "ev-shadcn-blocks-primitives",
+      "sourceId": "official-shadcn-blocks",
+      "sourceClass": "official_documentation",
+      "claim": "shadcn/ui Blocks introduce structural primitives like 'Field', 'Input Group', and 'app-sidebar.tsx' to standardize SaaS dashboard and form layouts.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": [
+        "component-saas-blocks",
+        "principle-saas-density"
+      ]
+    },
+    {
+      "id": "ev-next-font-cls",
+      "sourceId": "official-next-font-best-practices",
+      "sourceClass": "official_documentation",
+      "claim": "next/font eliminates CLS by automatically generating Size-Adjust CSS to match fallback font metrics to the custom font.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": [
+        "principle-font-loading",
+        "principle-performance-budget"
+      ]
+    },
+    {
+      "id": "ev-dark-mode-cookies",
+      "sourceId": "official-next-themes-dark-mode",
+      "sourceClass": "official_documentation",
+      "claim": "Cookie-based dark mode persistence is superior for App Router apps to prevent FOUC without client-side blocking scripts in Server Components.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": [
+        "principle-dark-light-theme"
+      ]
+    },
+    {
+      "id": "ev-view-transitions-experimental",
+      "sourceId": "reddit-view-transitions-2025",
+      "sourceClass": "community_signal",
+      "claim": "The View Transitions API in Next.js 15 is excellent for Shared Element Transitions but considered 'experimental' and potentially 'janky' for full-page slides.",
+      "confidence": "medium",
+      "risk": "medium",
+      "supports": [
+        "motion-page-transition"
+      ]
+    },
+    {
+      "id": "ev-fluid-accessibility-clamp",
+      "sourceId": "reddit-fluid-design-2025",
+      "sourceClass": "community_signal",
+      "claim": "To remain WCAG compliant, clamp() functions for typography MUST use a rem-based unit in the preferred value to support browser zoom.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": [
+        "principle-wcag-compliance",
+        "principle-typography-scale"
+      ]
+    },
     {
       "id": "ev-olivier-animation-tiers",
       "sourceId": "yt-olivier-animation-tier-list",
+      "sourceClass": "expert_video_transcript",
       "claim": "Web animation difficulty spans 5 tiers: Beginner (pixel transitions) to God Tier (fluid shaders). GSAP for complex timelines; Framer Motion for React integration. Master HTML/CSS/JS before libraries.",
       "supports": [
         "pkg-gsap",
@@ -658,6 +675,7 @@
     {
       "id": "ev-olivier-gsap-motion-coexist",
       "sourceId": "yt-olivier-awwwards-portfolio-gsap-motion",
+      "sourceClass": "expert_video_transcript",
       "claim": "GSAP and Framer Motion coexist in Awwwards portfolios: Framer Motion for React layout/exit, GSAP for complex scroll timelines.",
       "supports": [
         "pkg-gsap",
@@ -670,6 +688,7 @@
     {
       "id": "ev-gsap-usegsap-hook",
       "sourceId": "yt-greensock-react-complete-guide",
+      "sourceClass": "expert_video_transcript",
       "claim": "Official @gsap/react useGSAP hook: auto cleanup, React 18 Strict Mode safe, scope parameter for component-scoped selectors, use useRef for targeting.",
       "supports": [
         "pkg-gsap",
@@ -681,6 +700,7 @@
     {
       "id": "ev-gsap-scrolltrigger-discipline",
       "sourceId": "yt-greensock-scrolltrigger-react",
+      "sourceClass": "expert_video_transcript",
       "claim": "ScrollTrigger discipline: don't overuse, function-based values + invalidateOnRefresh for responsive, never nest ST in ST timeline, matchMedia() for mobile/reduced-motion.",
       "supports": [
         "pkg-gsap",
@@ -693,6 +713,7 @@
     {
       "id": "ev-tim-gabe-emotional-design",
       "sourceId": "yt-tim-gabe-addictive-apps-secret",
+      "sourceClass": "expert_video_transcript",
       "claim": "Apps retain through emotional design (how it feels > features). Code is copyable, feelings aren't. Trust signaling > traffic. Smarter friction > removing all steps.",
       "supports": [
         "principle-signature-layer"
@@ -703,6 +724,7 @@
     {
       "id": "ev-fluid-typography-clamp",
       "sourceId": "yt-kevin-powell-clamp-typography",
+      "sourceClass": "expert_video_transcript",
       "claim": "Use clamp() for fluid typography headings with rem for accessibility. Utopia.fyi for type scale generation. Body text may stay breakpoint-based. CSS custom properties at root for maintainability.",
       "supports": [
         "principle-typography-scale"
@@ -713,6 +735,7 @@
     {
       "id": "ev-typography-font-trends",
       "sourceId": "reference-typography-trends-2025",
+      "sourceClass": "design_analysis",
       "claim": "Award font trends 2024-2025: Inter (UI standard), Satoshi (modern sans), PP Neue Montreal (grotesk). High-contrast pairings (grotesk + serif). Variable fonts standard. Typography carries brand personality.",
       "supports": [
         "principle-typography-scale"
@@ -723,6 +746,7 @@
     {
       "id": "ev-a11y-animation-wcag",
       "sourceId": "reference-wcag-animation-a11y",
+      "sourceClass": "official_documentation",
       "claim": "WCAG 2.3.3: users must disable non-essential animation. SplitText breaks screen readers; aria-label on parent + aria-hidden on spans. gsap.matchMedia() for reduced-motion. Always provide reduced-motion alternative.",
       "supports": [
         "motion-reduced-motion",
@@ -734,6 +758,7 @@
     {
       "id": "ev-animation-bundle-sizes",
       "sourceId": "reference-animation-bundle-performance",
+      "sourceClass": "official_documentation",
       "claim": "Bundle sizes: GSAP ~23KB, Framer Motion ~34-46KB, Motion ~2.3KB. CWV: modular imports, next/dynamic lazy load, never animate LCP element, transform/opacity only. Centralize GSAP config.",
       "supports": [
         "principle-performance-budget",
@@ -746,6 +771,7 @@
     {
       "id": "ev-view-transitions-api",
       "sourceId": "reference-view-transitions-nextjs",
+      "sourceClass": "official_documentation",
       "claim": "View Transitions API: widespread support (Chrome, Safari 18.2+, Firefox 144+). Next.js experimental flag + React ViewTransition. GPU-compositor perf. Progressive enhancement fallback. Shared elements via view-transition-name CSS.",
       "supports": [
         "motion-page-transition"
@@ -756,6 +782,7 @@
     {
       "id": "ev-awwwards-stack-2025",
       "sourceId": "awwwards-soty-2025-lando-norris",
+      "sourceClass": "award_case_study",
       "claim": "Next.js + GSAP + Three.js = Awwwards gold standard. SOTY 2024: Igloo (3D+scroll). SOTY 2025: Lando Norris (dynamic+bold). Darkroom created Lenis, Locomotive created Locomotive Scroll.",
       "supports": [
         "pkg-gsap",
@@ -769,6 +796,7 @@
     {
       "id": "ev-linear-design-principles",
       "sourceId": "analysis-linear-design",
+      "sourceClass": "design_analysis",
       "claim": "Linear: clarity/speed/logic over decoration. 8px spacing. Bold typography + high contrast. Keyboard-first. Modular components. Goal-oriented dashboards. 'Boring but better' aesthetic that feels performant.",
       "supports": [
         "principle-signature-layer",
@@ -780,6 +808,7 @@
     {
       "id": "ev-component-ecosystem-2025",
       "sourceId": "component-origin-ui",
+      "sourceClass": "component_ecosystem",
       "claim": "Ecosystem 2025: shadcn/ui = foundation (Radix+Tailwind, code ownership). Origin UI = SaaS. Motion Primitives = refined interactions. Hover.dev = marketing. Animata = creative. Copy-paste, mix in same project.",
       "supports": [
         "pkg-radix-shadcn",
@@ -792,6 +821,7 @@
     {
       "id": "ev-community-animation-2025",
       "sourceId": "reddit-animation-library-2025",
+      "sourceClass": "community_signal",
       "claim": "Reddit 2025: CSS for simple, Motion for React UI, GSAP for complex. Copy-paste libraries (Magic UI, Aceternity) fastest for polished UI. Lottie for designer-handed. Don't learn all at once.",
       "supports": [
         "pkg-gsap",
@@ -804,6 +834,7 @@
     {
       "id": "ev-dark-mode-shadcn",
       "sourceId": "reddit-shadcn-production-2025",
+      "sourceClass": "community_signal",
       "claim": "Dark mode: next-themes for switching, suppressHydrationWarning, CSS variables toggle light/dark. Centralize tokens. Wrapper components or direct source modification both acceptable.",
       "supports": [
         "principle-dark-light-theme",
@@ -813,8 +844,56 @@
       "risk": "low"
     },
     {
+      "id": "ev-performance-shaders",
+      "sourceId": "yt-oxeni-awwwards-3d",
+      "sourceClass": "expert_video_transcript",
+      "claim": "Advanced shaders must be optimized to stay within the 16.6ms frame budget (60fps), especially on mobile devices.",
+      "confidence": "strong",
+      "risk": "medium",
+      "supports": [
+        "pattern-shaders",
+        "principle-performance-budget"
+      ]
+    },
+    {
+      "id": "ev-next-themes-dark-mode",
+      "sourceId": "official-next-themes-dark-mode",
+      "sourceClass": "official_documentation",
+      "claim": "next-themes is the industry standard for handling dark mode in Next.js, providing a ThemeProvider and useTheme hook with SSR support.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": [
+        "principle-dark-light-theme"
+      ]
+    },
+    {
+      "id": "ev-kevin-powell-font-basics",
+      "sourceId": "official-next-font-best-practices",
+      "sourceClass": "official_documentation",
+      "claim": "Optimizing font loading involves using swap display, self-hosting, and subsetting to minimize CLS and LCP impact.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": [
+        "principle-font-loading"
+      ]
+    },
+    {
+      "id": "ev-tim-gabe-world-class-process",
+      "sourceId": "yt-tim-gabe-world-class-app-design",
+      "sourceClass": "expert_video_transcript",
+      "claim": "A world-class design process includes exhaustive state coverage (loading, empty, error) to ensure product robustness.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": [
+        "component-empty-error-loading",
+        "principle-state-completeness",
+        "principle-real-product-ux"
+      ]
+    },
+    {
       "id": "ev-modern-responsive",
       "sourceId": "yt-kevin-powell-modern-responsive",
+      "sourceClass": "expert_video_transcript",
       "claim": "Modern responsive: clamp() replaces media queries. Container queries for components. min()/max() for spacing. Fewer breakpoints, more fluid. Utopia.fyi for fluid type scales.",
       "supports": [
         "principle-responsive-breakpoints",
@@ -822,6 +901,142 @@
       ],
       "confidence": "strong",
       "risk": "low"
+    },
+    {
+      "id": "ev-olivier-gsap-motion-roles",
+      "sourceId": "yt-olivier-awwwards-gallery-gsap-motion",
+      "claim": "In Awwwards-style projects, GSAP and Framer Motion serve distinct roles: Motion handles React lifecycle animations (enter/exit/layout), GSAP handles mouse-follow effects, magnetic interactions, and complex timelines. useRef for GSAP targeting avoids re-renders. Lerp (linear interpolation) creates smooth float/follow effects.",
+      "supports": [
+        "pkg-gsap",
+        "pkg-motion",
+        "principle-performance-budget"
+      ],
+      "confidence": "strong"
+    },
+    {
+      "id": "ev-marquee-implementation",
+      "sourceId": "yt-olivier-infinite-text-marquee",
+      "claim": "GSAP marquee pattern: two identical text elements side-by-side, xPercent animation resetting at -100% for seamless loop. ScrollTrigger detects scroll direction/speed to adjust marquee direction. Pair with Lenis for premium smooth scroll feel. CSS overflow:hidden on container.",
+      "supports": [
+        "component-marquee-ticker",
+        "pkg-gsap",
+        "pkg-lenis"
+      ],
+      "confidence": "strong"
+    },
+    {
+      "id": "ev-locomotive-v5-is-lenis",
+      "sourceId": "yt-olivier-locomotive-v5-vs-lenis",
+      "claim": "Locomotive Scroll v5 is built ON TOP of Lenis. LocoV5 adds convenience (data-scroll-speed parallax, viewport detection) but Lenis alone + GSAP ScrollTrigger gives finer control with smaller bundle. For Dhiraj system: Lenis is the correct choice over Locomotive Scroll.",
+      "supports": [
+        "pkg-lenis",
+        "pkg-gsap",
+        "principle-performance-budget"
+      ],
+      "confidence": "strong"
+    },
+    {
+      "id": "ev-micro-interactions-5-secrets",
+      "sourceId": "yt-tim-gabe-10x-better-feel",
+      "claim": "5 secrets for apps that feel 10x better: 1) Micro-animations under 400ms with consistency, 2) Layered feedback (visual+haptic+audio), 3) Haptics for confirmation/error, 4) Strategic spacing creating hierarchy, 5) Contextual state awareness (disabled/loading/success must all differ). Every micro-interaction = trigger + rules + feedback + loop.",
+      "supports": [
+        "principle-signature-layer",
+        "principle-product-design",
+        "motion-reduced-motion"
+      ],
+      "confidence": "strong"
+    },
+    {
+      "id": "ev-landing-page-structure",
+      "sourceId": "yt-tim-gabe-9-landing-page-secrets",
+      "claim": "Landing page design secrets: Frankenstein wireframes from curated inspo. Assets+copy = 80-90% of impact. Fewer colors/fonts = more professional. Text hierarchy via weight+opacity (80%/60%). 8pt grid for ALL spacing. Hero needs: value prop + sub-headline + visual + ONE clear CTA. Sell outcomes, not features.",
+      "supports": [
+        "component-hero",
+        "principle-signature-layer",
+        "principle-typography-scale"
+      ],
+      "confidence": "strong"
+    },
+    {
+      "id": "ev-vw-font-accessibility-violation",
+      "sourceId": "yt-kevin-powell-no-vw-fonts",
+      "claim": "Using vw-only for font sizes violates WCAG 1.4.4 (Resize text) because text doesn't scale with browser zoom. Also ignores user font preferences and causes extremes on small/large screens. Solution: always use clamp() with rem boundaries: clamp(1rem, 0.8rem + 0.5vw, 3rem).",
+      "supports": [
+        "principle-typography-scale",
+        "principle-wcag-compliance",
+        "principle-responsive-breakpoints"
+      ],
+      "confidence": "strong"
+    },
+    {
+      "id": "ev-css-clamp-min-max-magic",
+      "sourceId": "yt-kevin-powell-clamp-min-max",
+      "claim": "CSS clamp()/min()/max() replace many media queries for fluid design. clamp() for typography and spacing. min() for responsive max-width without queries. max() for minimum sizes. Always use rem in clamp boundaries for accessibility.",
+      "supports": [
+        "principle-responsive-breakpoints",
+        "principle-typography-scale"
+      ],
+      "confidence": "strong"
+    },
+    {
+      "id": "ev-uiux-fundamentals-compressed",
+      "sourceId": "yt-juxtopposed-shortest-uiux",
+      "claim": "UI/UX fundamentals: Consistent spacing (8pt grid) creates rhythm. Color guides attention, not decoration. Accessibility is foundational, not optional. Hierarchy = size + color + spacing telling the eye where to look. Consistency builds trust. Never use color as the only signal for meaning.",
+      "supports": [
+        "principle-wcag-compliance",
+        "principle-signature-layer",
+        "principle-product-design"
+      ],
+      "confidence": "strong"
+    },
+    {
+      "id": "ev-3d-perfect-duo-gsap-threejs",
+      "sourceId": "yt-hyperplexed-perfect-duo-3d",
+      "claim": "GSAP + Three.js (via R3F in React) = the 'perfect duo' for 3D web animations. GSAP handles interpolation/timing/easing, Three.js handles GPU rendering. Mouse/scroll interaction drives 3D transforms. Build modular 3D components with useFrame (R3F) and useGSAP.",
+      "supports": [
+        "pkg-gsap",
+        "pkg-three-r3f"
+      ],
+      "confidence": "strong"
+    },
+    {
+      "id": "ev-hover-effects-patterns",
+      "sourceId": "yt-hyperplexed-hover-effect",
+      "claim": "Premium hover effect patterns: 1) 3D tilt card = CSS perspective + JS mousemove + rotateX/Y via CSS custom properties, 2) Magnetic button = invisible wrapper + translate toward cursor, 3) Glowing border = radial-gradient on ::before with --mouse-x/y variables. Use will-change:transform for GPU optimization.",
+      "supports": [
+        "motion-card-hover-depth",
+        "principle-performance-budget"
+      ],
+      "confidence": "strong"
+    },
+    {
+      "id": "ev-svg-animation-css-first",
+      "sourceId": "yt-fireship-svg-animations-css",
+      "claim": "SVG animation can be CSS-first without GSAP: line drawing via stroke-dasharray/dashoffset, keyframe staggering via CSS variables, transition animations for state changes. GSAP only needed for complex timeline sequencing of SVG. 7 pure CSS techniques cover most SVG animation needs.",
+      "supports": [
+        "principle-performance-budget"
+      ],
+      "confidence": "strong"
+    },
+    {
+      "id": "ev-bruno-simon-immersion-philosophy",
+      "sourceId": "yt-bruno-simon-threejs-journey",
+      "claim": "Bruno Simon's philosophy: portfolios should be 'worlds' users explore, not static pages. Three.js Journey is the canonical 3D web course. Covers R3F, shaders, physics, WebGPU. Immersion over convention for creative work. Show don't tell.",
+      "supports": [
+        "pkg-three-r3f",
+        "principle-signature-layer"
+      ],
+      "confidence": "strong"
+    },
+    {
+      "id": "ev-react-performance-measure-first",
+      "sourceId": "yt-wds-react-performance",
+      "claim": "React performance: measure first with DevTools Profiler. Re-renders aren't inherently bad (<16ms is fine). memo/useMemo/useCallback are surgical tools with memory cost \u2014 don't use by default. Component composition > memoization. Avoid premature optimization. React Compiler reduces manual memo need.",
+      "supports": [
+        "principle-performance-budget",
+        "pkg-react"
+      ],
+      "confidence": "strong"
     }
   ]
 }

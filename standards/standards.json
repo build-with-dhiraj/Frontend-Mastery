@@ -20,7 +20,8 @@
         "ev-codrops-3d-grid-stack",
         "ev-21st-agent-components",
         "ev-jsmastery-frequency",
-        "ev-prismic-frequency"
+        "ev-prismic-frequency",
+        "ev-awwwards-stack-2025"
       ],
       "risks": [
         "Framework choice should still follow product/runtime constraints."
@@ -107,7 +108,8 @@
         "ev-reactbits-ai-ready",
         "ev-magic-ui-stack",
         "ev-jsmastery-frequency",
-        "ev-prismic-frequency"
+        "ev-prismic-frequency",
+        "ev-component-ecosystem-2025"
       ],
       "risks": [
         "Utility sprawl without tokens can make Dhiraj identity inconsistent."
@@ -137,7 +139,10 @@
         "ev-shadcn-component-surface",
         "ev-magic-ui-stack",
         "ev-designcourse-shadcn-cursor",
-        "ev-shadcn-motion-reddit"
+        "ev-shadcn-motion-reddit",
+        "ev-component-ecosystem-2025",
+        "ev-community-animation-2025",
+        "ev-dark-mode-shadcn"
       ],
       "risks": [
         "Default shadcn look can feel generic without signature tokens and composition."
@@ -150,17 +155,64 @@
       ]
     },
     {
+      "id": "pkg-motion",
+      "name": "Motion (formerly Framer Motion)",
+      "type": "package",
+      "layer": "base",
+      "tier": "T0 Foundation",
+      "score": 25,
+      "sourceClasses": [
+        "official_documentation",
+        "expert_video_transcript",
+        "component_ecosystem",
+        "community_signal"
+      ],
+      "evidenceIds": [
+        "ev-motion-react-capabilities",
+        "ev-magic-ui-stack",
+        "ev-olivier-motion-performance",
+        "ev-olivier-gsap-motion-coexist",
+        "ev-animation-bundle-sizes",
+        "ev-component-ecosystem-2025",
+        "ev-community-animation-2025"
+      ],
+      "risks": [
+        "Layout transitions can be expensive; exit animations require AnimatePresence."
+      ],
+      "useWhen": [
+        "React UI animations, gestures, layout transitions, and simple entry/exit effects."
+      ],
+      "avoidWhen": [
+        "Complex non-React timelines (use GSAP) or extremely performance-critical 3D."
+      ]
+    },
+    {
       "id": "principle-performance-budget",
       "name": "Performance Budgets (CWV)",
       "type": "design_principle",
       "layer": "base",
       "tier": "T0 Foundation",
       "score": 22,
-      "sourceClasses": ["official_documentation", "community_signal", "expert_video_transcript"],
-      "evidenceIds": ["ev-next-font-cls", "ev-performance-shaders", "ev-powell-fluid-type"],
-      "risks": ["Animation bloat can tank INP and LCP scores."],
-      "useWhen": ["Establishing thresholds for JS bundle size, LCP (<2.5s), and INP (<200ms)."],
-      "avoidWhen": ["Never."]
+      "sourceClasses": [
+        "official_documentation",
+        "community_signal",
+        "expert_video_transcript"
+      ],
+      "evidenceIds": [
+        "ev-next-font-cls",
+        "ev-performance-shaders",
+        "ev-powell-fluid-type",
+        "ev-animation-bundle-sizes"
+      ],
+      "risks": [
+        "Animation bloat can tank INP and LCP scores."
+      ],
+      "useWhen": [
+        "Establishing thresholds for JS bundle size, LCP (<2.5s), and INP (<200ms)."
+      ],
+      "avoidWhen": [
+        "Never."
+      ]
     },
     {
       "id": "principle-responsive-breakpoints",
@@ -169,11 +221,25 @@
       "layer": "base",
       "tier": "T0 Foundation",
       "score": 19,
-      "sourceClasses": ["community_signal", "official_documentation"],
-      "evidenceIds": ["ev-fluid-accessibility-clamp", "ev-powell-fluid-type"],
-      "risks": ["Relying on old breakpoints (like 768px only) misses the modern mobile-large/foldable tier."],
-      "useWhen": ["Defining layout tiers: 480px (Mobile), 768px (Tablet), 1024px (Laptop), 1280px (Desktop), 1536px (Ultra-Wide)."],
-      "avoidWhen": ["Purely fluid 'intrinsic' layouts where no media queries are used."]
+      "sourceClasses": [
+        "community_signal",
+        "official_documentation",
+        "expert_video_transcript"
+      ],
+      "evidenceIds": [
+        "ev-fluid-accessibility-clamp",
+        "ev-powell-fluid-type",
+        "ev-modern-responsive"
+      ],
+      "risks": [
+        "Relying on old breakpoints (like 768px only) misses the modern mobile-large/foldable tier."
+      ],
+      "useWhen": [
+        "Defining layout tiers: 480px (Mobile), 768px (Tablet), 1024px (Laptop), 1280px (Desktop), 1536px (Ultra-Wide)."
+      ],
+      "avoidWhen": [
+        "Purely fluid 'intrinsic' layouts where no media queries are used."
+      ]
     },
     {
       "id": "component-sidebar-nav",
@@ -182,11 +248,25 @@
       "layer": "base",
       "tier": "T0 Foundation",
       "score": 24,
-      "sourceClasses": ["expert_video_transcript", "award_case_study", "official_documentation"],
-      "evidenceIds": ["ev-tim-gabe-saas-density", "ev-shadcn-blocks-primitives", "ev-linear-aesthetic"],
-      "risks": ["Poor mobile transition; must switch to Bottom Tab Bar or Drawer on small screens."],
-      "useWhen": ["Complex SaaS products and admin dashboards with 6+ primary sections."],
-      "avoidWhen": ["Simple marketing sites (use Top Nav)."]
+      "sourceClasses": [
+        "expert_video_transcript",
+        "award_case_study",
+        "official_documentation"
+      ],
+      "evidenceIds": [
+        "ev-tim-gabe-saas-density",
+        "ev-shadcn-blocks-primitives",
+        "ev-linear-design-principles"
+      ],
+      "risks": [
+        "Poor mobile transition; must switch to Bottom Tab Bar or Drawer on small screens."
+      ],
+      "useWhen": [
+        "Complex SaaS products and admin dashboards with 6+ primary sections."
+      ],
+      "avoidWhen": [
+        "Simple marketing sites (use Top Nav)."
+      ]
     },
     {
       "id": "component-skeleton-loading",
@@ -195,11 +275,27 @@
       "layer": "base",
       "tier": "T0 Foundation",
       "score": 18,
-      "sourceClasses": ["official_documentation", "expert_video_transcript", "community_signal"],
-      "evidenceIds": ["ev-shadcn-component-surface", "ev-design-engineering-states"],
-      "risks": ["Static skeletons can feel 'stuck' if data loading is extremely slow."],
-      "useWhen": ["Preventing layout shift during async data fetching (Suspense)."],
-      "avoidWhen": ["Instant-load static content."]
+      "sourceClasses": [
+        "official_documentation",
+        "expert_video_transcript",
+        "community_signal",
+        "design_analysis"
+      ],
+      "evidenceIds": [
+        "ev-shadcn-component-surface",
+        "ev-design-engineering-states",
+        "ev-linear-design-principles",
+        "ev-animation-bundle-sizes"
+      ],
+      "risks": [
+        "Static skeletons can feel 'stuck' if data loading is extremely slow."
+      ],
+      "useWhen": [
+        "Preventing layout shift during async data fetching (Suspense)."
+      ],
+      "avoidWhen": [
+        "Instant-load static content."
+      ]
     },
     {
       "id": "principle-wcag-compliance",
@@ -216,7 +312,9 @@
       "evidenceIds": [
         "ev-powell-accessibility",
         "ev-syntax-gsap-svg-accessibility",
-        "ev-reduced-motion-reddit"
+        "ev-reduced-motion-reddit",
+        "ev-a11y-animation-wcag",
+        "ev-fluid-accessibility-clamp"
       ],
       "risks": [
         "Accessibility is binary; non-compliance is a legal and usability failure."
@@ -236,11 +334,16 @@
       "tier": "T0 Foundation",
       "score": 18,
       "sourceClasses": [
-        "expert_video_transcript"
+        "expert_video_transcript",
+        "community_signal",
+        "design_analysis"
       ],
       "evidenceIds": [
         "ev-powell-fluid-type",
-        "ev-tim-gabe-foundations"
+        "ev-tim-gabe-foundations",
+        "ev-fluid-typography-clamp",
+        "ev-typography-font-trends",
+        "ev-modern-responsive"
       ],
       "risks": [
         "Viewport units (vw) can scale poorly in sidebars/nested containers; prefer cqi."
@@ -261,11 +364,13 @@
       "score": 15,
       "sourceClasses": [
         "expert_video_transcript",
-        "award_case_study"
+        "award_case_study",
+        "official_documentation"
       ],
       "evidenceIds": [
         "ev-tim-gabe-saas-density",
-        "ev-linear-aesthetic"
+        "ev-linear-aesthetic",
+        "ev-shadcn-blocks-primitives"
       ],
       "risks": [
         "High density can overwhelm casual users; requires 'Opinionated Design'."
@@ -286,11 +391,14 @@
       "score": 14,
       "sourceClasses": [
         "expert_video_transcript",
-        "award_case_study"
+        "award_case_study",
+        "component_ecosystem"
       ],
       "evidenceIds": [
         "ev-tim-gabe-saas-density",
-        "ev-linear-aesthetic"
+        "ev-linear-aesthetic",
+        "ev-linear-design-principles",
+        "ev-component-ecosystem-2025"
       ],
       "risks": [
         "Hidden feature problem; needs visible affordance/shortcuts list."
@@ -309,11 +417,24 @@
       "layer": "base",
       "tier": "T0 Foundation",
       "score": 20,
-      "sourceClasses": ["official_documentation", "community_signal"],
-      "evidenceIds": ["ev-dark-mode-cookies", "ev-next-themes-dark-mode"],
-      "risks": ["Flash of Unstyled Content (FOUC) on page load."],
-      "useWhen": ["Cookie-based persistence for pure RSC/App Router; next-themes for simple abstraction."],
-      "avoidWhen": ["Raw localStorage without a blocking script."]
+      "sourceClasses": [
+        "official_documentation",
+        "community_signal"
+      ],
+      "evidenceIds": [
+        "ev-dark-mode-cookies",
+        "ev-next-themes-dark-mode",
+        "ev-dark-mode-shadcn"
+      ],
+      "risks": [
+        "Flash of Unstyled Content (FOUC) on page load."
+      ],
+      "useWhen": [
+        "Cookie-based persistence for pure RSC/App Router; next-themes for simple abstraction."
+      ],
+      "avoidWhen": [
+        "Raw localStorage without a blocking script."
+      ]
     },
     {
       "id": "principle-font-loading",
@@ -322,11 +443,25 @@
       "layer": "base",
       "tier": "T0 Foundation",
       "score": 18,
-      "sourceClasses": ["official_documentation", "expert_video_transcript"],
-      "evidenceIds": ["ev-next-font-cls", "ev-kevin-powell-font-basics"],
-      "risks": ["Layout shift (CLS) and extra DNS lookups."],
-      "useWhen": ["next/font for automatic self-hosting, size-adjust, and variable font support."],
-      "avoidWhen": ["External @import or <link> for fonts."]
+      "sourceClasses": [
+        "official_documentation",
+        "expert_video_transcript"
+      ],
+      "evidenceIds": [
+        "ev-next-font-cls",
+        "ev-kevin-powell-font-basics",
+        "ev-animation-bundle-sizes",
+        "ev-typography-font-trends"
+      ],
+      "risks": [
+        "Layout shift (CLS) and extra DNS lookups."
+      ],
+      "useWhen": [
+        "next/font for automatic self-hosting, size-adjust, and variable font support."
+      ],
+      "avoidWhen": [
+        "External @import or <link> for fonts."
+      ]
     },
     {
       "id": "pkg-tremor-raw",
@@ -335,11 +470,21 @@
       "layer": "base",
       "tier": "T1 Premium Standard",
       "score": 16,
-      "sourceClasses": ["official_documentation"],
-      "evidenceIds": ["ev-tremor-raw-abstraction"],
-      "risks": ["Higher initial code volume compared to a library."],
-      "useWhen": ["Production dashboards requiring full control over charts and KPI cards."],
-      "avoidWhen": ["Simple charts where a generic library is sufficient."]
+      "sourceClasses": [
+        "official_documentation"
+      ],
+      "evidenceIds": [
+        "ev-tremor-raw-abstraction"
+      ],
+      "risks": [
+        "Higher initial code volume compared to a library."
+      ],
+      "useWhen": [
+        "Production dashboards requiring full control over charts and KPI cards."
+      ],
+      "avoidWhen": [
+        "Simple charts where a generic library is sufficient."
+      ]
     },
     {
       "id": "motion-page-transition",
@@ -348,11 +493,23 @@
       "layer": "signature",
       "tier": "T1 Premium Standard",
       "score": 15,
-      "sourceClasses": ["official_documentation", "community_signal"],
-      "evidenceIds": ["ev-view-transitions-experimental"],
-      "risks": ["Experimental status, network-dependent jank, and lack of exit control."],
-      "useWhen": ["Shared Element Transitions (e.g., card-to-hero) in Next.js 15."],
-      "avoidWhen": ["Mission-critical production apps requiring precise exit-animation control."]
+      "sourceClasses": [
+        "official_documentation",
+        "community_signal"
+      ],
+      "evidenceIds": [
+        "ev-view-transitions-experimental",
+        "ev-view-transitions-api"
+      ],
+      "risks": [
+        "Experimental status, network-dependent jank, and lack of exit control."
+      ],
+      "useWhen": [
+        "Shared Element Transitions (e.g., card-to-hero) in Next.js 15."
+      ],
+      "avoidWhen": [
+        "Mission-critical production apps requiring precise exit-animation control."
+      ]
     },
     {
       "id": "principle-composition-over-config",
@@ -361,11 +518,21 @@
       "layer": "base",
       "tier": "T1 Premium Standard",
       "score": 12,
-      "sourceClasses": ["official_documentation"],
-      "evidenceIds": ["ev-tremor-raw-abstraction"],
-      "risks": ["Can lead to code duplication if not carefully managed."],
-      "useWhen": ["Building production-ready components that need to be customized beyond simple props."],
-      "avoidWhen": ["Atomic components where props are sufficient."]
+      "sourceClasses": [
+        "official_documentation"
+      ],
+      "evidenceIds": [
+        "ev-tremor-raw-abstraction"
+      ],
+      "risks": [
+        "Can lead to code duplication if not carefully managed."
+      ],
+      "useWhen": [
+        "Building production-ready components that need to be customized beyond simple props."
+      ],
+      "avoidWhen": [
+        "Atomic components where props are sufficient."
+      ]
     },
     {
       "id": "pkg-gsap",
@@ -388,7 +555,14 @@
         "ev-sparkk-stack",
         "ev-syntax-gsap-svg-accessibility",
         "ev-frontend-animations-reddit",
-        "ev-awwwards-golden-stack"
+        "ev-awwwards-golden-stack",
+        "ev-olivier-animation-tiers",
+        "ev-olivier-gsap-motion-coexist",
+        "ev-gsap-usegsap-hook",
+        "ev-gsap-scrolltrigger-discipline",
+        "ev-animation-bundle-sizes",
+        "ev-awwwards-stack-2025",
+        "ev-community-animation-2025"
       ],
       "risks": [
         "Imperative animation cleanup in React, bundle cost, and temptation to animate too much."
@@ -462,7 +636,8 @@
         "ev-lenis-scroll",
         "ev-sparkk-stack",
         "ev-olivier-top-techniques",
-        "ev-awwwards-golden-stack"
+        "ev-awwwards-golden-stack",
+        "ev-awwwards-stack-2025"
       ],
       "risks": [
         "Scroll feel can hurt accessibility, browser expectations, and mobile performance."
@@ -493,7 +668,8 @@
         "ev-codrops-3d-grid-stack",
         "ev-prismic-frequency",
         "ev-r3f-reddit-tradeoff",
-        "ev-awwwards-golden-stack"
+        "ev-awwwards-golden-stack",
+        "ev-awwwards-stack-2025"
       ],
       "risks": [
         "Asset pipeline, GPU performance, mobile fallbacks, and low-level rendering complexity."
@@ -565,12 +741,14 @@
       "sourceClasses": [
         "official_documentation",
         "component_ecosystem",
-        "expert_video_transcript"
+        "expert_video_transcript",
+        "design_analysis"
       ],
       "evidenceIds": [
         "ev-shadcn-component-surface",
         "ev-aceternity-component-taxonomy",
-        "ev-design-engineering-states"
+        "ev-design-engineering-states",
+        "ev-linear-design-principles"
       ],
       "risks": [
         "Too many variants can create contradictions; keep one canonical interaction per component."
@@ -859,7 +1037,8 @@
         "ev-gsap-reduced-motion-cleanup",
         "ev-olivier-top-techniques",
         "ev-jsmastery-frequency",
-        "ev-frontend-animations-reddit"
+        "ev-frontend-animations-reddit",
+        "ev-olivier-gsap-motion-coexist"
       ],
       "risks": [
         "Overuse makes pages feel repetitive; content must remain reachable without JS."
@@ -884,7 +1063,8 @@
       ],
       "evidenceIds": [
         "ev-olivier-top-techniques",
-        "ev-frontend-animations-reddit"
+        "ev-frontend-animations-reddit",
+        "ev-gsap-scrolltrigger-discipline"
       ],
       "risks": [
         "Mobile viewport quirks and scroll confusion."
@@ -993,7 +1173,9 @@
         "ev-motion-react-capabilities",
         "ev-gsap-reduced-motion-cleanup",
         "ev-syntax-gsap-svg-accessibility",
-        "ev-reduced-motion-reddit"
+        "ev-reduced-motion-reddit",
+        "ev-gsap-scrolltrigger-discipline",
+        "ev-a11y-animation-wcag"
       ],
       "risks": [
         "Skipping this is an accessibility failure."
@@ -1020,7 +1202,8 @@
       "evidenceIds": [
         "ev-design-engineering-states",
         "ev-shadcn-component-surface",
-        "ev-tim-gabe-world-class-process"
+        "ev-tim-gabe-world-class-process",
+        "ev-powell-accessibility"
       ],
       "risks": [
         "Polished still frames hide broken product behavior."
@@ -1120,11 +1303,15 @@
       "score": 9,
       "sourceClasses": [
         "expert_video_transcript",
-        "component_ecosystem"
+        "component_ecosystem",
+        "design_analysis"
       ],
       "evidenceIds": [
         "ev-designcourse-shadcn-cursor",
-        "ev-design-engineering-states"
+        "ev-design-engineering-states",
+        "ev-olivier-animation-tiers",
+        "ev-tim-gabe-emotional-design",
+        "ev-linear-design-principles"
       ],
       "risks": [
         "Signature choices must not override accessibility or product clarity."
@@ -1261,6 +1448,79 @@
       ]
     },
     {
+      "id": "principle-product-design",
+      "name": "Product/SaaS Design Principles",
+      "type": "design_principle",
+      "layer": "base",
+      "tier": "T0 Foundation",
+      "score": 20,
+      "sourceClasses": [
+        "design_analysis",
+        "expert_video_transcript"
+      ],
+      "evidenceIds": [
+        "ev-linear-design-principles",
+        "ev-tim-gabe-emotional-design"
+      ],
+      "risks": [
+        "Clarity/speed/logic must take precedence over decoration."
+      ],
+      "useWhen": [
+        "Building dashboards, SaaS interfaces, and pro-tools."
+      ],
+      "avoidWhen": [
+        "Purely experimental art-sites."
+      ]
+    },
+    {
+      "id": "component-marquee-ticker",
+      "name": "Marquee / Logo Ticker",
+      "type": "component",
+      "layer": "signature",
+      "tier": "T1 Premium Standard",
+      "score": 10,
+      "sourceClasses": [
+        "component_ecosystem"
+      ],
+      "evidenceIds": [
+        "ev-component-ecosystem-2025"
+      ],
+      "risks": [
+        "Constant motion can be distracting; must pause on hover and respect reduced motion."
+      ],
+      "useWhen": [
+        "Social proof strips, logo clouds, announcement banners."
+      ],
+      "avoidWhen": [
+        "Critical information that users must read fully."
+      ]
+    },
+    {
+      "id": "component-skeleton-shimmer",
+      "name": "Skeleton Shimmer",
+      "type": "component",
+      "layer": "base",
+      "tier": "T0 Foundation",
+      "score": 15,
+      "sourceClasses": [
+        "official_documentation",
+        "design_analysis"
+      ],
+      "evidenceIds": [
+        "ev-linear-design-principles",
+        "ev-animation-bundle-sizes"
+      ],
+      "risks": [
+        "Shimmer should be subtle; matches final content dimensions to prevent CLS."
+      ],
+      "useWhen": [
+        "Loading states for cards, lists, and content blocks."
+      ],
+      "avoidWhen": [
+        "Users prefer reduced motion (use static skeletons)."
+      ]
+    },
+    {
       "id": "anti-animation-everywhere",
       "name": "Animation Everywhere",
       "type": "anti_pattern",
@@ -1310,147 +1570,6 @@
       "avoidWhen": [
         "Product workflows, forms, dashboards, content-heavy pages, reduced-motion users."
       ]
-    },
-    {
-      "id": "principle-wcag-compliance",
-      "type": "design_principle",
-      "tier": "T0",
-      "label": "WCAG 2.2 Compliance for Animated UI",
-      "description": "All animated components must respect prefers-reduced-motion, provide keyboard navigation, maintain focus management, and preserve semantic HTML for screen readers. Text splitting must use aria-label on parent and aria-hidden on decorative spans.",
-      "evidenceIds": [
-        "ev-a11y-animation-wcag",
-        "ev-gsap-scrolltrigger-discipline"
-      ],
-      "score": 9.2,
-      "rationale": "WCAG 2.3.3 explicitly requires user control over non-essential animation. Text splitting accessibility is frequently overlooked but critical."
-    },
-    {
-      "id": "principle-typography-scale",
-      "type": "design_principle",
-      "tier": "T0",
-      "label": "Evidence-Based Typography System",
-      "description": "Use fluid typography with clamp() and rem units for accessibility. Heading scale via Utopia.fyi or equivalent. Body at 16-18px base. Font stack: Inter/Satoshi for UI, optional serif for editorial headings. Variable fonts preferred. High-contrast pairing (grotesk + serif) for brand character.",
-      "evidenceIds": [
-        "ev-fluid-typography-clamp",
-        "ev-typography-font-trends",
-        "ev-modern-responsive"
-      ],
-      "score": 9.0,
-      "rationale": "Every award-winning site uses intentional typography. The corpus lacked any font/type-scale tokens. Kevin Powell + Utopia.fyi + Awwwards font trends all converge."
-    },
-    {
-      "id": "principle-performance-budget",
-      "type": "design_principle",
-      "tier": "T0",
-      "label": "Animation Performance Budget",
-      "description": "Total animation JS budget: <80KB gzipped. GSAP core (~23KB) + Motion (~2.3-46KB) + Lenis (~3KB) = ~50-72KB. Use modular GSAP imports. Lazy-load heavy animation components with next/dynamic { ssr: false }. Never animate LCP element with JS. Stick to transform/opacity for GPU compositing. Avoid layout-triggering properties. Target: LCP <2.5s, INP <200ms, CLS <0.1.",
-      "evidenceIds": [
-        "ev-animation-bundle-sizes",
-        "ev-gsap-scrolltrigger-discipline"
-      ],
-      "score": 9.5,
-      "rationale": "Performance budget directly impacts CWV, SEO, and user retention. Animation libraries can easily exceed 100KB without discipline."
-    },
-    {
-      "id": "principle-product-design",
-      "type": "design_principle",
-      "tier": "T0",
-      "label": "Product/SaaS Design Principles (Linear Standard)",
-      "description": "Product UI prioritizes clarity/speed/logic over decoration. Consistent 8px spacing scale. Bold typography + high contrast. Keyboard-first UX with shortcuts. Modular component system. Goal-oriented dashboards for specific audiences. Actionable insights with contextual clarity. Boring but better > flashy but fragile.",
-      "evidenceIds": [
-        "ev-linear-design-principles",
-        "ev-tim-gabe-emotional-design"
-      ],
-      "score": 9.0,
-      "rationale": "The corpus was 90% creative/portfolio. Linear/Vercel/Stripe represent the product-side standard that must inform dashboard and SaaS templates."
-    },
-    {
-      "id": "principle-responsive-breakpoints",
-      "type": "design_principle",
-      "tier": "T0",
-      "label": "Fluid-First Responsive Design",
-      "description": "Minimize breakpoints; use clamp(), min(), max() for fluid scaling. Container queries for component-level responsiveness. Fluid type scales maintain rhythm across viewports. Touch targets minimum 48px. Mobile navigation: consider tab bar, drawer, or collapsible sidebar over hamburger alone.",
-      "evidenceIds": [
-        "ev-modern-responsive",
-        "ev-fluid-typography-clamp"
-      ],
-      "score": 8.5,
-      "rationale": "Modern CSS eliminates the need for many media queries. Kevin Powell + web.dev consensus on fluid-first approach."
-    },
-    {
-      "id": "principle-dark-light-theme",
-      "type": "design_principle",
-      "tier": "T0",
-      "label": "System-Aware Dark/Light Theme",
-      "description": "Detect system preference via prefers-color-scheme. Use next-themes for SSR-safe switching with suppressHydrationWarning. CSS custom properties toggle light/dark palettes. Persist user choice in cookie (SSR) or localStorage. Both themes must pass WCAG AA contrast (4.5:1 for text, 3:1 for large text).",
-      "evidenceIds": [
-        "ev-dark-mode-shadcn"
-      ],
-      "score": 8.8,
-      "rationale": "Every major component ecosystem supports dark mode. The existing design-tokens.css already has .dark values but lacked the implementation standard."
-    },
-    {
-      "id": "motion-page-transition",
-      "type": "motion_pattern",
-      "tier": "T1",
-      "label": "View Transitions API for Page Navigation",
-      "description": "Use the native View Transitions API with Next.js experimental.viewTransition. Wrap layouts with React ViewTransition component. Use view-transition-name CSS for shared element morphing. Progressive enhancement: graceful fallback to instant navigation. GPU-compositor performance. Prefer over JS-based page transition libraries.",
-      "evidenceIds": [
-        "ev-view-transitions-api"
-      ],
-      "score": 8.0,
-      "rationale": "Widespread browser support in 2025-2026. Official Next.js integration. GPU-native performance far exceeds JS alternatives. Still experimental in Next.js."
-    },
-    {
-      "id": "principle-font-loading",
-      "type": "design_principle",
-      "tier": "T0",
-      "label": "Font Loading Performance Strategy",
-      "description": "Use next/font for automatic self-hosting and optimization. font-display: swap for body text, optional for decorative display fonts. Prefer variable fonts (single file, multiple weights). Self-hosted > CDN for privacy and LCP. Subset fonts to used character ranges when possible.",
-      "evidenceIds": [
-        "ev-animation-bundle-sizes",
-        "ev-typography-font-trends"
-      ],
-      "score": 8.5,
-      "rationale": "Font loading directly impacts LCP. next/font is the standard in Next.js. Variable fonts reduce HTTP requests while enabling fluid weight."
-    },
-    {
-      "id": "component-marquee-ticker",
-      "type": "component",
-      "tier": "T1",
-      "label": "Marquee / Logo Ticker",
-      "description": "Infinitely scrolling horizontal strip for logos, testimonials, or text. CSS animation preferred with requestAnimationFrame fallback. Pause on hover. Reduced-motion: static grid or single row.",
-      "evidenceIds": [
-        "ev-component-ecosystem-2025"
-      ],
-      "score": 7.5,
-      "rationale": "Present in Magic UI, Aceternity UI, Animate UI, Hover.dev. Common in SaaS landing pages and portfolio sites."
-    },
-    {
-      "id": "component-command-palette",
-      "type": "component",
-      "tier": "T1",
-      "label": "Command Palette / Search (\u2318K)",
-      "description": "Global search/action modal triggered by keyboard shortcut. Fuzzy search, categorized results, recent items. Use Radix Dialog + custom search logic. Focus trap, keyboard navigation, escape to close.",
-      "evidenceIds": [
-        "ev-linear-design-principles",
-        "ev-component-ecosystem-2025"
-      ],
-      "score": 8.0,
-      "rationale": "Linear, Vercel, Raycast, and Notion all feature command palettes. Becoming a product UI standard for power users."
-    },
-    {
-      "id": "component-skeleton-shimmer",
-      "type": "component",
-      "tier": "T0",
-      "label": "Skeleton Loading (Shimmer)",
-      "description": "Placeholder shapes matching expected content layout during data fetching. Shimmer gradient animation via CSS. Matches final content dimensions to prevent CLS. Reduced-motion: static gray blocks without shimmer.",
-      "evidenceIds": [
-        "ev-linear-design-principles",
-        "ev-animation-bundle-sizes"
-      ],
-      "score": 8.5,
-      "rationale": "Industry standard loading pattern. Prevents CLS. Used by every major SaaS product."
     }
   ]
 }
