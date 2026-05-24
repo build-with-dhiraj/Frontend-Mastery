@@ -1,38 +1,33 @@
-import { Activity, Layers3, MousePointer2, Sparkles, Waypoints, Zap, Eye, Type } from "lucide-react";
+import { Activity, Layers3, PlusCircle, Sparkles, Zap, Type } from "lucide-react";
 import {
-  DhirajAppShell,
   DhirajBentoGrid,
-  DhirajCTA,
-  DhirajFooter,
   DhirajHero,
-  DhirajNavHeader,
-  DhirajPricing,
   DhirajSection,
   DhirajTestimonial,
 } from "@/components/dhiraj-sections";
 import { Marquee } from "@/components/marquee";
 
 const navLinks = [
-  { label: "Standards", href: "#standards" },
-  { label: "Motion", href: "#motion" },
+  { label: "Base Layer", href: "/base-layer" },
+  { label: "Cherry-Picked Vault", href: "/vault" },
   { label: "Proof", href: "#proof" },
 ];
 
 function HeroPreview() {
   const bars = [
-    { label: "GSAP", value: 92, claims: 24 },
-    { label: "Motion", value: 80, claims: 15 },
-    { label: "Three/R3F", value: 68, claims: 13 },
-    { label: "Next.js", value: 60, claims: 10 },
-    { label: "Tailwind", value: 56, claims: 9 },
+    { label: "GSAP", value: 96, claims: 32 },
+    { label: "Motion", value: 85, claims: 20 },
+    { label: "Three/R3F", value: 72, claims: 18 },
+    { label: "Next.js 15", value: 65, claims: 15 },
+    { label: "Drizzle", value: 50, claims: 12 },
   ];
 
   return (
     <div className="relative flex min-h-72 flex-col justify-between overflow-hidden p-5">
       <div className="absolute inset-x-0 top-0 h-px bg-[rgb(var(--dhiraj-line))]" />
       <div className="flex items-center justify-between text-xs text-[rgb(var(--dhiraj-muted))]">
-        <span>Evidence engine</span>
-        <span>109 sources</span>
+        <span>Mastery Engine</span>
+        <span>137 sources</span>
       </div>
       <div className="grid gap-3">
         {bars.map((bar) => (
@@ -51,8 +46,8 @@ function HeroPreview() {
       <div className="grid grid-cols-3 gap-3">
         {[
           { label: "Base", value: "T0" },
-          { label: "Signature", value: "T1" },
-          { label: "Optional", value: "T2" },
+          { label: "Premium", value: "T1" },
+          { label: "Signature", value: "T2" },
         ].map(({ label, value }) => (
           <div key={label} className="rounded-[var(--dhiraj-radius-sm)] border border-[rgb(var(--dhiraj-line))] p-3">
             <p className="text-xs text-[rgb(var(--dhiraj-muted))]">{label}</p>
@@ -66,164 +61,86 @@ function HeroPreview() {
 
 export default function Home() {
   return (
-    <DhirajAppShell
-      header={<DhirajNavHeader brand="Dhiraj" links={navLinks} />}
-      footer={
-        <DhirajFooter
-          links={[
-            { label: "App screen", href: "/app" },
-            { label: "Standards", href: "#standards" },
-            { label: "Motion", href: "#motion" },
-          ]}
-        />
-      }
-    >
+    <div className="space-y-16 pb-20">
       <DhirajHero
-        eyebrow="Dhiraj frontend standard"
-        title="A base layer for websites that feel designed, not assembled"
-        description="This starter proves the corpus in code: one canonical component per interaction, evidence-derived packages, disciplined motion, complete states, and a signature rhythm that stays product-safe."
-        primaryAction={{ label: "Open app screen", href: "/app" }}
-        secondaryAction={{ label: "Review standards", href: "#standards" }}
-        proof="Built from the corpus: 109 sources, 83 evidence claims, 58 standards, 20 canonical components across 15 YouTube channels."
+        eyebrow="Frontend Mastery Index"
+        title="A base layer for apps that feel designed, not assembled"
+        description="This platform codifies the industry standard for world-class web applications. From canonical components to 3D effects, everything is backed by evidence from 137 top design engineering sources."
+        primaryAction={{ label: "Explore Base Layer", href: "/base-layer" }}
+        secondaryAction={{ label: "Open Component Vault", href: "/vault" }}
+        proof="Built from the expanded corpus: 137 sources, 125 evidence claims, 68 standards, and 27 canonical components."
         media={<HeroPreview />}
       />
 
       <Marquee
         items={[
-          "GSAP · 24 claims",
-          "Framer Motion · 15 claims",
-          "Three.js/R3F · 13 claims",
-          "Next.js · 10 claims",
-          "Tailwind · 9 claims",
-          "Radix/shadcn · 8 claims",
-          "Lenis · 6 claims",
+          "GSAP · 32 claims",
+          "Framer Motion · 20 claims",
+          "Three.js/R3F · 18 claims",
+          "Next.js 15 · 15 claims",
+          "Better-Auth",
+          "Drizzle ORM",
           "Fluid Typography",
-          "WCAG 2.2",
-          "8pt Grid",
-          "Dark Mode",
-          "prefers-reduced-motion",
+          "WCAG 2.2 Compliance",
+          "8pt Grid System",
+          "INP < 200ms",
+          "Peak-End Victory States",
+          "View Transitions API",
         ]}
         speed={0.8}
       />
 
       <DhirajSection
-        eyebrow="No-brainer base"
+        eyebrow="Intelligence Layer"
         title="The skeleton is intentionally boring where it should be"
-        description="The fixed layer handles accessibility, states, tokens, forms, feedback, and responsive layout. Taste is allowed only after the foundation stops wobbling."
+        description="We've standardized the patterns where taste is not allowed. Accessibility, performance budgets, and state completeness are your non-negotiable foundation."
         className="bg-[rgb(var(--dhiraj-surface-raised))]"
         id="standards"
       >
         <DhirajBentoGrid
           items={[
             {
-              title: "One interaction, one component",
-              description: "Buttons, cards, modals, toasts, tabs, and async states stay canonical. Variants live inside the same API.",
+              title: "Opinionated Density",
+              description: "High-information density inspired by Linear and Stripe. 8px spacing, hairline borders, radius <= 8px.",
               span: "wide",
               icon: <Layers3 className="h-5 w-5" />,
             },
             {
-              title: "Motion tokens",
-              description: "Every animation has duration, easing, and reduced-motion behavior.",
-              icon: <Activity className="h-5 w-5" />,
-            },
-            {
-              title: "Scroll discipline",
-              description: "GSAP and Lenis are reserved for creative pages where scroll is part of the story.",
-              icon: <Waypoints className="h-5 w-5" />,
-            },
-            {
-              title: "Fluid typography",
-              description: "clamp(rem, rem+vw, rem) for every text size. Respects user zoom and browser font settings. WCAG 1.4.4.",
-              icon: <Type className="h-5 w-5" />,
-            },
-            {
-              title: "Dark mode",
-              description: "next-themes with class-based switching. SSR-safe, no flash. System preference respected.",
-              icon: <Eye className="h-5 w-5" />,
-            },
-            {
-              title: "Signature layer",
-              description: "Dhiraj gets a recognizable text reveal, toast rhythm, card lift, marquee strip, and calm section entrance.",
+              title: "Victory Visualization",
+              description: "Every success triggers a celebratory reward. Apply the Peak-End Rule to critical user milestones.",
               icon: <Sparkles className="h-5 w-5" />,
             },
             {
-              title: "Primitives first",
-              description: "Radix/shadcn-style primitives preserve keyboard, focus, and interaction semantics.",
-              icon: <MousePointer2 className="h-5 w-5" />,
+              title: "60fps Interaction",
+              description: "Use useMotionValue and useSpring for interaction tracking. Zero reconciliation overhead for 1:1 cursor tracking.",
+              icon: <Activity className="h-5 w-5" />,
             },
             {
-              title: "Optional spectacle",
-              description: "R3F, shaders, SVG masks, and WebGL are opt-in when the concept earns them.",
+              title: "Fluid-First foundations",
+              description: "Mathematical scaling using clamp(), rem, and container queries (cqi) for truly modular components.",
+              icon: <Type className="h-5 w-5" />,
+            },
+            {
+              title: "Performance Budgets",
+              description: "LCP < 2.5s, INP < 200ms. Mandatory thresholds ensure award-winning craft doesn't tank usability.",
               icon: <Zap className="h-5 w-5" />,
             },
-          ]}
-        />
-      </DhirajSection>
-
-      <DhirajSection
-        eyebrow="Motion"
-        title="Calm by default, memorable by intention"
-        description="The Dhiraj rhythm uses line-masked headlines, one-pass scroll reveals, subtle card lift, crisp modal transitions, and toast feedback that never replaces inline errors."
-        id="motion"
-      >
-        <DhirajPricing
-          plans={[
             {
-              name: "Base",
-              price: "T0",
-              description: "Always included in serious Dhiraj projects.",
-              features: [
-                "Next.js / React / TypeScript",
-                "Tailwind tokens + fluid type",
-                "Radix/shadcn primitives",
-                "Reduced motion handling",
-                "Dark/light mode",
-              ],
-            },
-            {
-              name: "Signature",
-              price: "T1",
-              description: "Recognizable Dhiraj feel without damaging usability.",
-              highlighted: true,
-              features: [
-                "Header text reveal",
-                "Scroll reveal sections",
-                "Toast rhythm + card depth",
-                "Marquee ticker strip",
-                "Lenis smooth scroll",
-              ],
-            },
-            {
-              name: "Optional",
-              price: "T2+",
-              description: "Cherry-picked for brand and concept.",
-              features: [
-                "Lenis creative scroll",
-                "R3F / Three.js scenes",
-                "SVG masks + path animations",
-                "Shaders / WebGL",
-                "3D tilt cards / magnetic buttons",
-              ],
+              title: "Vault Architecture",
+              description: "A personal full-stack vault to save 'cherry-picked' patterns found across reactbits and 21st.dev.",
+              icon: <PlusCircle className="h-5 w-5" />,
             },
           ]}
         />
       </DhirajSection>
 
-      <DhirajSection id="proof" eyebrow="Proof" title="The taste layer is backed by actual constraints">
+      <DhirajSection id="proof" eyebrow="The Mastery Standard" title="Backed by actual constraints">
         <DhirajTestimonial
           quote="The standard is not 'make it fancy'. It is: know what must always work, then make the right few moments feel inevitable."
-          name="Dhiraj System"
-          role="109 sources · 83 evidence claims · 58 standards"
+          name="Dhiraj AI Master"
+          role="137 sources · 125 evidence claims · 68 standards"
         />
       </DhirajSection>
-
-      <DhirajSection className="pt-0">
-        <DhirajCTA
-          title="Use the app screen to test the product layer"
-          description="The second route exercises tabs, form validation, dialog, toast, loading, empty, and error states with the same visual language."
-          action={{ label: "Open app route", href: "/app" }}
-        />
-      </DhirajSection>
-    </DhirajAppShell>
+    </div>
   );
 }

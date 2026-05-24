@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/providers";
 import { LenisProvider } from "@/components/lenis-provider";
+import { AppShell } from "@/components/app-shell";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,9 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dhiraj Frontend Starter",
+  title: "Frontend Mastery | Dhiraj AI",
   description:
-    "A corpus-backed frontend starter proving the Dhiraj design system: 109 sources, 83 evidence claims, 58 standards, 20 canonical components.",
+    "A personal component vault and gold-standard design system index, backed by 137 sources and 125 evidence claims.",
 };
 
 export default function RootLayout({
@@ -33,9 +34,13 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full">
         <Providers>
-          <LenisProvider>{children}</LenisProvider>
+          <LenisProvider>
+             <AppShell>
+                {children}
+             </AppShell>
+          </LenisProvider>
         </Providers>
       </body>
     </html>

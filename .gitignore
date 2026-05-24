@@ -43,3 +43,9 @@ next-env.d.ts
 
 # === Misc ===
 *.pem
+
+# === Full-stack ===
+*.db
+*.db-journal
+*.sqlite
+.env

@@ -1,0 +1,281 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-05-24",
+  "rules": {
+    "uniqueness": "Each interactionId must appear once. Add variants inside the existing component spec.",
+    "stateMinimum": ["default", "mobile", "desktop", "reduced-motion"],
+    "signature": "Dhiraj components use the shared token and motion specs; project taste can add content/assets later."
+  },
+  "components": [
+    {
+      "id": "app-shell",
+      "interactionId": "layout.app-shell",
+      "standardIds": ["component-canonical-base", "principle-saas-density", "component-sidebar-nav"],
+      "layer": "base",
+      "purpose": "Stable page frame. Desktop: Sidebar Nav (240-280px). Mobile: Bottom Tab Bar or Drawer. Includes Skip Link.",
+      "states": ["default", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["page-entrance"],
+      "visual": "Dense SaaS layout (Linear style). Hairline borders. Radius 8px. Clear content bands."
+    },
+    {
+      "id": "navigation-header",
+      "interactionId": "navigation.primary",
+      "standardIds": ["component-nav-header", "pkg-radix-shadcn"],
+      "layer": "base",
+      "purpose": "Primary orientation and route/action surface.",
+      "states": ["default", "hover", "focus", "active", "disabled", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["page-entrance"],
+      "visual": "Sticky optional, translucent only when readability holds, compact links, one primary action."
+    },
+    {
+      "id": "hero",
+      "interactionId": "section.hero",
+      "standardIds": ["component-hero", "motion-header-text-reveal", "principle-signature-layer"],
+      "layer": "signature",
+      "purpose": "First viewport signal for product/person/place/object with strong typography and clear action.",
+      "states": ["default", "loading", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["header-text-reveal", "scroll-reveal"],
+      "visual": "Editorial headline, concise supporting copy, action row, proof/meta strip, and optional media slot."
+    },
+    {
+      "id": "section-layout",
+      "interactionId": "section.standard",
+      "standardIds": ["component-canonical-base", "principle-state-completeness"],
+      "layer": "base",
+      "purpose": "Reusable section rhythm with eyebrow, heading, copy, optional aside/media/content grid.",
+      "states": ["default", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal"],
+      "visual": "Full-width band or unframed constrained section; no floating page-section cards."
+    },
+    {
+      "id": "button",
+      "interactionId": "action.button",
+      "standardIds": ["component-canonical-base", "motion-card-hover"],
+      "layer": "base",
+      "purpose": "Command/action trigger with icon support and stable dimensions.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["card-hover-depth"],
+      "visual": "8px radius max, clear contrast, icon+text only for commands, stable min-height."
+    },
+    {
+      "id": "card",
+      "interactionId": "surface.card",
+      "standardIds": ["component-canonical-base", "motion-card-hover"],
+      "layer": "base",
+      "purpose": "Reusable content/action surface for a single object.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "empty", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["card-hover-depth"],
+      "visual": "Subtle hairline border, 8px radius max, no card-inside-card nesting."
+    },
+    {
+      "id": "bento-grid",
+      "interactionId": "layout.bento-grid",
+      "standardIds": ["component-bento-grid", "motion-scroll-reveal"],
+      "layer": "base",
+      "purpose": "Feature/capability layout with responsive, scannable hierarchy.",
+      "states": ["default", "hover", "focus", "loading", "empty", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal", "card-hover-depth"],
+      "visual": "Mixed span grid at desktop, single column on mobile, one dominant tile only."
+    },
+    {
+      "id": "form",
+      "interactionId": "input.form",
+      "standardIds": ["component-form", "pkg-react-hook-form-zod"],
+      "layer": "base",
+      "purpose": "Validated accessible data entry.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "error", "success", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal"],
+      "visual": "Label-first fields, inline errors, clear submit state, toast only as secondary feedback."
+    },
+    {
+      "id": "dialog-sheet",
+      "interactionId": "overlay.dialog-sheet",
+      "standardIds": ["component-dialog-sheet", "pkg-radix-shadcn"],
+      "layer": "base",
+      "purpose": "Accessible modal and mobile sheet behavior.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "error", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["modal-transition"],
+      "visual": "Dialog centered on desktop, sheet mode on mobile, focus handled by Radix."
+    },
+    {
+      "id": "tabs",
+      "interactionId": "navigation.tabs",
+      "standardIds": ["component-canonical-base", "pkg-radix-shadcn"],
+      "layer": "base",
+      "purpose": "Small-set view switching.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["card-hover-depth"],
+      "visual": "Segmented control feel with visible selected state and keyboard navigation."
+    },
+    {
+      "id": "tooltip-popover",
+      "interactionId": "overlay.tooltip-popover",
+      "standardIds": ["component-tooltip-popover", "pkg-radix-shadcn"],
+      "layer": "base",
+      "purpose": "Contextual help, lightweight details, and icon affordance labels.",
+      "states": ["default", "hover", "focus", "active", "disabled", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["modal-transition"],
+      "visual": "Tooltip for labels/help; popover for interactive content; never hide critical instructions only in tooltip."
+    },
+    {
+      "id": "toast",
+      "interactionId": "feedback.toast",
+      "standardIds": ["component-toast"],
+      "layer": "signature",
+      "purpose": "Non-blocking feedback for save/sync/success/undo.",
+      "states": ["default", "loading", "success", "error", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["toast-enter-exit"],
+      "visual": "Bottom-right desktop, bottom mobile, crisp border, short actionable copy."
+    },
+    {
+      "id": "loading-empty-error",
+      "interactionId": "feedback.async-state",
+      "standardIds": ["component-empty-error-loading", "principle-state-completeness"],
+      "layer": "base",
+      "purpose": "Async and zero-data states for every data-backed UI.",
+      "states": ["default", "loading", "empty", "error", "success", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal"],
+      "visual": "Useful next action, not decorative emptiness. Skeletons only where layout is known."
+    },
+    {
+      "id": "cta",
+      "interactionId": "section.cta",
+      "standardIds": ["component-canonical-base", "component-hero"],
+      "layer": "base",
+      "purpose": "Clear next step after value/proof.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal"],
+      "visual": "One primary action, one secondary action at most, compact copy."
+    },
+    {
+      "id": "pricing",
+      "interactionId": "commerce.pricing",
+      "standardIds": ["component-canonical-base", "component-bento-grid"],
+      "layer": "base",
+      "purpose": "Offer comparison and conversion surface.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "error", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal", "card-hover-depth"],
+      "visual": "Clear plan hierarchy, feature comparison, one highlighted recommendation."
+    },
+    {
+      "id": "testimonial",
+      "interactionId": "proof.testimonial",
+      "standardIds": ["component-canonical-base"],
+      "layer": "base",
+      "purpose": "Trust/proof content with person/company attribution.",
+      "states": ["default", "loading", "empty", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal"],
+      "visual": "Short quote, visible attribution, no fake decorative review clutter."
+    },
+    {
+      "id": "footer",
+      "interactionId": "navigation.footer",
+      "standardIds": ["component-footer", "component-canonical-base"],
+      "layer": "base",
+      "purpose": "Secondary navigation, legal, and contact/proof links.",
+      "states": ["default", "hover", "focus", "active", "disabled", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal"],
+      "visual": "Quiet, structured, scannable; never a second hero."
+    },
+    {
+      "id": "skeleton-loading",
+      "interactionId": "feedback.skeleton",
+      "standardIds": ["component-skeleton-shimmer", "principle-performance-budget"],
+      "layer": "base",
+      "purpose": "Placeholder shapes matching expected content layout during data fetching.",
+      "states": ["default", "mobile", "desktop", "reduced-motion"],
+      "motionIds": [],
+      "visual": "Gray shapes matching final content dimensions. Shimmer gradient animation via CSS. Reduced-motion: static gray blocks without shimmer. Must prevent CLS."
+    },
+    {
+      "id": "marquee-ticker",
+      "interactionId": "section.marquee",
+      "standardIds": ["component-marquee-ticker", "motion-reduced-motion"],
+      "layer": "signature",
+      "purpose": "Infinitely scrolling horizontal strip for logos, testimonials, or text as social proof.",
+      "states": ["default", "hover", "mobile", "desktop", "reduced-motion"],
+      "motionIds": [],
+      "visual": "CSS animation with requestAnimationFrame fallback. Pause on hover. Reduced-motion: static grid or single row. No GSAP needed for basic marquee."
+    },
+    {
+      "id": "command-palette",
+      "interactionId": "navigation.command-palette",
+      "standardIds": ["component-command-palette", "pkg-radix-shadcn"],
+      "layer": "base",
+      "purpose": "Global search/action modal triggered by keyboard shortcut (Cmd+K / Ctrl+K).",
+      "states": ["default", "focus", "loading", "empty", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["modal-transition"],
+      "visual": "Centered modal with search input, categorized results, recent items. Focus trap via Radix Dialog. Keyboard navigation for results. Escape to close."
+    },
+    {
+      "id": "magnetic-button",
+      "interactionId": "action.magnetic-button",
+      "standardIds": ["component-canonical-base", "component-magnetic-cursor"],
+      "layer": "taste",
+      "purpose": "High-engagement command trigger that physically follows the cursor when inside hover bounds.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["magnetic-attraction"],
+      "visual": "Dampened translation based on bounding client coordinates. Smooth lerped return to center on cursor exit."
+    },
+    {
+      "id": "3d-card",
+      "interactionId": "surface.3d-card",
+      "standardIds": ["component-canonical-base", "pattern-3d-tilt"],
+      "layer": "taste",
+      "purpose": "Interactive surface that rotates in 3D perspective space based on cursor coordinates relative to its center.",
+      "states": ["default", "hover", "focus", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["3d-spring-tilt"],
+      "visual": "Perspective wrapper, will-change: transform, rotateX/Y spring-dampened to prevent coordinate jitter."
+    },
+    {
+      "id": "spotlight-card",
+      "interactionId": "surface.spotlight-card",
+      "standardIds": ["component-canonical-base", "pattern-spotlight-hover"],
+      "layer": "premium",
+      "purpose": "SaaS card surface featuring a subtle glowing radial background mask tracking cursor coordinates.",
+      "states": ["default", "hover", "focus", "mobile", "desktop", "reduced-motion"],
+      "motionIds": [],
+      "visual": "Parent container updating --mouse-x and --mouse-y CSS properties. Pseudo-element with radial-gradient mask."
+    },
+    {
+      "id": "accordion",
+      "interactionId": "disclosure.accordion",
+      "standardIds": ["component-canonical-base", "pkg-radix-shadcn"],
+      "layer": "base",
+      "purpose": "Accessible accordion collapsible panels with fluid height-expanding content sections.",
+      "states": ["default", "hover", "focus", "active", "disabled", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["accordion-expand-collapse"],
+      "visual": "Hairline border separators, chevrons animating 180deg, focus ring around triggers, no page jump on expand."
+    },
+    {
+      "id": "animated-tabs",
+      "interactionId": "navigation.animated-tabs",
+      "standardIds": ["component-canonical-base", "pattern-sliding-indicator-tabs"],
+      "layer": "premium",
+      "purpose": "Segmented navigational controls sharing a single active background pill indicator sliding smoothly on click.",
+      "states": ["default", "hover", "focus", "active", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["tab-active-slide"],
+      "visual": "Relative button triggers inside absolute container frame. Slide pill using Framer Motion layoutId."
+    },
+    {
+      "id": "drawer-sheet",
+      "interactionId": "overlay.drawer-sheet",
+      "standardIds": ["component-dialog-sheet", "pattern-drag-drawer"],
+      "layer": "premium",
+      "purpose": "Mobile-native interactive dialog wrapper snapping to sheet height snap-points and drag to dismiss.",
+      "states": ["default", "hover", "focus", "active", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["drawer-drag-snap"],
+      "visual": "Bottom sheet anchor, backdrop blur, grab handle indicator, snap boundary damping."
+    },
+    {
+      "id": "before-after",
+      "interactionId": "interaction.before-after",
+      "standardIds": ["component-canonical-base", "pattern-before-after"],
+      "layer": "taste",
+      "purpose": "Visual comparison surface with a sliding divider to crop overlapping before/after images.",
+      "states": ["default", "hover", "active", "focus", "mobile", "desktop", "reduced-motion"],
+      "motionIds": [],
+      "visual": "Dual layered identical sizing wrappers, top wrapper clipped horizontally relative to cursor percentage slider."
+    }
+  ]
+}
