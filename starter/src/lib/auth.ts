@@ -5,7 +5,7 @@ import * as schema from "./db/schema";
 
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
-    provider: "sqlite",
+    provider: "pg", // Switched to PostgreSQL for Supabase
     schema: schema,
   }),
   emailAndPassword: {
