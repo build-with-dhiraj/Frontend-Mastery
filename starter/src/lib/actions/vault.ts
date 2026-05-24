@@ -6,9 +6,14 @@ import { revalidatePath } from "next/cache";
 import { eq, desc } from "drizzle-orm";
 
 export async function getVaultItems() {
-  return await db.query.cherryPickedComponents.findMany({
-    orderBy: [desc(cherryPickedComponents.createdAt)],
-  });
+  try {
+    return await db.query.cherryPickedComponents.findMany({
+      orderBy: [desc(cherryPickedComponents.createdAt)],
+    });
+  } catch (error) {
+    console.error("Vault DB Error:", error);
+    return []; // Return empty list instead of 500ing
+  }
 }
 
 export async function addVaultItem(data: {
@@ -18,21 +23,26 @@ export async function addVaultItem(data: {
   prompt?: string;
   category?: string;
 }) {
-  // Placeholder user ID until auth is fully implemented
-  const userId = "guest-user-id"; 
+  try {
+    // Placeholder user ID until auth is fully implemented
+    const userId = "guest-user-id"; 
 
-  await db.insert(cherryPickedComponents).values({
-    id: crypto.randomUUID(),
-    userId,
-    title: data.title,
-    sourceUrl: data.sourceUrl,
-    codeSnippet: data.codeSnippet,
-    prompt: data.prompt,
-    category: data.category || "General",
-    createdAt: new Date(),
-  });
+    await db.insert(cherryPickedComponents).values({
+      id: crypto.randomUUID(),
+      userId,
+      title: data.title,
+      sourceUrl: data.sourceUrl,
+      codeSnippet: data.codeSnippet,
+      prompt: data.prompt,
+      category: data.category || "General",
+      createdAt: new Date(),
+    });
 
-  revalidatePath("/vault");
+    revalidatePath("/vault");
+  } catch (error) {
+    console.error("Add Vault Item Error:", error);
+    throw new Error("Database not connected. Please check your DATABASE_URL.");
+  }
 }
 
 export async function deleteVaultItem(id: string) {

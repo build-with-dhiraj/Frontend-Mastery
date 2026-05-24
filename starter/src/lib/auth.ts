@@ -11,4 +11,7 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
   },
+  // Production Security & Environment Sync
+  secret: process.env.BETTER_AUTH_SECRET,
+  baseURL: process.env.BETTER_AUTH_URL || (process.env.NODE_ENV === "production" ? "https://frontend-mastery-opal.vercel.app" : "http://localhost:3000"),
 });
