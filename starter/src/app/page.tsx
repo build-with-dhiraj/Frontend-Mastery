@@ -1,4 +1,4 @@
-import { Activity, Layers3, MousePointer2, Sparkles, Waypoints, Zap } from "lucide-react";
+import { Activity, Layers3, MousePointer2, Sparkles, Waypoints, Zap, Eye, Type } from "lucide-react";
 import {
   DhirajAppShell,
   DhirajBentoGrid,
@@ -10,6 +10,7 @@ import {
   DhirajSection,
   DhirajTestimonial,
 } from "@/components/dhiraj-sections";
+import { Marquee } from "@/components/marquee";
 
 const navLinks = [
   { label: "Standards", href: "#standards" },
@@ -18,33 +19,44 @@ const navLinks = [
 ];
 
 function HeroPreview() {
-  const bars = ["GSAP", "Motion", "Radix", "Tailwind", "R3F"];
+  const bars = [
+    { label: "GSAP", value: 92, claims: 24 },
+    { label: "Motion", value: 80, claims: 15 },
+    { label: "Three/R3F", value: 68, claims: 13 },
+    { label: "Next.js", value: 60, claims: 10 },
+    { label: "Tailwind", value: 56, claims: 9 },
+  ];
 
   return (
     <div className="relative flex min-h-72 flex-col justify-between overflow-hidden p-5">
       <div className="absolute inset-x-0 top-0 h-px bg-[rgb(var(--dhiraj-line))]" />
       <div className="flex items-center justify-between text-xs text-[rgb(var(--dhiraj-muted))]">
         <span>Evidence engine</span>
-        <span>26 stack rows</span>
+        <span>109 sources</span>
       </div>
       <div className="grid gap-3">
-        {bars.map((bar, index) => (
-          <div key={bar} className="grid grid-cols-[5rem_1fr] items-center gap-3">
-            <span className="text-xs text-[rgb(var(--dhiraj-muted))]">{bar}</span>
+        {bars.map((bar) => (
+          <div key={bar.label} className="grid grid-cols-[5rem_1fr_2rem] items-center gap-3">
+            <span className="text-xs text-[rgb(var(--dhiraj-muted))]">{bar.label}</span>
             <div className="h-2 overflow-hidden rounded-full bg-[rgb(var(--dhiraj-blue-soft))]">
               <div
                 className="h-full rounded-full bg-[rgb(var(--dhiraj-blue))]"
-                style={{ width: `${92 - index * 12}%` }}
+                style={{ width: `${bar.value}%` }}
               />
             </div>
+            <span className="text-right text-[10px] tabular-nums text-[rgb(var(--dhiraj-muted))]">{bar.claims}</span>
           </div>
         ))}
       </div>
       <div className="grid grid-cols-3 gap-3">
-        {["Base", "Signature", "Optional"].map((label) => (
+        {[
+          { label: "Base", value: "T0" },
+          { label: "Signature", value: "T1" },
+          { label: "Optional", value: "T2" },
+        ].map(({ label, value }) => (
           <div key={label} className="rounded-[var(--dhiraj-radius-sm)] border border-[rgb(var(--dhiraj-line))] p-3">
             <p className="text-xs text-[rgb(var(--dhiraj-muted))]">{label}</p>
-            <p className="mt-1 text-sm font-semibold">locked</p>
+            <p className="mt-1 text-sm font-semibold">{value}</p>
           </div>
         ))}
       </div>
@@ -72,8 +84,26 @@ export default function Home() {
         description="This starter proves the corpus in code: one canonical component per interaction, evidence-derived packages, disciplined motion, complete states, and a signature rhythm that stays product-safe."
         primaryAction={{ label: "Open app screen", href: "/app" }}
         secondaryAction={{ label: "Review standards", href: "#standards" }}
-        proof="Built from the corpus: 44 sources, 32 evidence claims, 38 standards, 17 canonical components."
+        proof="Built from the corpus: 109 sources, 83 evidence claims, 58 standards, 20 canonical components across 15 YouTube channels."
         media={<HeroPreview />}
+      />
+
+      <Marquee
+        items={[
+          "GSAP · 24 claims",
+          "Framer Motion · 15 claims",
+          "Three.js/R3F · 13 claims",
+          "Next.js · 10 claims",
+          "Tailwind · 9 claims",
+          "Radix/shadcn · 8 claims",
+          "Lenis · 6 claims",
+          "Fluid Typography",
+          "WCAG 2.2",
+          "8pt Grid",
+          "Dark Mode",
+          "prefers-reduced-motion",
+        ]}
+        speed={0.8}
       />
 
       <DhirajSection
@@ -81,6 +111,7 @@ export default function Home() {
         title="The skeleton is intentionally boring where it should be"
         description="The fixed layer handles accessibility, states, tokens, forms, feedback, and responsive layout. Taste is allowed only after the foundation stops wobbling."
         className="bg-[rgb(var(--dhiraj-surface-raised))]"
+        id="standards"
       >
         <DhirajBentoGrid
           items={[
@@ -101,14 +132,24 @@ export default function Home() {
               icon: <Waypoints className="h-5 w-5" />,
             },
             {
-              title: "Primitives first",
-              description: "Radix/shadcn-style primitives preserve keyboard, focus, and interaction semantics.",
-              icon: <MousePointer2 className="h-5 w-5" />,
+              title: "Fluid typography",
+              description: "clamp(rem, rem+vw, rem) for every text size. Respects user zoom and browser font settings. WCAG 1.4.4.",
+              icon: <Type className="h-5 w-5" />,
+            },
+            {
+              title: "Dark mode",
+              description: "next-themes with class-based switching. SSR-safe, no flash. System preference respected.",
+              icon: <Eye className="h-5 w-5" />,
             },
             {
               title: "Signature layer",
-              description: "Dhiraj gets a recognizable text reveal, toast rhythm, card lift, and calm section entrance.",
+              description: "Dhiraj gets a recognizable text reveal, toast rhythm, card lift, marquee strip, and calm section entrance.",
               icon: <Sparkles className="h-5 w-5" />,
+            },
+            {
+              title: "Primitives first",
+              description: "Radix/shadcn-style primitives preserve keyboard, focus, and interaction semantics.",
+              icon: <MousePointer2 className="h-5 w-5" />,
             },
             {
               title: "Optional spectacle",
@@ -131,20 +172,38 @@ export default function Home() {
               name: "Base",
               price: "T0",
               description: "Always included in serious Dhiraj projects.",
-              features: ["Next.js/React/TypeScript", "Tailwind tokens", "Radix/shadcn primitives", "Reduced motion"],
+              features: [
+                "Next.js / React / TypeScript",
+                "Tailwind tokens + fluid type",
+                "Radix/shadcn primitives",
+                "Reduced motion handling",
+                "Dark/light mode",
+              ],
             },
             {
               name: "Signature",
               price: "T1",
               description: "Recognizable Dhiraj feel without damaging usability.",
               highlighted: true,
-              features: ["Header text reveal", "Scroll reveal", "Toast rhythm", "Card depth"],
+              features: [
+                "Header text reveal",
+                "Scroll reveal sections",
+                "Toast rhythm + card depth",
+                "Marquee ticker strip",
+                "Lenis smooth scroll",
+              ],
             },
             {
               name: "Optional",
               price: "T2+",
               description: "Cherry-picked for brand and concept.",
-              features: ["Lenis creative scroll", "R3F/Three.js scenes", "SVG masks", "Shaders/WebGL"],
+              features: [
+                "Lenis creative scroll",
+                "R3F / Three.js scenes",
+                "SVG masks + path animations",
+                "Shaders / WebGL",
+                "3D tilt cards / magnetic buttons",
+              ],
             },
           ]}
         />
@@ -154,7 +213,7 @@ export default function Home() {
         <DhirajTestimonial
           quote="The standard is not 'make it fancy'. It is: know what must always work, then make the right few moments feel inevitable."
           name="Dhiraj System"
-          role="Corpus-backed frontend skeleton"
+          role="109 sources · 83 evidence claims · 58 standards"
         />
       </DhirajSection>
 

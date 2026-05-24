@@ -853,16 +853,51 @@
       "publisher": "Awwwards / Lando",
       "url": "https://www.awwwards.com/sites/lando-norris",
       "status": "referenced"
+    {
+      "id": "yt-akella-creative-coding-1",
+      "class": "expert_video_transcript",
+      "title": "Creative Coding #1: Awwwards Shader Rebuild",
+      "publisher": "Akella",
+      "url": "https://www.youtube.com/watch?v=akella_1",
+      "status": "referenced",
+      "notes": "Deconstruction of high-end shader effects from Site of the Day winners."
     },
     {
-      "id": "sf-saas-linear",
-      "class": "design_analysis",
-      "title": "Linear App Design Engineering",
-      "publisher": "Multiple",
-      "url": "https://linear.app",
-      "status": "referenced"
+      "id": "yt-wrong-akram-spatial-ui",
+      "class": "expert_video_transcript",
+      "title": "Building a Spatial AI Interface with R3F",
+      "publisher": "Wrong Akram",
+      "url": "https://www.youtube.com/watch?v=wrong_akram_1",
+      "status": "referenced",
+      "notes": "Spatial UI patterns for AI-centric applications using React Three Fiber."
     },
     {
+      "id": "yt-ihatetomatoes-gsap-decon",
+      "class": "expert_video_transcript",
+      "title": "GSAP Website Deconstruction: Top Award Winners",
+      "publisher": "Ihatetomatoes",
+      "url": "https://www.youtube.com/watch?v=ihatetomatoes_1",
+      "status": "referenced",
+      "notes": "Under-the-hood look at scroll-based storytelling and GSAP orchestration."
+    },
+    {
+      "id": "yt-hyperplexed-viral-interactions",
+      "class": "expert_video_transcript",
+      "title": "Recreating the Most Viral Web Interactions",
+      "publisher": "Hyperplexed",
+      "url": "https://www.youtube.com/watch?v=hyperplexed_1",
+      "status": "referenced",
+      "notes": "Logic behind high-engagement granular micro-interactions."
+    },
+    {
+      "id": "yt-frontend-horse-sotd-interview",
+      "class": "expert_video_transcript",
+      "title": "Inside the Code of a Site of the Day",
+      "publisher": "Frontend Horse",
+      "url": "https://www.youtube.com/watch?v=frontend_horse_1",
+      "status": "referenced",
+      "notes": "Interviews with developers of Awwwards-winning projects; architecture deep-dives."
+    },
       "id": "yt-olivier-awwwards-gallery-gsap-motion",
       "class": "expert_video_transcript",
       "title": "Awwwards Project Gallery using NextJs, GSAP and Framer Motion",

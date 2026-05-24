@@ -7,6 +7,7 @@ import Link from "next/link";
 import { pageEntrance } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 import { DhirajCard, DhirajScrollReveal, DhirajTextReveal } from "./dhiraj-ui";
+import { ThemeToggle } from "./theme-toggle";
 
 export function DhirajAppShell({
   children,
@@ -73,12 +74,15 @@ export function DhirajNavHeader({
             </Link>
           ))}
         </nav>
-        <Link
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <Link
           href={actionHref}
           className="inline-flex min-h-9 items-center justify-center rounded-[var(--dhiraj-radius-md)] border border-[rgb(var(--dhiraj-line))] bg-[rgb(var(--dhiraj-surface))] px-3 text-sm font-medium text-[rgb(var(--dhiraj-fg))] transition hover:border-[rgb(var(--dhiraj-blue))] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgb(var(--dhiraj-blue))]"
         >
           {actionLabel}
-        </Link>
+          </Link>
+        </div>
       </div>
     </header>
   );
