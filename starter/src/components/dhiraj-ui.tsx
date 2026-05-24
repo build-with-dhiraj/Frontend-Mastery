@@ -63,21 +63,25 @@ DhirajButton.displayName = "DhirajButton";
 export function DhirajCard({
   className,
   interactive = false,
+  onClick,
   children,
 }: {
   className?: string;
   interactive?: boolean;
+  onClick?: () => void;
   children: React.ReactNode;
 }) {
   const reduceMotion = useReducedMotion();
 
   return (
     <motion.article
-      whileHover={interactive && !reduceMotion ? { y: -4 } : undefined}
+      onClick={onClick}
+      whileHover={interactive || onClick && !reduceMotion ? { y: -4 } : undefined}
       transition={dhirajTransition.base}
       className={cn(
         "rounded-[var(--dhiraj-radius-md)] border border-[rgb(var(--dhiraj-line))] bg-[rgb(var(--dhiraj-surface))] p-5 shadow-[var(--dhiraj-shadow-soft)]",
-        interactive && "transition-colors hover:border-[rgb(var(--dhiraj-blue))]",
+        (interactive || onClick) && "transition-colors hover:border-[rgb(var(--dhiraj-blue))]",
+        onClick && "cursor-pointer",
         className,
       )}
     >
