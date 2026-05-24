@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-05-24",
+  "principle": "Default packages are included because they map to scored standards, not because of preference.",
+  "install": {
+    "create": "npx create-next-app@latest dhiraj-app --ts --tailwind --eslint --app --src-dir --import-alias \"@/*\"",
+    "core": [
+      {
+        "package": "next react react-dom",
+        "reason": "Default React/Next implementation surface.",
+        "standardIds": ["pkg-nextjs", "pkg-react"]
+      },
+      {
+        "package": "typescript",
+        "reason": "Typed component APIs and safer agent-generated code.",
+        "standardIds": ["pkg-typescript"]
+      },
+      {
+        "package": "tailwindcss",
+        "reason": "Token-driven styling and component portability.",
+        "standardIds": ["pkg-tailwind"]
+      }
+    ],
+    "ui": [
+      {
+        "package": "@radix-ui/react-dialog @radix-ui/react-tabs @radix-ui/react-tooltip @radix-ui/react-popover",
+        "reason": "Accessible primitives for core interactions.",
+        "standardIds": ["pkg-radix-shadcn", "component-dialog-sheet"]
+      },
+      {
+        "package": "class-variance-authority clsx tailwind-merge",
+        "reason": "Variant-safe Tailwind component composition.",
+        "standardIds": ["pkg-radix-shadcn"]
+      },
+      {
+        "package": "lucide-react",
+        "reason": "Consistent icon system.",
+        "standardIds": ["component-canonical-base"]
+      },
+      {
+        "package": "sonner",
+        "reason": "Toast feedback surface.",
+        "standardIds": ["component-toast"]
+      }
+    ],
+    "forms": [
+      {
+        "package": "react-hook-form zod @hookform/resolvers",
+        "reason": "Accessible, validated real product forms.",
+        "standardIds": ["pkg-react-hook-form-zod", "component-form"]
+      }
+    ],
+    "motion": [
+      {
+        "package": "motion",
+        "reason": "React-native component transitions and microinteractions.",
+        "standardIds": ["pkg-motion", "motion-scroll-reveal", "motion-modal-transition"]
+      },
+      {
+        "package": "gsap @gsap/react",
+        "reason": "Complex timelines, ScrollTrigger, SVG/text motion, and creative pages.",
+        "standardIds": ["pkg-gsap"]
+      },
+      {
+        "package": "lenis",
+        "reason": "Dhiraj signature smooth scroll for creative pages only.",
+        "standardIds": ["pkg-lenis", "motion-dhiraj-scroll"]
+      }
+    ],
+    "optional3d": [
+      {
+        "package": "three @react-three/fiber @react-three/drei",
+        "reason": "3D/WebGL scenes when the product/brand needs them.",
+        "standardIds": ["pkg-three-r3f"]
+      }
+    ]
+  },
+  "notDefault": [
+    {
+      "package": "shader-heavy stacks",
+      "reason": "T3 experimental; add only when the concept requires WebGL.",
+      "standardIds": ["pattern-shaders"]
+    },
+    {
+      "package": "smooth scroll on dashboards/forms",
+      "reason": "Avoid because it changes expected product behavior.",
+      "standardIds": ["anti-scroll-hijacking"]
+    }
+  ]
+}

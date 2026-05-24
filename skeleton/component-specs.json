@@ -1,0 +1,181 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-05-24",
+  "rules": {
+    "uniqueness": "Each interactionId must appear once. Add variants inside the existing component spec.",
+    "stateMinimum": ["default", "mobile", "desktop", "reduced-motion"],
+    "signature": "Dhiraj components use the shared token and motion specs; project taste can add content/assets later."
+  },
+  "components": [
+    {
+      "id": "app-shell",
+      "interactionId": "layout.app-shell",
+      "standardIds": ["component-canonical-base", "principle-state-completeness"],
+      "layer": "base",
+      "purpose": "Stable page frame with skip link, header, main, footer, and responsive spacing.",
+      "states": ["default", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["page-entrance"],
+      "visual": "Unframed layout with constrained content, no nested cards, clear content bands."
+    },
+    {
+      "id": "navigation-header",
+      "interactionId": "navigation.primary",
+      "standardIds": ["component-nav-header", "pkg-radix-shadcn"],
+      "layer": "base",
+      "purpose": "Primary orientation and route/action surface.",
+      "states": ["default", "hover", "focus", "active", "disabled", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["page-entrance"],
+      "visual": "Sticky optional, translucent only when readability holds, compact links, one primary action."
+    },
+    {
+      "id": "hero",
+      "interactionId": "section.hero",
+      "standardIds": ["component-hero", "motion-header-text-reveal", "principle-signature-layer"],
+      "layer": "signature",
+      "purpose": "First viewport signal for product/person/place/object with strong typography and clear action.",
+      "states": ["default", "loading", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["header-text-reveal", "scroll-reveal"],
+      "visual": "Editorial headline, concise supporting copy, action row, proof/meta strip, and optional media slot."
+    },
+    {
+      "id": "section-layout",
+      "interactionId": "section.standard",
+      "standardIds": ["component-canonical-base", "principle-state-completeness"],
+      "layer": "base",
+      "purpose": "Reusable section rhythm with eyebrow, heading, copy, optional aside/media/content grid.",
+      "states": ["default", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal"],
+      "visual": "Full-width band or unframed constrained section; no floating page-section cards."
+    },
+    {
+      "id": "button",
+      "interactionId": "action.button",
+      "standardIds": ["component-canonical-base", "motion-card-hover"],
+      "layer": "base",
+      "purpose": "Command/action trigger with icon support and stable dimensions.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["card-hover-depth"],
+      "visual": "8px radius max, clear contrast, icon+text only for commands, stable min-height."
+    },
+    {
+      "id": "card",
+      "interactionId": "surface.card",
+      "standardIds": ["component-canonical-base", "motion-card-hover"],
+      "layer": "base",
+      "purpose": "Reusable content/action surface for a single object.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "empty", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["card-hover-depth"],
+      "visual": "Subtle hairline border, 8px radius max, no card-inside-card nesting."
+    },
+    {
+      "id": "bento-grid",
+      "interactionId": "layout.bento-grid",
+      "standardIds": ["component-bento-grid", "motion-scroll-reveal"],
+      "layer": "base",
+      "purpose": "Feature/capability layout with responsive, scannable hierarchy.",
+      "states": ["default", "hover", "focus", "loading", "empty", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal", "card-hover-depth"],
+      "visual": "Mixed span grid at desktop, single column on mobile, one dominant tile only."
+    },
+    {
+      "id": "form",
+      "interactionId": "input.form",
+      "standardIds": ["component-form", "pkg-react-hook-form-zod"],
+      "layer": "base",
+      "purpose": "Validated accessible data entry.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "error", "success", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal"],
+      "visual": "Label-first fields, inline errors, clear submit state, toast only as secondary feedback."
+    },
+    {
+      "id": "dialog-sheet",
+      "interactionId": "overlay.dialog-sheet",
+      "standardIds": ["component-dialog-sheet", "pkg-radix-shadcn"],
+      "layer": "base",
+      "purpose": "Accessible modal and mobile sheet behavior.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "error", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["modal-transition"],
+      "visual": "Dialog centered on desktop, sheet mode on mobile, focus handled by Radix."
+    },
+    {
+      "id": "tabs",
+      "interactionId": "navigation.tabs",
+      "standardIds": ["component-canonical-base", "pkg-radix-shadcn"],
+      "layer": "base",
+      "purpose": "Small-set view switching.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["card-hover-depth"],
+      "visual": "Segmented control feel with visible selected state and keyboard navigation."
+    },
+    {
+      "id": "tooltip-popover",
+      "interactionId": "overlay.tooltip-popover",
+      "standardIds": ["component-tooltip-popover", "pkg-radix-shadcn"],
+      "layer": "base",
+      "purpose": "Contextual help, lightweight details, and icon affordance labels.",
+      "states": ["default", "hover", "focus", "active", "disabled", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["modal-transition"],
+      "visual": "Tooltip for labels/help; popover for interactive content; never hide critical instructions only in tooltip."
+    },
+    {
+      "id": "toast",
+      "interactionId": "feedback.toast",
+      "standardIds": ["component-toast"],
+      "layer": "signature",
+      "purpose": "Non-blocking feedback for save/sync/success/undo.",
+      "states": ["default", "loading", "success", "error", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["toast-enter-exit"],
+      "visual": "Bottom-right desktop, bottom mobile, crisp border, short actionable copy."
+    },
+    {
+      "id": "loading-empty-error",
+      "interactionId": "feedback.async-state",
+      "standardIds": ["component-empty-error-loading", "principle-state-completeness"],
+      "layer": "base",
+      "purpose": "Async and zero-data states for every data-backed UI.",
+      "states": ["default", "loading", "empty", "error", "success", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal"],
+      "visual": "Useful next action, not decorative emptiness. Skeletons only where layout is known."
+    },
+    {
+      "id": "cta",
+      "interactionId": "section.cta",
+      "standardIds": ["component-canonical-base", "component-hero"],
+      "layer": "base",
+      "purpose": "Clear next step after value/proof.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal"],
+      "visual": "One primary action, one secondary action at most, compact copy."
+    },
+    {
+      "id": "pricing",
+      "interactionId": "commerce.pricing",
+      "standardIds": ["component-canonical-base", "component-bento-grid"],
+      "layer": "base",
+      "purpose": "Offer comparison and conversion surface.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "error", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal", "card-hover-depth"],
+      "visual": "Clear plan hierarchy, feature comparison, one highlighted recommendation."
+    },
+    {
+      "id": "testimonial",
+      "interactionId": "proof.testimonial",
+      "standardIds": ["component-canonical-base"],
+      "layer": "base",
+      "purpose": "Trust/proof content with person/company attribution.",
+      "states": ["default", "loading", "empty", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal"],
+      "visual": "Short quote, visible attribution, no fake decorative review clutter."
+    },
+    {
+      "id": "footer",
+      "interactionId": "navigation.footer",
+      "standardIds": ["component-footer", "component-canonical-base"],
+      "layer": "base",
+      "purpose": "Secondary navigation, legal, and contact/proof links.",
+      "states": ["default", "hover", "focus", "active", "disabled", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["scroll-reveal"],
+      "visual": "Quiet, structured, scannable; never a second hero."
+    }
+  ]
+}

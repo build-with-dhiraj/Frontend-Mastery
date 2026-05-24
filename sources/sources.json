@@ -1,0 +1,438 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-05-24",
+  "xPolicy": {
+    "status": "public_or_provided_only",
+    "reason": "X search redirected to login during live browser check."
+  },
+  "sources": [
+    {
+      "id": "yt-olivier-top-5-web-animation",
+      "class": "expert_video_transcript",
+      "title": "My Top 5 Techniques for Web Animation",
+      "publisher": "Olivier Larose",
+      "url": "https://www.youtube.com/watch?v=9eHEOAn2FOA",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 274,
+      "notes": "Recurring creative-web primitives: scroll progress, viewport detection, sticky positioning, easing, text splitting, interpolation, shaders."
+    },
+    {
+      "id": "yt-warp-rise-design-engineering",
+      "class": "expert_video_transcript",
+      "title": "The Rise of Design Engineering",
+      "publisher": "Warp / Raphael Salaja",
+      "url": "https://www.youtube.com/watch?v=uEMEs499fUs",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 1068,
+      "notes": "Design engineering as the bridge between static mockups, implementation taste, component states, and motion discipline."
+    },
+    {
+      "id": "yt-syntax-gsap-cassie-evans",
+      "class": "expert_video_transcript",
+      "title": "GSAP: Killer Web Animations With Cassie Evans",
+      "publisher": "Syntax",
+      "url": "https://www.youtube.com/watch?v=shotcE73Vns",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 1356,
+      "notes": "GSAP, SVG, text, performance, React cleanup, and accessibility considerations."
+    },
+    {
+      "id": "yt-tim-gabe-gamified-apps",
+      "class": "expert_video_transcript",
+      "title": "I Studied 500+ Gamified Apps",
+      "publisher": "Tim Gabe",
+      "url": "https://www.youtube.com/watch?v=LXX_qOA5D8E",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 265,
+      "notes": "Product UX and gamification warnings: competence feedback over badge theater."
+    },
+    {
+      "id": "yt-olivier-web-animation-trends-2024",
+      "class": "expert_video_transcript",
+      "title": "Top 10 Web Animation Trends of 2024",
+      "publisher": "Olivier Larose",
+      "url": "https://www.youtube.com/watch?v=ELjE8QXu5zo",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 184,
+      "notes": "Animation trends with accessibility and scroll/sticky mentions."
+    },
+    {
+      "id": "yt-olivier-top-10-resources",
+      "class": "expert_video_transcript",
+      "title": "My Top 10 Resources for Web Animations",
+      "publisher": "Olivier Larose",
+      "url": "https://www.youtube.com/watch?v=wQA8vi9z5cU",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 328,
+      "notes": "Resource discovery for web animation, WebGL, and creative development."
+    },
+    {
+      "id": "yt-olivier-floating-gallery-gsap",
+      "class": "expert_video_transcript",
+      "title": "Build an Awwwards Floating Image Gallery using Nextjs and GSAP",
+      "publisher": "Olivier Larose",
+      "url": "https://www.youtube.com/watch?v=p9Kfy12j3Xg",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 211,
+      "notes": "Awwwards-style mouse image gallery, Next.js, GSAP, performance notes."
+    },
+    {
+      "id": "yt-tim-gabe-world-class-app-design",
+      "class": "expert_video_transcript",
+      "title": "Our World Class App Design Formula",
+      "publisher": "Tim Gabe",
+      "url": "https://www.youtube.com/watch?v=wmTkiF23GRQ",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 328,
+      "notes": "Predictable app design process and derisking design decisions."
+    },
+    {
+      "id": "yt-jsmastery-awwwards-react-tailwind-gsap",
+      "class": "expert_video_transcript",
+      "title": "Build and Deploy an Awwwards Winning Website",
+      "publisher": "JavaScript Mastery",
+      "url": "https://www.youtube.com/watch?v=zA9r5zTllx4",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 3534,
+      "notes": "React, Tailwind, GSAP, scroll, text, bento, and hero implementation frequency."
+    },
+    {
+      "id": "yt-jsmastery-master-web-animations",
+      "class": "expert_video_transcript",
+      "title": "Master Web Animations in 2 Hours",
+      "publisher": "JavaScript Mastery",
+      "url": "https://www.youtube.com/watch?v=AW1yfBKRMKc",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 3351,
+      "notes": "GSAP-heavy web animation course; scroll, text, hero, parallax and Tailwind mentions."
+    },
+    {
+      "id": "yt-jsmastery-creative-frontend",
+      "class": "expert_video_transcript",
+      "title": "Master Creative Frontend in 2 Hours with React, Three.js & GSAP",
+      "publisher": "JavaScript Mastery",
+      "url": "https://www.youtube.com/watch?v=DEeaT6FxEws",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 3321,
+      "notes": "React, Next, Three.js, GSAP, scroll, performance, bento, and hero patterns."
+    },
+    {
+      "id": "yt-prismic-3d-ecommerce-next-gsap",
+      "class": "expert_video_transcript",
+      "title": "Build a 3D Ecommerce Landing Page with Next.js, GSAP, Three.js and Prismic",
+      "publisher": "Prismic",
+      "url": "https://www.youtube.com/watch?v=RKQqrNyAC6k",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 8236,
+      "notes": "Long-form implementation source with Next, React, Tailwind, GSAP, Three.js, TypeScript, performance, hero, and scroll."
+    },
+    {
+      "id": "yt-designcourse-shadcn-cursor",
+      "class": "expert_video_transcript",
+      "title": "PRO LEVEL ShadCN & Cursor Landing Page in 20 minutes",
+      "publisher": "DesignCourse",
+      "url": "https://www.youtube.com/watch?v=8InCAFYQuxo",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 503,
+      "notes": "Shadcn and Cursor workflow for non-template-looking landing pages."
+    },
+    {
+      "id": "yt-codegrid-3d-scroll-product",
+      "class": "expert_video_transcript",
+      "title": "This 3D Scroll Animation Makes Your Product Page Feel Alive",
+      "publisher": "Codegrid",
+      "url": "https://www.youtube.com/watch?v=gIPk9j4byQs",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 501,
+      "notes": "3D product scroll animation, scroll frequency, Next, Motion, Three.js."
+    },
+    {
+      "id": "yt-wawa-3d-book-slider",
+      "class": "expert_video_transcript",
+      "title": "Build a 3D Book Slider Landing Page with Three.js & React",
+      "publisher": "Wawa Sensei",
+      "url": "https://www.youtube.com/watch?v=b7a_Y1Ja6js",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 888,
+      "notes": "React Three Fiber/Three.js landing page interaction candidate."
+    },
+    {
+      "id": "yt-oxeni-awwwards-3d",
+      "class": "expert_video_transcript",
+      "title": "Build an Awwwards Winning 3D Website",
+      "publisher": "Oxeni",
+      "url": "https://www.youtube.com/watch?v=RdyZnB6ElLs",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 437,
+      "notes": "Shader-heavy Awwwards-style 3D site implementation."
+    },
+    {
+      "id": "official-next-app-router",
+      "class": "official_documentation",
+      "title": "Next.js App Router Installation",
+      "publisher": "Vercel / Next.js",
+      "url": "https://nextjs.org/docs/app/getting-started/installation",
+      "status": "referenced",
+      "notes": "Current Next.js docs identify App Router as the current /app feature set."
+    },
+    {
+      "id": "official-tailwind-next",
+      "class": "official_documentation",
+      "title": "Install Tailwind CSS with Next.js",
+      "publisher": "Tailwind CSS",
+      "url": "https://tailwindcss.com/docs/installation/framework-guides/nextjs",
+      "status": "referenced",
+      "notes": "Official Tailwind setup for Next.js."
+    },
+    {
+      "id": "official-radix-intro",
+      "class": "official_documentation",
+      "title": "Radix Primitives Introduction",
+      "publisher": "Radix UI",
+      "url": "https://www.radix-ui.com/primitives/docs/overview/introduction",
+      "status": "referenced",
+      "notes": "Accessible, unstyled primitives for high-quality design systems and web apps."
+    },
+    {
+      "id": "official-shadcn-components-json",
+      "class": "official_documentation",
+      "title": "shadcn/ui components.json",
+      "publisher": "shadcn/ui",
+      "url": "https://ui.shadcn.com/docs/components-json",
+      "status": "referenced",
+      "notes": "CLI configuration, component list, Tailwind variables, registry model."
+    },
+    {
+      "id": "official-shadcn-rhf-zod",
+      "class": "official_documentation",
+      "title": "React Hook Form - shadcn/ui",
+      "publisher": "shadcn/ui",
+      "url": "https://ui.shadcn.com/docs/forms/react-hook-form",
+      "status": "referenced",
+      "notes": "React Hook Form with Zod, error handling, accessibility, and Sonner feedback."
+    },
+    {
+      "id": "official-motion-react",
+      "class": "official_documentation",
+      "title": "Motion for React",
+      "publisher": "Motion",
+      "url": "https://motion.dev/docs/react",
+      "status": "referenced",
+      "notes": "Production React animation library covering micro-interactions, layout, gestures, scroll, SVG, and reduced motion."
+    },
+    {
+      "id": "official-gsap-matchmedia",
+      "class": "official_documentation",
+      "title": "gsap.matchMedia()",
+      "publisher": "GSAP",
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.matchMedia()/",
+      "status": "referenced",
+      "notes": "Responsive, scoped, automatically reverted animation setup and prefers-reduced-motion support."
+    },
+    {
+      "id": "official-webflow-gsap-free",
+      "class": "official_update",
+      "title": "Webflow makes GSAP 100% free",
+      "publisher": "Webflow",
+      "url": "https://webflow.com/updates/gsap-becomes-free",
+      "status": "referenced",
+      "notes": "GSAP and previously paid Club plugins became free for all users and commercial use on 2025-04-30."
+    },
+    {
+      "id": "official-r3f-intro",
+      "class": "official_documentation",
+      "title": "React Three Fiber Introduction",
+      "publisher": "pmndrs",
+      "url": "https://r3f.docs.pmnd.rs/getting-started/introduction",
+      "status": "referenced",
+      "notes": "React renderer for Three.js, with ecosystem packages like drei, gltfjsx, and postprocessing."
+    },
+    {
+      "id": "official-lenis-github",
+      "class": "official_documentation",
+      "title": "Lenis README",
+      "publisher": "darkroomengineering",
+      "url": "https://github.com/darkroomengineering/lenis",
+      "status": "referenced",
+      "notes": "Lightweight smooth scroll library with GSAP ScrollTrigger integration guidance."
+    },
+    {
+      "id": "official-lucide-react",
+      "class": "official_documentation",
+      "title": "Lucide React Guide",
+      "publisher": "Lucide",
+      "url": "https://lucide.dev/guide/react",
+      "status": "referenced",
+      "notes": "React icon package for consistent iconography."
+    },
+    {
+      "id": "component-21st-docs",
+      "class": "component_ecosystem",
+      "title": "21st Documentation",
+      "publisher": "21st.dev",
+      "url": "https://help.21st.dev/",
+      "status": "referenced",
+      "notes": "AI-powered UI builder and community library of React/Tailwind components, screens, and themes."
+    },
+    {
+      "id": "component-react-bits-home",
+      "class": "component_ecosystem",
+      "title": "React Bits",
+      "publisher": "React Bits",
+      "url": "https://reactbits.dev/",
+      "status": "referenced",
+      "notes": "Animated React components with stack variants and AI-ready copy-paste workflow."
+    },
+    {
+      "id": "component-magic-ui-home",
+      "class": "component_ecosystem",
+      "title": "Magic UI",
+      "publisher": "Magic UI",
+      "url": "https://magicui.design/",
+      "status": "referenced",
+      "notes": "Animated React/TypeScript/Tailwind/Motion components for design engineers."
+    },
+    {
+      "id": "component-aceternity-components",
+      "class": "component_ecosystem",
+      "title": "Aceternity UI Components",
+      "publisher": "Aceternity UI",
+      "url": "https://ui.aceternity.com/components",
+      "status": "referenced",
+      "notes": "shadcn-compatible microinteraction and animation component catalog."
+    },
+    {
+      "id": "component-animate-ui-docs",
+      "class": "component_ecosystem",
+      "title": "Animate UI",
+      "publisher": "Animate UI",
+      "url": "https://animate-ui.com/docs",
+      "status": "referenced",
+      "notes": "Animated component ecosystem candidate."
+    },
+    {
+      "id": "awwwards-j-vers",
+      "class": "award_case_study",
+      "title": "Case Study: J-Vers Site",
+      "publisher": "Awwwards / Obys",
+      "url": "https://www.awwwards.com/case-study-j-vers-site.html",
+      "status": "referenced",
+      "notes": "Next.js, R3F, Three.js, GSAP, Tailwind, Strapi, Vercel/Render, 3D and cursor storytelling."
+    },
+    {
+      "id": "awwwards-sparkk",
+      "class": "award_case_study",
+      "title": "Case Study: Building Sparkk's Website",
+      "publisher": "Awwwards / Sparkk",
+      "url": "https://www.awwwards.com/case-study-building-sparkks-website.html",
+      "status": "referenced",
+      "notes": "Nuxt, Strapi, Three.js, Lenis, GSAP, Blender, Figma, interactive navigation."
+    },
+    {
+      "id": "codrops-3d-product-grid",
+      "class": "award_case_study",
+      "title": "From Flat to Spatial: Creating a 3D Product Grid with React Three Fiber",
+      "publisher": "Codrops",
+      "url": "https://tympanus.net/codrops/2026/02/24/from-flat-to-spatial-creating-a-3d-product-grid-with-react-three-fiber/",
+      "status": "referenced",
+      "notes": "Next.js, R3F, Tailwind, Motion, GLSL, shader architecture."
+    },
+    {
+      "id": "codrops-robin-payot",
+      "class": "award_case_study",
+      "title": "Developer Spotlight: Robin Payot",
+      "publisher": "Codrops",
+      "url": "https://tympanus.net/codrops/2025/06/12/developer-spotlight-robin-payot/",
+      "status": "referenced",
+      "notes": "Creative developer, WebGL, animation, R3F, and award-winning interactive web experience signal."
+    },
+    {
+      "id": "reddit-frontend-animations",
+      "class": "community_signal",
+      "title": "Frontend animations",
+      "publisher": "Reddit r/webdev",
+      "url": "https://www.reddit.com/r/webdev/comments/1rp81e3/frontend_animations/",
+      "status": "referenced",
+      "notes": "Community discussion repeatedly naming GSAP, ScrollTrigger, Framer Motion/Motion, Three.js/R3F, and performance/mobile risks."
+    },
+    {
+      "id": "reddit-animation-library-react",
+      "class": "community_signal",
+      "title": "Which animation library should I use?",
+      "publisher": "Reddit r/reactjs",
+      "url": "https://www.reddit.com/r/reactjs/comments/1pmbum9/which_animation_library_should_i_use/",
+      "status": "referenced",
+      "notes": "Community differentiation: CSS for simple effects, Motion for React UI, GSAP for complex timelines, Rive/SVG notes."
+    },
+    {
+      "id": "reddit-motion-shadcn",
+      "class": "community_signal",
+      "title": "Motion-driven UI components built on top of shadcn/ui",
+      "publisher": "Reddit r/shadcn",
+      "url": "https://www.reddit.com/r/shadcn/comments/1rtpd5f/motiondriven_ui_components_built_on_top_of/",
+      "status": "referenced",
+      "notes": "Motion layer on shadcn primitives, microinteractions, morphing layouts, animated dropdowns, scroll transitions."
+    },
+    {
+      "id": "reddit-animated-components-feedback",
+      "class": "community_signal",
+      "title": "Collection of animated UI components built with React + Shadcn + Framer Motion",
+      "publisher": "Reddit r/reactjs",
+      "url": "https://www.reddit.com/r/reactjs/comments/1rh0qpy/collection_of_animated_ui_components_built_with/",
+      "status": "referenced",
+      "notes": "Community feedback calls out reduced-motion support, timing, bounce, performance, and over-animation."
+    },
+    {
+      "id": "reddit-awwwards-usability-critique",
+      "class": "community_signal",
+      "title": "Where do you find actually good website design inspiration?",
+      "publisher": "Reddit r/web_design",
+      "url": "https://www.reddit.com/r/web_design/comments/1ko8f6i/where_do_you_find_actually_good_website_design/",
+      "status": "referenced",
+      "notes": "Strong community warning that flashy Awwwards-style work can be experimental, slow, and unusable if not grounded in real product UX."
+    },
+    {
+      "id": "reddit-interactive-media-communities",
+      "class": "community_signal",
+      "title": "Interactive media web design communities",
+      "publisher": "Reddit r/web_design",
+      "url": "https://www.reddit.com/r/web_design/comments/169adm7/are_there_any_communities_for_the_more/",
+      "status": "referenced",
+      "notes": "Community framing of Awwwards, Three.js, WebGL, creative coding, shaders, FWA, and performance/UX criticism."
+    },
+    {
+      "id": "reddit-r3f-tradeoffs",
+      "class": "community_signal",
+      "title": "React Three Fiber",
+      "publisher": "Reddit r/threejs",
+      "url": "https://www.reddit.com/r/threejs/comments/1c5gw0l/react_three_fiber/",
+      "status": "referenced",
+      "notes": "R3F tradeoffs: declarative React integration and ecosystem versus raw Three.js control for low-level simulations."
+    },
+    {
+      "id": "reddit-3d-cinematic-stack",
+      "class": "community_signal",
+      "title": "Cinematic interactive 3D experience",
+      "publisher": "Reddit r/threejs",
+      "url": "https://www.reddit.com/r/threejs/comments/1titi4c/built_a_cinematic_interactive_3d_experience_for_a/",
+      "status": "referenced",
+      "notes": "Recent creative-dev stack signal: Three.js, R3F, GSAP, GLSL."
+    }
+  ]
+}

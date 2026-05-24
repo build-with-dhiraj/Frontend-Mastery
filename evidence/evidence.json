@@ -1,0 +1,294 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-05-24",
+  "claims": [
+    {
+      "id": "ev-next-awwwards-jvers",
+      "sourceId": "awwwards-j-vers",
+      "sourceClass": "award_case_study",
+      "claim": "J-Vers used Next.js for frontend performance/SEO, with R3F, Three.js, GSAP, and Tailwind as key frontend libraries.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": ["pkg-nextjs", "pkg-tailwind", "pkg-gsap", "pkg-three-r3f"]
+    },
+    {
+      "id": "ev-sparkk-stack",
+      "sourceId": "awwwards-sparkk",
+      "sourceClass": "award_case_study",
+      "claim": "Sparkk's Awwwards case study lists Nuxt, Three.js, Lenis, GSAP, Figma, Blender, and Strapi for an interactive 3D site.",
+      "confidence": "strong",
+      "risk": "medium",
+      "supports": ["pkg-gsap", "pkg-lenis", "pkg-three-r3f", "tool-figma"]
+    },
+    {
+      "id": "ev-codrops-3d-grid-stack",
+      "sourceId": "codrops-3d-product-grid",
+      "sourceClass": "award_case_study",
+      "claim": "Codrops' 3D product grid stack is Next.js, React Three Fiber, Tailwind, Motion, and GLSL.",
+      "confidence": "medium",
+      "risk": "medium",
+      "supports": ["pkg-nextjs", "pkg-tailwind", "pkg-motion", "pkg-three-r3f", "pattern-shaders"]
+    },
+    {
+      "id": "ev-radix-accessible-primitives",
+      "sourceId": "official-radix-intro",
+      "sourceClass": "official_documentation",
+      "claim": "Radix Primitives are positioned as accessible, unstyled primitives for high-quality design systems and web apps, with focus and keyboard behavior handled.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": ["pkg-radix-shadcn", "component-dialog-sheet", "component-tabs", "component-tooltip-popover"]
+    },
+    {
+      "id": "ev-shadcn-component-surface",
+      "sourceId": "official-shadcn-components-json",
+      "sourceClass": "official_documentation",
+      "claim": "shadcn/ui exposes common components including button, card, dialog, drawer/sheet, empty, input, navigation, popover, sheet, skeleton, sonner, tabs, toast, tooltip, and typography.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": ["pkg-radix-shadcn", "component-canonical-base"]
+    },
+    {
+      "id": "ev-shadcn-forms",
+      "sourceId": "official-shadcn-rhf-zod",
+      "sourceClass": "official_documentation",
+      "claim": "shadcn's React Hook Form guide combines React Hook Form, Zod, accessible field markup, errors, and Sonner feedback.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": ["pkg-react-hook-form-zod", "component-form", "component-toast"]
+    },
+    {
+      "id": "ev-motion-react-capabilities",
+      "sourceId": "official-motion-react",
+      "sourceClass": "official_documentation",
+      "claim": "Motion for React covers production UI animation, gestures, layout animation, scroll-triggered/linked animation, SVG animation, and reduced-motion hooks.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": ["pkg-motion", "motion-page-entrance", "motion-scroll-reveal", "motion-modal-transition", "motion-card-hover"]
+    },
+    {
+      "id": "ev-gsap-reduced-motion-cleanup",
+      "sourceId": "official-gsap-matchmedia",
+      "sourceClass": "official_documentation",
+      "claim": "gsap.matchMedia scopes and reverts animations/ScrollTriggers and can branch on prefers-reduced-motion.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": ["pkg-gsap", "motion-reduced-motion", "motion-scroll-reveal"]
+    },
+    {
+      "id": "ev-gsap-free",
+      "sourceId": "official-webflow-gsap-free",
+      "sourceClass": "official_update",
+      "claim": "GSAP and previously paid Club plugins became free for all users and commercial use in 2025.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": ["pkg-gsap"]
+    },
+    {
+      "id": "ev-r3f-renderer",
+      "sourceId": "official-r3f-intro",
+      "sourceClass": "official_documentation",
+      "claim": "React Three Fiber is a React renderer for Three.js with ecosystem helpers including drei, gltfjsx, and postprocessing.",
+      "confidence": "strong",
+      "risk": "medium",
+      "supports": ["pkg-three-r3f", "pattern-shaders"]
+    },
+    {
+      "id": "ev-lenis-scroll",
+      "sourceId": "official-lenis-github",
+      "sourceClass": "official_documentation",
+      "claim": "Lenis is a smooth scroll library for modern browsers and documents GSAP ScrollTrigger integration.",
+      "confidence": "strong",
+      "risk": "medium",
+      "supports": ["pkg-lenis", "motion-dhiraj-scroll"]
+    },
+    {
+      "id": "ev-21st-agent-components",
+      "sourceId": "component-21st-docs",
+      "sourceClass": "component_ecosystem",
+      "claim": "21st combines AI-powered component generation with a React/Tailwind community library of components, screens, and themes for coding assistants.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": ["pkg-nextjs", "pkg-tailwind", "component-agent-prompts"]
+    },
+    {
+      "id": "ev-reactbits-ai-ready",
+      "sourceId": "component-react-bits-home",
+      "sourceClass": "component_ecosystem",
+      "claim": "React Bits positions animated React components as AI-ready, copyable into projects, with JS/TS and CSS/Tailwind variants.",
+      "confidence": "strong",
+      "risk": "medium",
+      "supports": ["pkg-react", "pkg-tailwind", "component-agent-prompts", "pattern-text-effects", "pattern-animated-backgrounds"]
+    },
+    {
+      "id": "ev-magic-ui-stack",
+      "sourceId": "component-magic-ui-home",
+      "sourceClass": "component_ecosystem",
+      "claim": "Magic UI describes 150+ animated components built with React, TypeScript, Tailwind CSS, and Motion, as a companion for shadcn/ui.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": ["pkg-react", "pkg-typescript", "pkg-tailwind", "pkg-motion", "pkg-radix-shadcn"]
+    },
+    {
+      "id": "ev-aceternity-component-taxonomy",
+      "sourceId": "component-aceternity-components",
+      "sourceClass": "component_ecosystem",
+      "claim": "Aceternity's catalog repeatedly groups hero sections, bento grids, pricing, navbars, footers, empty states, text animations, scroll/parallax, magnetic buttons, animated modals, and tooltips.",
+      "confidence": "strong",
+      "risk": "medium",
+      "supports": ["component-hero", "component-bento-grid", "component-pricing", "component-nav-header", "component-footer", "component-empty-error-loading", "motion-header-text-reveal", "motion-scroll-reveal", "motion-card-hover"]
+    },
+    {
+      "id": "ev-olivier-top-techniques",
+      "sourceId": "yt-olivier-top-5-web-animation",
+      "sourceClass": "expert_video_transcript",
+      "claim": "Olivier Larose frames repeated award-site animations around scroll progress, viewport detection, sticky positioning, easing, text splitting, interpolation, and shaders.",
+      "confidence": "strong",
+      "risk": "medium",
+      "supports": ["motion-scroll-reveal", "motion-sticky-section", "motion-header-text-reveal", "pattern-shaders", "principle-motion-tokens"]
+    },
+    {
+      "id": "ev-olivier-parallax-magnetic",
+      "sourceId": "yt-olivier-floating-gallery-gsap",
+      "sourceClass": "expert_video_transcript",
+      "claim": "Olivier's Awwwards gallery tutorial uses Next.js/GSAP-style mouse interaction and treats the floating gallery as a recurring Awwwards interaction style.",
+      "confidence": "medium",
+      "risk": "medium",
+      "supports": ["pkg-nextjs", "pkg-gsap", "motion-card-hover"]
+    },
+    {
+      "id": "ev-design-engineering-states",
+      "sourceId": "yt-warp-rise-design-engineering",
+      "sourceClass": "expert_video_transcript",
+      "claim": "Design engineering quality depends on implementation details, states, transition taste, and knowing when not to animate.",
+      "confidence": "strong",
+      "risk": "low",
+      "supports": ["principle-state-completeness", "anti-animation-everywhere"]
+    },
+    {
+      "id": "ev-syntax-gsap-svg-accessibility",
+      "sourceId": "yt-syntax-gsap-cassie-evans",
+      "sourceClass": "expert_video_transcript",
+      "claim": "The Syntax/GSAP discussion emphasizes GSAP's strength across text, SVG, performance, React, and accessibility concerns.",
+      "confidence": "medium",
+      "risk": "low",
+      "supports": ["pkg-gsap", "pattern-svg-motion", "motion-reduced-motion"]
+    },
+    {
+      "id": "ev-jsmastery-frequency",
+      "sourceId": "yt-jsmastery-awwwards-react-tailwind-gsap",
+      "sourceClass": "expert_video_transcript",
+      "claim": "Transcript term extraction shows repeated implementation focus on scroll, text, Next, React, bento, hero, GSAP, Tailwind, and cursor interactions.",
+      "confidence": "medium",
+      "risk": "medium",
+      "supports": ["pkg-nextjs", "pkg-react", "pkg-tailwind", "pkg-gsap", "component-hero", "component-bento-grid", "motion-scroll-reveal", "motion-header-text-reveal"]
+    },
+    {
+      "id": "ev-prismic-frequency",
+      "sourceId": "yt-prismic-3d-ecommerce-next-gsap",
+      "sourceClass": "expert_video_transcript",
+      "claim": "The Prismic long-form tutorial heavily repeats Next, React, Tailwind, GSAP, Three.js, TypeScript, performance, hero, and scroll.",
+      "confidence": "medium",
+      "risk": "medium",
+      "supports": ["pkg-nextjs", "pkg-react", "pkg-tailwind", "pkg-typescript", "pkg-gsap", "pkg-three-r3f", "component-hero", "motion-scroll-reveal"]
+    },
+    {
+      "id": "ev-designcourse-shadcn-cursor",
+      "sourceId": "yt-designcourse-shadcn-cursor",
+      "sourceClass": "expert_video_transcript",
+      "claim": "DesignCourse shows shadcn plus Cursor can produce a distinct landing page when prompts and design decisions avoid a generic shadcn look.",
+      "confidence": "medium",
+      "risk": "low",
+      "supports": ["pkg-radix-shadcn", "component-agent-prompts", "principle-signature-layer"]
+    },
+    {
+      "id": "ev-codegrid-3d-scroll",
+      "sourceId": "yt-codegrid-3d-scroll-product",
+      "sourceClass": "expert_video_transcript",
+      "claim": "Codegrid's 3D scroll product tutorial centers scroll, Next, Motion, Three.js, GSAP, and performance for a product page interaction.",
+      "confidence": "medium",
+      "risk": "medium",
+      "supports": ["pkg-nextjs", "pkg-motion", "pkg-three-r3f", "pkg-gsap", "motion-dhiraj-scroll"]
+    },
+    {
+      "id": "ev-frontend-animations-reddit",
+      "sourceId": "reddit-frontend-animations",
+      "sourceClass": "community_signal",
+      "claim": "A Reddit frontend animation thread repeatedly recommends GSAP/ScrollTrigger, Framer Motion/Motion, Three.js/R3F, and warns about timing, mobile performance, and scroll orchestration.",
+      "confidence": "medium",
+      "risk": "medium",
+      "supports": ["pkg-gsap", "pkg-motion", "pkg-three-r3f", "motion-scroll-reveal", "anti-scroll-hijacking"]
+    },
+    {
+      "id": "ev-react-animation-library-reddit",
+      "sourceId": "reddit-animation-library-react",
+      "sourceClass": "community_signal",
+      "claim": "React animation community advice separates CSS for simple effects, Motion for component/UI animation, and GSAP for complex timelines.",
+      "confidence": "medium",
+      "risk": "low",
+      "supports": ["pkg-motion", "pkg-gsap", "principle-motion-surface-choice"]
+    },
+    {
+      "id": "ev-shadcn-motion-reddit",
+      "sourceId": "reddit-motion-shadcn",
+      "sourceClass": "community_signal",
+      "claim": "Motion-driven components on shadcn primitives focus on microinteractions, morphing layouts, dropdowns/dialogs, buttons, and scroll-driven transitions.",
+      "confidence": "medium",
+      "risk": "medium",
+      "supports": ["pkg-radix-shadcn", "pkg-motion", "component-dialog-sheet", "component-button", "motion-modal-transition"]
+    },
+    {
+      "id": "ev-reduced-motion-reddit",
+      "sourceId": "reddit-animated-components-feedback",
+      "sourceClass": "community_signal",
+      "claim": "Community feedback on animated component libraries specifically calls for prefers-reduced-motion support and warns against too much bounce or sluggish timing.",
+      "confidence": "medium",
+      "risk": "low",
+      "supports": ["motion-reduced-motion", "anti-animation-everywhere", "principle-motion-tokens"]
+    },
+    {
+      "id": "ev-awwwards-usability-reddit",
+      "sourceId": "reddit-awwwards-usability-critique",
+      "sourceClass": "community_signal",
+      "claim": "Practitioners warn that Awwwards-style inspiration can be too experimental, slow, scroll-hijacking, or unusable for real client/product work.",
+      "confidence": "medium",
+      "risk": "low",
+      "supports": ["anti-scroll-hijacking", "anti-animation-everywhere", "principle-real-product-ux"]
+    },
+    {
+      "id": "ev-r3f-reddit-tradeoff",
+      "sourceId": "reddit-r3f-tradeoffs",
+      "sourceClass": "community_signal",
+      "claim": "R3F is praised for React integration and ecosystem, but raw Three.js can be preferable for low-level simulations and performance-sensitive rendering control.",
+      "confidence": "medium",
+      "risk": "medium",
+      "supports": ["pkg-three-r3f", "principle-motion-surface-choice"]
+    },
+    {
+      "id": "ev-3d-cinematic-reddit",
+      "sourceId": "reddit-3d-cinematic-stack",
+      "sourceClass": "community_signal",
+      "claim": "A recent cinematic interactive 3D build publicly lists Three.js, R3F, GSAP, and GLSL as the stack.",
+      "confidence": "weak",
+      "risk": "medium",
+      "supports": ["pkg-three-r3f", "pkg-gsap", "pattern-shaders"]
+    },
+    {
+      "id": "ev-tim-gabe-competence",
+      "sourceId": "yt-tim-gabe-gamified-apps",
+      "sourceClass": "expert_video_transcript",
+      "claim": "Tim Gabe argues gamification works when it reflects user competence/progress, not decorative points, badges, or leaderboards.",
+      "confidence": "medium",
+      "risk": "low",
+      "supports": ["principle-competence-feedback"]
+    },
+    {
+      "id": "ev-tim-gabe-world-class-process",
+      "sourceId": "yt-tim-gabe-world-class-app-design",
+      "sourceClass": "expert_video_transcript",
+      "claim": "Tim Gabe's app design formula emphasizes a system that derisks steps from concept to world-class app instead of relying on isolated taste.",
+      "confidence": "medium",
+      "risk": "low",
+      "supports": ["principle-state-completeness", "principle-real-product-ux"]
+    }
+  ]
+}

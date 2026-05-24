@@ -1,0 +1,117 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-05-24",
+  "tokens": {
+    "ease": {
+      "standard": [0.22, 1, 0.36, 1],
+      "entrance": [0.16, 1, 0.3, 1],
+      "exit": [0.7, 0, 0.84, 0],
+      "snappy": [0.2, 0.8, 0.2, 1]
+    },
+    "durationMs": {
+      "micro": 160,
+      "base": 240,
+      "section": 560,
+      "hero": 720,
+      "exit": 140
+    },
+    "staggerMs": {
+      "tight": 35,
+      "base": 60,
+      "section": 90
+    }
+  },
+  "motion": [
+    {
+      "id": "page-entrance",
+      "standardIds": ["pkg-motion", "principle-motion-tokens", "motion-reduced-motion"],
+      "layer": "base",
+      "durationMs": 560,
+      "easing": "entrance",
+      "from": "opacity 0, y 12, blur 4",
+      "to": "opacity 1, y 0, blur 0",
+      "reducedMotion": "opacity only, duration 120ms",
+      "notes": "Use once per route or major layout, not on every child."
+    },
+    {
+      "id": "header-text-reveal",
+      "standardIds": ["motion-header-text-reveal", "principle-signature-layer", "motion-reduced-motion"],
+      "layer": "signature",
+      "durationMs": 720,
+      "easing": "entrance",
+      "from": "line masked, opacity 0, y 40, blur 8",
+      "to": "opacity 1, y 0, blur 0",
+      "staggerMs": 60,
+      "reducedMotion": "render text immediately with optional 120ms fade",
+      "notes": "Use for short headings only. Preserve semantic text."
+    },
+    {
+      "id": "scroll-reveal",
+      "standardIds": ["motion-scroll-reveal", "motion-reduced-motion"],
+      "layer": "signature",
+      "durationMs": 560,
+      "easing": "standard",
+      "from": "opacity 0, y 24, blur 6",
+      "to": "opacity 1, y 0, blur 0",
+      "reducedMotion": "opacity only or no animation",
+      "notes": "Trigger once at about 30-35% visibility."
+    },
+    {
+      "id": "sticky-section",
+      "standardIds": ["motion-sticky-section", "anti-scroll-hijacking", "motion-reduced-motion"],
+      "layer": "signature",
+      "durationMs": 560,
+      "easing": "standard",
+      "from": "native sticky panel with scroll-linked inner reveal",
+      "to": "content swaps or progresses while panel stays pinned",
+      "reducedMotion": "normal stacked sections with no pinning",
+      "notes": "Use CSS sticky first; GSAP ScrollTrigger only for scrubbed timelines."
+    },
+    {
+      "id": "card-hover-depth",
+      "standardIds": ["motion-card-hover", "pkg-motion", "motion-reduced-motion"],
+      "layer": "signature",
+      "durationMs": 240,
+      "easing": "snappy",
+      "from": "resting card",
+      "to": "y -4, subtle border lift, shadow/elevation +1",
+      "reducedMotion": "border and color change only",
+      "notes": "Hover is progressive enhancement; tap targets must remain visible."
+    },
+    {
+      "id": "toast-enter-exit",
+      "standardIds": ["component-toast", "motion-reduced-motion", "principle-signature-layer"],
+      "layer": "signature",
+      "durationMs": 180,
+      "exitDurationMs": 140,
+      "easing": "snappy",
+      "from": "opacity 0, y 12, scale .98",
+      "to": "opacity 1, y 0, scale 1",
+      "reducedMotion": "opacity only",
+      "notes": "Bottom-right desktop, bottom mobile; do not rely on toast for critical errors."
+    },
+    {
+      "id": "modal-transition",
+      "standardIds": ["motion-modal-transition", "component-dialog-sheet", "motion-reduced-motion"],
+      "layer": "signature",
+      "durationMs": 220,
+      "exitDurationMs": 140,
+      "easing": "snappy",
+      "from": "overlay opacity 0; content opacity 0, scale .97, y 8",
+      "to": "overlay opacity 1; content opacity 1, scale 1, y 0",
+      "reducedMotion": "opacity only",
+      "notes": "Keep focus management in Radix; Motion only handles visual transition."
+    },
+    {
+      "id": "dhiraj-smooth-scroll",
+      "standardIds": ["pkg-lenis", "anti-scroll-hijacking", "motion-reduced-motion"],
+      "layer": "signature",
+      "durationMs": 0,
+      "easing": "native-or-lenis",
+      "from": "native browser scroll",
+      "to": "Lenis scroll only on creative pages",
+      "reducedMotion": "native browser scroll always",
+      "notes": "Disable for dashboards, forms, data grids, dialogs, and touch-heavy workflows."
+    }
+  ]
+}

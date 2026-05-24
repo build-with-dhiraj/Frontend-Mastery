@@ -1,0 +1,235 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-05-24",
+  "scope": "Second-pass public stack-frequency table from Awwwards inspiration/case pages, Codrops case/tutorial articles, studio case pages, and already processed expert/tutorial transcripts. Rows are evidence signals, not endorsements.",
+  "rows": [
+    {
+      "id": "sf-awwwards-mtrust-scroll-transition",
+      "sourceType": "awwwards_inspiration",
+      "title": "GSAP Scroll Transition from M-TRUST CO.,LTD.",
+      "url": "https://www.awwwards.com/inspiration/gsap-scroll-transition-m-trust-co-ltd",
+      "stack": ["gsap", "lenis", "sveltekit", "typescript", "three.js", "tailwind css"],
+      "patterns": ["scroll transition", "smooth scroll", "3d"]
+    },
+    {
+      "id": "sf-awwwards-otherlife-portals",
+      "sourceType": "awwwards_inspiration",
+      "title": "Case Study Portals from Otherlife",
+      "url": "https://www.awwwards.com/inspiration/case-study-portals-otherlife",
+      "stack": ["webgl", "three.js", "gsap"],
+      "patterns": ["case study portal", "webgl", "scrolltrigger animation"]
+    },
+    {
+      "id": "sf-awwwards-punchdrunk-canvas",
+      "sourceType": "awwwards_inspiration",
+      "title": "Three.JS Interactive Canvas Animation from Punchdrunk",
+      "url": "https://www.awwwards.com/inspiration/three-js-interactive-canvas-animation-punchdrunk",
+      "stack": ["three.js", "gsap"],
+      "patterns": ["interactive canvas", "parallax", "god ray effect"]
+    },
+    {
+      "id": "sf-awwwards-real-estate-map",
+      "sourceType": "awwwards_inspiration",
+      "title": "Loading and Intro from Real Estate 3D Interactive Map",
+      "url": "https://www.awwwards.com/inspiration/loading-and-intro-real-estate-3d-interactive-map",
+      "stack": ["three.js", "gsap", "tween"],
+      "patterns": ["3d loading", "intro animation", "interactive map"]
+    },
+    {
+      "id": "sf-awwwards-penderecki-garden",
+      "sourceType": "awwwards_inspiration",
+      "title": "Penderecki's Garden - Three.js virtual garden",
+      "url": "https://www.awwwards.com/inspiration/pendereckis-garden-three-js-virtual-garden",
+      "stack": ["three.js", "gsap", "glsl"],
+      "patterns": ["virtual garden", "3d", "sound", "shader"]
+    },
+    {
+      "id": "sf-awwwards-wirefox-gsap",
+      "sourceType": "awwwards_inspiration",
+      "title": "GSAP Animations from Wirefox Digital Agency",
+      "url": "https://www.awwwards.com/inspiration/gsap-animations-wirefox-digital-agency",
+      "stack": ["gsap", "css animation", "three.js", "wordpress"],
+      "patterns": ["parallax", "agency animation"]
+    },
+    {
+      "id": "sf-awwwards-base-planning-mobile",
+      "sourceType": "awwwards_inspiration",
+      "title": "Mobile Responsive Design from Base Planning",
+      "url": "https://www.awwwards.com/inspiration/mobile-responsive-design-base-planning",
+      "stack": ["svg", "gsap", "lenis"],
+      "patterns": ["responsive design", "scrolling timeline", "svg interaction"]
+    },
+    {
+      "id": "sf-awwwards-ride-out-about",
+      "sourceType": "awwwards_inspiration",
+      "title": "About page from Ride Out Amsterdam",
+      "url": "https://www.awwwards.com/inspiration/about-page-ride-out-amsterdam",
+      "stack": ["lenis", "gsap", "three.js", "scrolltrigger"],
+      "patterns": ["scroll animation", "loading animation", "page transition"]
+    },
+    {
+      "id": "sf-awwwards-academy-value",
+      "sourceType": "awwwards_inspiration",
+      "title": "Value Proposition from Academy",
+      "url": "https://www.awwwards.com/inspiration/value-proposition-academy-2",
+      "stack": ["lenis", "p5.js", "gsap"],
+      "patterns": ["scroll animation", "hero", "testimonials"]
+    },
+    {
+      "id": "sf-awwwards-edoardo-turn-page",
+      "sourceType": "awwwards_inspiration",
+      "title": "Turn the page - Edoardo Smerilli Film Director",
+      "url": "https://www.awwwards.com/inspiration/turn-the-page-edoardo-smerilli-film-director",
+      "stack": ["webgl", "gsap", "three.js", "webpack"],
+      "patterns": ["page turn", "filters", "cursor", "3d wall"]
+    },
+    {
+      "id": "sf-awwwards-deveb-hero",
+      "sourceType": "awwwards_inspiration",
+      "title": "Hero from Deveb",
+      "url": "https://www.awwwards.com/inspiration/hero-deveb",
+      "stack": ["three.js", "gsap", "react", "locomotive scroll"],
+      "patterns": ["hero", "3d", "menu", "footer"]
+    },
+    {
+      "id": "sf-awwwards-jvers",
+      "sourceType": "awwwards_case_study",
+      "title": "Case Study: J-Vers Site",
+      "url": "https://www.awwwards.com/case-study-j-vers-site.html",
+      "stack": ["next.js", "react three fiber", "three.js", "gsap", "tailwind css", "strapi", "vercel"],
+      "patterns": ["3d storytelling", "cursor", "performance", "seo"]
+    },
+    {
+      "id": "sf-awwwards-sparkk",
+      "sourceType": "awwwards_case_study",
+      "title": "Case Study: Building Sparkk's Website",
+      "url": "https://www.awwwards.com/case-study-building-sparkks-website.html",
+      "stack": ["nuxt", "strapi", "three.js", "lenis", "gsap", "blender", "figma"],
+      "patterns": ["3d interaction", "animated navigation", "cms"]
+    },
+    {
+      "id": "sf-codrops-cinematic-3d-scroll",
+      "sourceType": "codrops_tutorial",
+      "title": "How to Build Cinematic 3D Scroll Experiences with GSAP",
+      "url": "https://tympanus.net/codrops/2025/11/19/how-to-build-cinematic-3d-scroll-experiences-with-gsap/",
+      "stack": ["gsap", "scrolltrigger", "scrollsmoother", "splittext", "three.js", "react three fiber"],
+      "patterns": ["scroll-controlled storytelling", "3d camera timeline", "text beats"]
+    },
+    {
+      "id": "sf-codrops-elastic-grid",
+      "sourceType": "codrops_tutorial",
+      "title": "Elastic Grid Scroll: Creating Lag-Based Layout Animations with GSAP ScrollSmoother",
+      "url": "https://tympanus.net/codrops/2025/06/03/elastic-grid-scroll-creating-lag-based-layout-animations-with-gsap-scrollsmoother/",
+      "stack": ["gsap", "scrolltrigger", "scrollsmoother"],
+      "patterns": ["grid scroll", "lag effects", "smooth scroll"]
+    },
+    {
+      "id": "sf-codrops-svg-mask-scroll",
+      "sourceType": "codrops_tutorial",
+      "title": "SVG Mask Transitions on Scroll with GSAP and ScrollTrigger",
+      "url": "https://tympanus.net/codrops/2026/03/11/svg-mask-transitions-on-scroll-with-gsap-and-scrolltrigger/",
+      "stack": ["svg", "gsap", "scrolltrigger"],
+      "patterns": ["svg mask", "scroll transition"]
+    },
+    {
+      "id": "sf-codrops-maxima-therapy",
+      "sourceType": "codrops_case_study",
+      "title": "Building the Maxima Therapy Website: React, GSAP, and Dabbling with AI",
+      "url": "https://tympanus.net/codrops/2026/04/06/building-the-maxima-therapy-website-react-gsap-and-dabbling-with-ai/",
+      "stack": ["react router", "sanity", "cloudflare pages", "lenis", "gsap", "scrolltrigger", "lottie", "canvas", "matter.js", "tailwind css", "typescript"],
+      "patterns": ["playful interactions", "scroll animation", "svg morph", "physics"]
+    },
+    {
+      "id": "sf-codrops-3d-product-grid",
+      "sourceType": "codrops_tutorial",
+      "title": "From Flat to Spatial: Creating a 3D Product Grid with React Three Fiber",
+      "url": "https://tympanus.net/codrops/2026/02/24/from-flat-to-spatial-creating-a-3d-product-grid-with-react-three-fiber/",
+      "stack": ["next.js", "react three fiber", "tailwind css", "motion", "glsl"],
+      "patterns": ["3d product grid", "shader architecture", "animation interruptibility"]
+    },
+    {
+      "id": "sf-codrops-sticky-grid-scroll",
+      "sourceType": "codrops_tutorial",
+      "title": "Sticky Grid Scroll: Building a Scroll-Driven Animated Grid",
+      "url": "https://tympanus.net/codrops/2026/03/02/sticky-grid-scroll-building-a-scroll-driven-animated-grid/",
+      "stack": ["gsap", "scrolltrigger", "lenis"],
+      "patterns": ["sticky grid", "scroll-driven animation", "image preload"]
+    },
+    {
+      "id": "sf-codrops-dual-wave-text",
+      "sourceType": "codrops_tutorial",
+      "title": "Building a Scroll-Driven Dual-Wave Text Animation with GSAP",
+      "url": "https://tympanus.net/codrops/2026/01/15/building-a-scroll-driven-dual-wave-text-animation-with-gsap/",
+      "stack": ["gsap", "scrolltrigger", "scrollsmoother", "lenis"],
+      "patterns": ["text animation", "smooth scroll", "scroll-driven wave"]
+    },
+    {
+      "id": "sf-codrops-portfolio-gsap",
+      "sourceType": "codrops_article",
+      "title": "From Shader Uniforms to Clip-Path Wipes: How GSAP Drives My Portfolio",
+      "url": "https://tympanus.net/codrops/2026/05/06/from-shader-uniforms-to-clip-path-wipes-how-gsap-drives-my-portfolio/",
+      "stack": ["gsap", "scrolltrigger", "shader uniforms", "clip-path"],
+      "patterns": ["scroll morph", "svg progress", "state machine"]
+    },
+    {
+      "id": "sf-codrops-phantom-land",
+      "sourceType": "codrops_case_study",
+      "title": "Invisible Forces: The Making of Phantom.land's Interactive Grid and 3D Face Particle System",
+      "url": "https://tympanus.net/codrops/2025/06/30/invisible-forces-the-making-of-phantom-lands-interactive-grid-and-3d-face-particle-system/",
+      "stack": ["react three fiber", "glsl", "gsap", "splittext", "customease", "scrolltrigger"],
+      "patterns": ["interactive grid", "3d particles", "webgl"]
+    },
+    {
+      "id": "sf-codrops-ink-games",
+      "sourceType": "codrops_case_study",
+      "title": "One Canvas to Rule Them All: How INK Games' New Site Handles Complex 3D",
+      "url": "https://tympanus.net/codrops/2025/11/21/one-canvas-to-rule-them-all-how-ink-games-new-site-handles-complex-3d/",
+      "stack": ["next.js", "react three fiber", "gsap", "styled components"],
+      "patterns": ["single webgl canvas", "scroll-triggered animation", "split text", "cursor"]
+    },
+    {
+      "id": "sf-codrops-future-three",
+      "sourceType": "codrops_case_study",
+      "title": "A Studio Reborn: FUTURE THREE and the Art of Self-Redesign",
+      "url": "https://tympanus.net/codrops/2025/10/23/a-studio-reborn-future-three-and-the-art-of-self-redesign/",
+      "stack": ["webflow", "gsap", "lenis"],
+      "patterns": ["page transition", "text animation", "smooth scroll"]
+    },
+    {
+      "id": "sf-studio-monolith",
+      "sourceType": "studio_case_study",
+      "title": "Case Study: Monolith NYC",
+      "url": "https://www.nomadterrace.com/articles/case-study-monolith-nyc-aqllbah3",
+      "stack": ["next.js", "sanity", "gsap", "framer motion", "lenis"],
+      "patterns": ["smooth scroll", "product storytelling", "motion"]
+    },
+    {
+      "id": "sf-studio-looks-generous",
+      "sourceType": "studio_case_study",
+      "title": "Looks Generous Website Rebuild Case Study",
+      "url": "https://debugged-pro.com/case-study/looks-generous",
+      "stack": ["next.js", "gsap", "three.js"],
+      "patterns": ["animation-driven portfolio", "responsive", "cinematic"]
+    }
+  ],
+  "summary": {
+    "rows": 26,
+    "frequency": {
+      "gsap": 25,
+      "three.js_or_r3f": 16,
+      "lenis_or_smooth_scroll": 13,
+      "scrolltrigger_or_scrollsmoother": 9,
+      "next.js_or_react": 9,
+      "tailwind_css": 4,
+      "typescript": 2,
+      "svg_or_glsl_or_webgl": 8,
+      "motion_or_framer_motion": 2
+    },
+    "interpretation": [
+      "GSAP is the strongest creative-web standard in this pass.",
+      "Three.js/R3F and shader/WebGL work are common in award-style work but remain optional due to risk.",
+      "Lenis/smooth scroll appears often with GSAP scroll scenes, but should remain signature/creative-page only.",
+      "Next.js/React/Tailwind appear enough to support the default app skeleton, while creative case studies also show Nuxt, SvelteKit, Webflow, Astro, and React Router."
+    ]
+  }
+}
