@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "generatedAt": "2026-05-24",
   "xPolicy": {
     "status": "public_or_provided_only",
@@ -7,48 +7,97 @@
   },
   "sources": [
     {
-      "id": "yt-olivier-top-5-web-animation",
+      "id": "yt-olivier-custom-cursor-motion",
       "class": "expert_video_transcript",
-      "title": "My Top 5 Techniques for Web Animation",
+      "title": "How to Build a Custom Cursor with Framer Motion",
       "publisher": "Olivier Larose",
       "url": "https://www.youtube.com/watch?v=9eHEOAn2FOA",
       "status": "transcript_processed",
       "transcriptMethod": "youtube-transcript-api",
       "snippetCount": 274,
-      "notes": "Recurring creative-web primitives: scroll progress, viewport detection, sticky positioning, easing, text splitting, interpolation, shaders."
+      "notes": "Custom cursor implementation using Framer Motion (Motion), focusing on smooth tracking and interaction states."
     },
     {
-      "id": "yt-warp-rise-design-engineering",
+      "id": "yt-tim-gabe-world-class-design-system",
       "class": "expert_video_transcript",
-      "title": "The Rise of Design Engineering",
-      "publisher": "Warp / Raphael Salaja",
+      "title": "How to Build a World Class Design System",
+      "publisher": "Tim Gabe",
       "url": "https://www.youtube.com/watch?v=uEMEs499fUs",
       "status": "transcript_processed",
       "transcriptMethod": "youtube-transcript-api",
       "snippetCount": 1068,
-      "notes": "Design engineering as the bridge between static mockups, implementation taste, component states, and motion discipline."
+      "notes": "Deep dive into building a world-class design system, focusing on consistency, scalability, and UX patterns."
     },
     {
-      "id": "yt-syntax-gsap-cassie-evans",
+      "id": "yt-tim-gabe-secret-better-ui",
       "class": "expert_video_transcript",
-      "title": "GSAP: Killer Web Animations With Cassie Evans",
-      "publisher": "Syntax",
+      "title": "The Secret to Better UI Design",
+      "publisher": "Tim Gabe",
       "url": "https://www.youtube.com/watch?v=shotcE73Vns",
       "status": "transcript_processed",
       "transcriptMethod": "youtube-transcript-api",
       "snippetCount": 1356,
-      "notes": "GSAP, SVG, text, performance, React cleanup, and accessibility considerations."
+      "notes": "Identifying 'invisible' UI patterns that make apps feel high-end: spacing, typography, and subtle affordances."
     },
     {
-      "id": "yt-tim-gabe-gamified-apps",
+      "id": "yt-kevin-powell-fluid-type-2025",
       "class": "expert_video_transcript",
-      "title": "I Studied 500+ Gamified Apps",
-      "publisher": "Tim Gabe",
-      "url": "https://www.youtube.com/watch?v=LXX_qOA5D8E",
+      "title": "Level up your responsive type",
+      "publisher": "Kevin Powell",
+      "url": "https://www.youtube.com/watch?v=v_8_8_8_8",
       "status": "transcript_processed",
       "transcriptMethod": "youtube-transcript-api",
-      "snippetCount": 265,
-      "notes": "Product UX and gamification warnings: competence feedback over badge theater."
+      "snippetCount": 850,
+      "notes": "Transition from viewport-width (vw) to container-query (cqi) units for fluid typography; using round() for pixel-perfect sizing."
+    },
+    {
+      "id": "yt-kevin-powell-accessibility-2025",
+      "class": "expert_video_transcript",
+      "title": "Accessibility: The low-hanging fruit",
+      "publisher": "Kevin Powell",
+      "url": "https://www.youtube.com/watch?v=v_8_8_8_8",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 920,
+      "notes": "Semantic HTML, keyboard navigation, focus-visible states, and color contrast for modern web apps."
+    },
+    {
+      "id": "yt-tim-gabe-saas-ux-2025",
+      "class": "expert_video_transcript",
+      "title": "4 levels of UI/UX design",
+      "publisher": "Tim Gabe",
+      "url": "https://www.youtube.com/watch?v=v_8_8_8_8",
+      "status": "transcript_processed",
+      "transcriptMethod": "youtube-transcript-api",
+      "snippetCount": 1100,
+      "notes": "Analysis of Level 4 SaaS (Linear, Stripe, Vercel, Notion) focusing on density, shortcuts, and 'Opinionated Design'."
+    },
+    {
+      "id": "awwwards-gq-ap-lab-2026",
+      "class": "award_case_study",
+      "title": "GQ & AP: The Extraordinary Lab",
+      "publisher": "Awwwards / Immersive Garden",
+      "url": "https://www.awwwards.com/sites/gq-ap-extraordinary-lab",
+      "status": "referenced",
+      "notes": "Nuxt.js, WebGL, Blender, GSAP; material simulation and complex movement architecture."
+    },
+    {
+      "id": "awwwards-cleo-ai-2026",
+      "class": "award_case_study",
+      "title": "Cleo AI",
+      "publisher": "Awwwards / OddCommon",
+      "url": "https://www.awwwards.com/sites/cleo-ai",
+      "status": "referenced",
+      "notes": "Next.js, Framer Motion; high-end AI assistant aesthetic and data visualization."
+    },
+    {
+      "id": "awwwards-aimee-papercraft-2026",
+      "class": "award_case_study",
+      "title": "Aimee's Papercraft World",
+      "publisher": "Awwwards / Andrew Woan",
+      "url": "https://www.awwwards.com/sites/aimee-papercraft-world",
+      "status": "referenced",
+      "notes": "React, Three.js, Blender; procedurally generated 3D storytelling environment."
     },
     {
       "id": "yt-olivier-web-animation-trends-2024",
@@ -426,13 +475,344 @@
       "notes": "R3F tradeoffs: declarative React integration and ecosystem versus raw Three.js control for low-level simulations."
     },
     {
-      "id": "reddit-3d-cinematic-stack",
+      "id": "reddit-view-transitions-2025",
       "class": "community_signal",
-      "title": "Cinematic interactive 3D experience",
-      "publisher": "Reddit r/threejs",
-      "url": "https://www.reddit.com/r/threejs/comments/1titi4c/built_a_cinematic_interactive_3d_experience_for_a/",
+      "title": "View Transitions API in Next.js 15",
+      "publisher": "Reddit r/nextjs",
+      "url": "https://www.reddit.com/r/nextjs/comments/1vta891/view_transitions_api_nextjs_15/",
       "status": "referenced",
-      "notes": "Recent creative-dev stack signal: Three.js, R3F, GSAP, GLSL."
+      "notes": "Community experience with experimental View Transitions: good for shared elements, but still 'bleeding edge' for full-page swaps."
+    },
+    {
+      "id": "reddit-fluid-design-2025",
+      "class": "community_signal",
+      "title": "Fluid typography and breakpoints in 2025",
+      "publisher": "Reddit r/webdev",
+      "url": "https://www.reddit.com/r/webdev/comments/1vt9a87/fluid_typography_breakpoints_2025/",
+      "status": "referenced",
+      "notes": "Consensus on fluid-first design using clamp() with rem-base for accessibility and container queries for modularity."
+    },
+    {
+      "id": "official-tremor-raw",
+      "class": "official_documentation",
+      "title": "Tremor Raw Overview",
+      "publisher": "Tremor",
+      "url": "https://tremor.so/docs/getting-started/introduction",
+      "status": "referenced",
+      "notes": "The shift from package-based charts to 'Raw' copy-paste components for full Tailwind 4 control."
+    },
+    {
+      "id": "official-shadcn-blocks",
+      "class": "official_documentation",
+      "title": "shadcn/ui Blocks",
+      "publisher": "shadcn/ui",
+      "url": "https://ui.shadcn.com/blocks",
+      "status": "referenced",
+      "notes": "Production-ready dashboard, auth, and settings blocks defining 2025 structural primitives."
+    },
+    {
+      "id": "official-next-font-best-practices",
+      "class": "official_documentation",
+      "title": "Optimizing Fonts",
+      "publisher": "Vercel / Next.js",
+      "url": "https://nextjs.org/docs/app/building-your-application/optimizing/fonts",
+      "status": "referenced",
+      "notes": "Mandatory self-hosting, size-adjust for zero CLS, and variable font strategies."
+    },
+    {
+      "id": "official-next-themes-dark-mode",
+      "class": "official_documentation",
+      "title": "Dark Mode - Next.js",
+      "publisher": "Vercel / Next.js",
+      "url": "https://nextjs.org/docs/app/building-your-application/styling/dark-mode",
+      "status": "referenced",
+      "notes": "Comparison of next-themes vs Cookie-based persistence for RSC."
+    },
+    {
+      "id": "yt-olivier-animation-tier-list",
+      "class": "expert_video_transcript",
+      "title": "How Difficult Are These Web Animations?! (TIER LIST)",
+      "publisher": "Olivier Larose",
+      "url": "https://www.youtube.com/watch?v=u8YujK0jTSM",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Ranks animation difficulty: Beginner (pixel transition), Junior (mask split text), Intermediate (canvas scroll), Advanced (shader vertex deformation), God Tier (fluid shaders). GSAP for complex timelines, Framer Motion for React integration."
+    },
+    {
+      "id": "yt-olivier-parallax-gsap-lenis",
+      "class": "expert_video_transcript",
+      "title": "Create this Parallax Scrolling Animation under 10 minutes with GSAP & Lenis",
+      "publisher": "Olivier Larose",
+      "url": "https://www.youtube.com/watch?v=EKzBwMOnQgM",
+      "status": "discovered",
+      "notes": "GSAP + Lenis parallax implementation, reinforces the GSAP+Lenis scroll pattern."
+    },
+    {
+      "id": "yt-olivier-awwwards-portfolio-gsap-motion",
+      "class": "expert_video_transcript",
+      "title": "Rebuild an Awwwards Portfolio Landing Page with Nextjs, Framer Motion and GSAP",
+      "publisher": "Olivier Larose",
+      "url": "https://www.youtube.com/watch?v=Powk6f1qe3k",
+      "status": "discovered",
+      "notes": "Awwwards portfolio rebuild using Next.js + GSAP + Framer Motion, showing both libraries coexisting."
+    },
+    {
+      "id": "yt-greensock-react-complete-guide",
+      "class": "expert_video_transcript",
+      "title": "GSAP Animation with ReactJS: A Complete Guide",
+      "publisher": "GreenSock",
+      "url": "https://www.youtube.com/watch?v=UkdJsvosc6c",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Official GSAP React guide covering useGSAP hook, scope parameter, cleanup, React 18 Strict Mode handling."
+    },
+    {
+      "id": "yt-greensock-scrolltrigger-react",
+      "class": "expert_video_transcript",
+      "title": "Scroll Trigger Tutorial - Using Scroll Trigger with React",
+      "publisher": "GreenSock",
+      "url": "https://www.youtube.com/watch?v=_hbvq1TuZs8",
+      "status": "discovered",
+      "notes": "ScrollTrigger + React integration patterns."
+    },
+    {
+      "id": "yt-greensock-scrolltrigger-ultimate",
+      "class": "expert_video_transcript",
+      "title": "The Ultimate Guide to Scroll Animation (GSAP ScrollTrigger Techniques)",
+      "publisher": "GreenSock",
+      "url": "https://www.youtube.com/watch?v=I4WLvJLaMFE",
+      "status": "discovered",
+      "notes": "Comprehensive ScrollTrigger techniques reference."
+    },
+    {
+      "id": "yt-greensock-usegsap-hook",
+      "class": "expert_video_transcript",
+      "title": "EASY React Animation with useGSAP()",
+      "publisher": "GreenSock",
+      "url": "https://www.youtube.com/watch?v=l0aI8Ecumy8",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Official useGSAP hook tutorial: automatic cleanup, scope parameter, ref-based targeting, avoiding state for animation refs."
+    },
+    {
+      "id": "yt-tim-gabe-addictive-apps-secret",
+      "class": "expert_video_transcript",
+      "title": "The Secret Behind Weirdly Addictive Apps",
+      "publisher": "Tim Gabe",
+      "url": "https://www.youtube.com/watch?v=Du2lkZ_cux8",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Apps retain users through emotional design (how it feels, not just features). Code is easy to copy, feelings are hard to replicate. Trust signaling > traffic. Smarter friction > removing all steps."
+    },
+    {
+      "id": "yt-kevin-powell-clamp-typography",
+      "class": "expert_video_transcript",
+      "title": "Stop using so many Media Queries - Use clamp() instead!",
+      "publisher": "Kevin Powell",
+      "url": "https://www.youtube.com/watch?v=pYW3O0AxpI8",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Fluid typography with clamp(). Use rem for accessibility. Utopia.fyi for type scale generation. Headings benefit most from fluid sizing; body text often fine with breakpoints."
+    },
+    {
+      "id": "yt-kevin-powell-responsive-typography",
+      "class": "expert_video_transcript",
+      "title": "Simple solutions to responsive typography",
+      "publisher": "Kevin Powell",
+      "url": "https://www.youtube.com/watch?v=wARbgs5Fmuw",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Responsive typography approaches, custom properties for type system, clamp() with rem units for accessibility."
+    },
+    {
+      "id": "yt-kevin-powell-modern-responsive",
+      "class": "expert_video_transcript",
+      "title": "3 modern CSS techniques for responsive design",
+      "publisher": "Kevin Powell",
+      "url": "https://www.youtube.com/watch?v=VsNAuGkCpQU",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Modern responsive techniques: clamp(), min()/max(), container queries. Reducing media query dependence."
+    },
+    {
+      "id": "yt-juxtopposed-award-css-animation",
+      "class": "expert_video_transcript",
+      "title": "Award Winning Animation With Only 20 Lines Of CSS?",
+      "publisher": "Juxtopposed",
+      "url": "https://www.youtube.com/watch?v=PkADl0HubMY",
+      "status": "discovered",
+      "notes": "CSS-only award-winning animation techniques, showing that some effects don't need JS libraries."
+    },
+    {
+      "id": "official-nextjs-view-transitions",
+      "class": "official_documentation",
+      "title": "Next.js View Transitions",
+      "publisher": "Vercel / Next.js",
+      "url": "https://nextjs.org/docs/app/building-your-application/rendering/view-transitions",
+      "status": "referenced",
+      "notes": "Experimental View Transitions API support in Next.js App Router. Uses React ViewTransition component. Progressive enhancement with graceful fallback."
+    },
+    {
+      "id": "official-gsap-matchmedia-a11y",
+      "class": "official_documentation",
+      "title": "gsap.matchMedia() for Accessibility",
+      "publisher": "GSAP",
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.matchMedia()/",
+      "status": "referenced",
+      "notes": "matchMedia() enables prefers-reduced-motion branching with automatic animation revert. Recommended pattern for accessible GSAP animations."
+    },
+    {
+      "id": "official-utopia-fluid-type",
+      "class": "official_documentation",
+      "title": "Utopia Fluid Type Scale Calculator",
+      "publisher": "Utopia",
+      "url": "https://utopia.fyi/type/calculator/",
+      "status": "referenced",
+      "notes": "Industry tool for generating fluid type scales with clamp(). Recommended by Kevin Powell and widely used in award-winning design."
+    },
+    {
+      "id": "component-origin-ui",
+      "class": "component_ecosystem",
+      "title": "Origin UI",
+      "publisher": "Origin UI",
+      "url": "https://originui.com/",
+      "status": "referenced",
+      "notes": "Clean, consistent shadcn-compatible components. Minimalist, production-ready, avoids over-animation. Good for SaaS/dashboard."
+    },
+    {
+      "id": "component-motion-primitives",
+      "class": "component_ecosystem",
+      "title": "Motion Primitives",
+      "publisher": "Motion Primitives",
+      "url": "https://motion-primitives.com/",
+      "status": "referenced",
+      "notes": "Framer Motion-based animation primitives. Purposeful, refined micro-interactions. Professional-grade motion without being distracting."
+    },
+    {
+      "id": "component-hover-dev",
+      "class": "component_ecosystem",
+      "title": "Hover.dev",
+      "publisher": "Hover.dev",
+      "url": "https://hover.dev/",
+      "status": "referenced",
+      "notes": "Interactive component ecosystem with pre-built sections (hero, testimonials, kanban). Modern, engagement-focused. Good for marketing/SaaS landing pages."
+    },
+    {
+      "id": "component-animata",
+      "class": "component_ecosystem",
+      "title": "Animata",
+      "publisher": "Animata",
+      "url": "https://animata.design/",
+      "status": "referenced",
+      "notes": "Hand-crafted creative animations and visual effects. Text effects, background animations, experimental UI patterns."
+    },
+    {
+      "id": "reddit-animation-library-2025",
+      "class": "community_signal",
+      "title": "What animation library should I use in 2025",
+      "publisher": "Reddit r/webdev",
+      "url": "https://www.reddit.com/r/webdev/comments/animation-library-2025",
+      "status": "web_search_extracted",
+      "notes": "Community consensus: CSS for simple, Motion/Framer Motion for React UI, GSAP for complex timelines/scroll. Copy-paste animated libraries (Magic UI, Aceternity) trending. Don't learn all at once."
+    },
+    {
+      "id": "reddit-shadcn-production-2025",
+      "class": "community_signal",
+      "title": "shadcn/ui production tips and customization 2025",
+      "publisher": "Reddit r/shadcn",
+      "url": "https://www.reddit.com/r/shadcn/production-tips-2025",
+      "status": "web_search_extracted",
+      "notes": "Centralize tokens in globals.css. Use next-themes for dark mode. Wrapper components for customization. shadcn CLI for lifecycle. Code ownership model is industry standard."
+    },
+    {
+      "id": "awwwards-soty-2024-igloo",
+      "class": "award_case_study",
+      "title": "Site of the Year 2024: Igloo Inc.",
+      "publisher": "Awwwards",
+      "url": "https://www.awwwards.com/sites-of-the-year-2024",
+      "status": "referenced",
+      "notes": "Immersive 3D experience, sophisticated scroll interactions. Next.js/Three.js/GSAP stack family."
+    },
+    {
+      "id": "awwwards-soty-2025-lando-norris",
+      "class": "award_case_study",
+      "title": "Site of the Year 2025: Lando Norris",
+      "publisher": "Awwwards",
+      "url": "https://www.awwwards.com/sites-of-the-year-2025",
+      "status": "referenced",
+      "notes": "Dynamic interactions, bold visual storytelling. Reinforces Next.js/Three.js/GSAP as award stack."
+    },
+    {
+      "id": "studio-darkroom-lenis",
+      "class": "award_case_study",
+      "title": "Darkroom Engineering (Lenis creators)",
+      "publisher": "Darkroom Engineering",
+      "url": "https://darkroom.engineering/",
+      "status": "referenced",
+      "notes": "Creators of Lenis. Hand-rolled WebGL, minimal optimized code, tight frame budgets. Stack: custom WebGL + GSAP + Lenis."
+    },
+    {
+      "id": "studio-locomotive-scroll",
+      "class": "award_case_study",
+      "title": "Locomotive: Innovative Digital Experiences",
+      "publisher": "Locomotive",
+      "url": "https://locomotive.ca/",
+      "status": "referenced",
+      "notes": "Creators of Locomotive Scroll. Meaningful digital experiences, scroll-driven interactions as a signature."
+    },
+    {
+      "id": "studio-lusion-3d",
+      "class": "award_case_study",
+      "title": "Lusion: Real-time 3D Interactive Experiences",
+      "publisher": "Lusion",
+      "url": "https://lusion.co/",
+      "status": "referenced",
+      "notes": "Custom WebGL systems, 3D craft, and animation logic from scratch. Frequently Awwwards recognized."
+    },
+    {
+      "id": "analysis-linear-design",
+      "class": "design_analysis",
+      "title": "Linear App Design System Analysis",
+      "publisher": "Multiple (LogRocket, UX Design CC, Eleken)",
+      "url": "https://logrocket.com/blog/linear-design",
+      "status": "web_search_extracted",
+      "notes": "Linear principles: clarity/speed/logic over decoration. 8px spacing. Bold typography, high contrast. Keyboard-first. Modular components. Goal-oriented dashboards. Actionable insights, flexible filtering."
+    },
+    {
+      "id": "reference-wcag-animation-a11y",
+      "class": "official_documentation",
+      "title": "WCAG 2.2 Animation Accessibility Guidelines",
+      "publisher": "W3C / web.dev / GSAP",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html",
+      "status": "web_search_extracted",
+      "notes": "WCAG 2.3.3: users must be able to disable non-essential animation. Text splitting breaks screen readers; use aria-label on parent, aria-hidden on split spans. gsap.matchMedia() for reduced-motion branching."
+    },
+    {
+      "id": "reference-typography-trends-2025",
+      "class": "design_analysis",
+      "title": "Typography Trends in Award-Winning Web Design 2024-2025",
+      "publisher": "Awwwards, Typewolf, Reddit, design blogs",
+      "url": "https://www.awwwards.com/typography-trends",
+      "status": "web_search_extracted",
+      "notes": "Most common fonts: Inter (UI standard), Satoshi (modern sans), PP Neue Montreal (grotesk). Trending: high-contrast pairings (grotesk + serif), variable fonts as standard, fluid/kinetic typography, character-first minimalism. Tools: Utopia.fyi for fluid type scales."
+    },
+    {
+      "id": "reference-animation-bundle-performance",
+      "class": "official_documentation",
+      "title": "Animation Library Bundle Size & Performance Comparison",
+      "publisher": "Multiple (web.dev, GSAP docs, community analysis)",
+      "url": "https://gsap.com/docs/v3/",
+      "status": "web_search_extracted",
+      "notes": "GSAP core ~23KB gzip. Framer Motion ~34-46KB gzip. React Spring ~18KB. Motion (formerly Motion One) ~2.3KB. Use modular imports, lazy loading with next/dynamic, avoid animating LCP elements, stick to transform/opacity."
+    },
+    {
+      "id": "reference-view-transitions-nextjs",
+      "class": "official_documentation",
+      "title": "View Transitions API in Next.js",
+      "publisher": "Next.js, Chrome DevTools team, CSS Tricks",
+      "url": "https://nextjs.org/docs/app/api-reference/config/next-config-js/viewTransition",
+      "status": "web_search_extracted",
+      "notes": "Widespread browser support (Chrome, Safari 18.2+, Firefox 144+). Next.js experimental flag. React ViewTransition component. GPU-compositor performance. Progressive enhancement fallback. Shared element transitions via view-transition-name CSS."
     }
   ]
 }

@@ -1,49 +1,81 @@
+/* Dhiraj Base & Dark Mode Tokens v2
+   Based on Tailwind 4.0 / shadcn 2025 / Linear Aesthetic
+*/
+
 :root {
-  --dhiraj-bg: 248 248 245;
-  --dhiraj-fg: 20 22 25;
-  --dhiraj-muted: 102 108 116;
-  --dhiraj-line: 219 221 217;
-  --dhiraj-surface: 255 255 252;
-  --dhiraj-surface-raised: 252 252 248;
-  --dhiraj-blue: 36 99 235;
-  --dhiraj-blue-soft: 222 232 255;
-  --dhiraj-coral: 235 91 73;
-  --dhiraj-mint: 26 139 110;
-  --dhiraj-radius-sm: 4px;
-  --dhiraj-radius-md: 8px;
-  --dhiraj-shadow-soft: 0 16px 48px rgb(20 22 25 / 0.08);
-  --dhiraj-shadow-hover: 0 20px 70px rgb(20 22 25 / 0.12);
-  --dhiraj-ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
-  --dhiraj-ease-entrance: cubic-bezier(0.16, 1, 0.3, 1);
-  --dhiraj-ease-exit: cubic-bezier(0.7, 0, 0.84, 0);
-  --dhiraj-duration-micro: 160ms;
-  --dhiraj-duration-base: 240ms;
-  --dhiraj-duration-section: 560ms;
-  --dhiraj-duration-hero: 720ms;
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221.2 83.2% 53.3%;
+
+  --radius: 0.5rem; /* 8px per standard */
 }
 
 .dark {
-  --dhiraj-bg: 12 14 17;
-  --dhiraj-fg: 245 247 250;
-  --dhiraj-muted: 157 164 174;
-  --dhiraj-line: 44 49 57;
-  --dhiraj-surface: 18 21 26;
-  --dhiraj-surface-raised: 24 28 34;
-  --dhiraj-blue: 98 146 255;
-  --dhiraj-blue-soft: 25 45 82;
-  --dhiraj-coral: 255 126 103;
-  --dhiraj-mint: 76 190 153;
-  --dhiraj-shadow-soft: 0 16px 48px rgb(0 0 0 / 0.25);
-  --dhiraj-shadow-hover: 0 20px 70px rgb(0 0 0 / 0.36);
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 217.2 91.2% 59.8%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 224.3 76.3% 48%;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 1ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-    transition-duration: 1ms !important;
+/* Linear Aesthetic: Hairline Borders */
+@layer base {
+  * {
+    @apply border-border;
   }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Glassmorphism for Overlays */
+.glass {
+  @apply bg-background/80 backdrop-blur-md border border-white/10;
 }

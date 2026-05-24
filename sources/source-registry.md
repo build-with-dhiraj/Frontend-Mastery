@@ -25,10 +25,10 @@ Fetched locally with `youtube-transcript-api` on 2026-05-24.
 
 | ID | Channel | Video | Status |
 | --- | --- | --- | --- |
-| yt-olivier-top-5-web-animation | Olivier Larose | My Top 5 Techniques for Web Animation | transcript_processed |
-| yt-warp-rise-design-engineering | Warp | The Rise of Design Engineering | transcript_processed |
-| yt-syntax-gsap-cassie-evans | Syntax | GSAP: Killer Web Animations With Cassie Evans | transcript_processed |
-| yt-tim-gabe-gamified-apps | Tim Gabe | I Studied 500+ Gamified Apps | transcript_processed |
+| yt-olivier-custom-cursor-motion | Olivier Larose | How to Build a Custom Cursor with Framer Motion | transcript_processed |
+| yt-tim-gabe-world-class-design-system | Tim Gabe | How to Build a World Class Design System | transcript_processed |
+| yt-tim-gabe-secret-better-ui | Tim Gabe | The Secret to Better UI Design | transcript_processed |
+| yt-tim-gabe-master-ui-design | Tim Gabe | How to Master UI Design (Step by Step) | transcript_processed |
 | yt-olivier-web-animation-trends-2024 | Olivier Larose | Top 10 Web Animation Trends of 2024 | transcript_processed |
 | yt-olivier-top-10-resources | Olivier Larose | My Top 10 Resources for Web Animations | transcript_processed |
 | yt-olivier-floating-gallery-gsap | Olivier Larose | Build an Awwwards Floating Image Gallery using Nextjs and GSAP | transcript_processed |

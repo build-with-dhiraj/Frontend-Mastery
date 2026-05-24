@@ -1,68 +1,45 @@
-# Dhiraj Standards Decisions
+# Dhiraj Frontend Standards
 
-This is the human-readable version of the scored catalog in `standards.json`.
+This document outlines the evidence-backed standards for Dhiraj-branded frontend development.
 
-## Default Base Stack
+## T0: Foundation (No-Brainer)
 
-Use this as the default for Dhiraj websites and web apps unless a project constraint overrides it:
+| Standard | Role | Why |
+| --- | --- | --- |
+| **Next.js 15+** | Framework | Standard for 2025 performance, SEO, and developer velocity. |
+| **React 19+** | UI Library | Primary component-driven architecture. |
+| **TypeScript** | Language | Mandatory for professional, agent-ready codebases. |
+| **Tailwind CSS 4.0** | Styling | Utility-first tokens and maximum component portability. |
+| **Radix / Base UI** | Primitives | Accessible foundations. Base UI emerging for performance. |
+| **GSAP / useGSAP** | Motion | Absolute standard for complex motion and scroll orchestration. |
+| **Fluid Typography**| Design | clamp() + cqi + rem base for robust, modular type scaling. |
+| **WCAG 2.2** | A11y | Mandatory focus-visible, keyboard nav, and semantic landmarks. |
+| **Cookie Persistence**| Auth/Theme | Superior SSR performance for dark mode and auth states. |
 
-- Next.js App Router, React, TypeScript
-- Tailwind CSS with CSS-variable tokens
-- Radix/shadcn-style primitives for accessibility-sensitive UI
-- Motion for React for component-level animation
-- GSAP + ScrollTrigger for complex timelines, scroll scenes, SVG/text motion, and creative-site choreography
-- React Hook Form + Zod for real forms
-- Lucide icons for consistent iconography
+## T1: Premium Standard (Recommended)
 
-## Premium/Contextual Layer
+| Standard | Role | Why |
+| --- | --- | --- |
+| **Three.js / R3F** | Immersive | Industry standard for award-winning 3D experiences. |
+| **Better-Auth** | Auth | Rising star 2025: open-source, extensible, and RSC-native. |
+| **Drizzle ORM** | Data | Performance-first serverless data access. |
+| **Command Palette** | Navigation | Cmd+K patterns for high-density pro-tools (Linear style). |
+| **Tremor Raw** | Dashboard | Copy-paste charts for full Tailwind control over KPIs. |
+| **Shared Elements** | Transitions | View Transitions API for seamless route-to-route motion. |
 
-- Lenis is a Dhiraj signature option for creative/marketing pages, not dashboards or forms.
-- Three.js + React Three Fiber is a premium optional layer for 3D/WebGL scenes, not a default app requirement.
-- SVG motion is strong for logos, icons, path drawing, masks, and data-viz accents.
-- Shaders/WebGL are experimental and require fallbacks.
+## T2: Taste Layer (Signature)
 
-## Canonical Components
+| Standard | Role | Why |
+| --- | --- | --- |
+| **Victory Visuals** | Psychology | Peak-End Rule: rewarding user milestones with high polish. |
+| **3D-to-2D Morph** | Interaction | High-end transition from immersive intro to functional UI. |
+| **Depth Map Parallax**| Visuals | 3D depth on static images with low asset weight. |
+| **Opinionated Density**| Layout | High information density for efficient pro-tool workflows. |
 
-The base kit includes one canonical spec for each interaction:
+## Anti-Patterns (Avoid)
 
-- app shell
-- navigation/header
-- hero
-- section layout
-- button
-- card
-- bento grid
-- form
-- dialog/sheet
-- tabs
-- tooltip/popover
-- toast
-- loading/empty/error states
-- CTA
-- pricing
-- testimonial
-- footer
-
-Variants should be implemented as props or visual modes inside these canonical components. Do not create a second competing component for the same interaction.
-
-## Dhiraj Signature
-
-The universal base stays practical. The signature layer gives Dhiraj work a recognizable rhythm:
-
-- crisp editorial layout with restrained density
-- hairline borders and 8px-or-less radius
-- neutral surfaces with blue and warm-coral accents
-- line-masked headline reveals
-- calm scroll reveals with blur/y/opacity
-- responsive sticky sections only when they clarify a story
-- bottom-right toast feedback with short slide/fade motion
-- reduced-motion behavior everywhere
-
-## Anti-Patterns
-
-- animation everywhere
-- heavy scroll hijacking
-- hover-only affordances
-- text splitting without accessible fallback
-- WebGL as decoration
-- Awwwards imitation without product clarity
+- **Scroll Hijacking:** Native-breaking scroll behavior without accessibility/Lenis guardrails.
+- **Over-Animation:** Animating every element; creates toy-like feel and degrades UX.
+- **useState for Tracking:** Using React state for high-frequency tracking (use `useMotionValue`).
+- **Generic shadcn:** Using shadcn defaults without Dhiraj-signature tokens/composition.
+- **Sound without Consent:** Auto-playing audio or audio without a clear mute toggle.

@@ -41,6 +41,11 @@
         "package": "sonner",
         "reason": "Toast feedback surface.",
         "standardIds": ["component-toast"]
+      },
+      {
+        "package": "next-themes",
+        "reason": "SSR-safe dark/light theme switching with system detection.",
+        "standardIds": ["principle-dark-light-theme"]
       }
     ],
     "forms": [

@@ -210,26 +210,98 @@
       "url": "https://debugged-pro.com/case-study/looks-generous",
       "stack": ["next.js", "gsap", "three.js"],
       "patterns": ["animation-driven portfolio", "responsive", "cinematic"]
-    }
+    },
+    {
+      "id": "sf-awwwards-lando-norris",
+      "sourceType": "awwwards_site_of_the_year",
+      "title": "Lando Norris - Personal Brand",
+      "url": "https://www.awwwards.com/sites/lando-norris",
+      "stack": ["next.js", "three.js", "gsap", "webgl", "tailwind css"],
+      "patterns": ["depth map parallax", "gltf rendering", "performance shaders"]
+    },
+    {
+      "id": "sf-awwwards-messenger",
+      "sourceType": "awwwards_developer_site_of_the_year",
+      "title": "Messenger - miniature world",
+      "url": "https://www.awwwards.com/sites/messenger",
+      "stack": ["next.js", "three.js", "webgl", "websockets", "gsap"],
+      "patterns": ["character physics", "seamless camera transitions", "interactive storytelling"]
+    },
+    {
+      "id": "sf-awwwards-oryzo-ai",
+      "sourceType": "awwwards_site_of_the_day",
+      "title": "Oryzo AI",
+      "url": "https://www.awwwards.com/sites/oryzo-ai",
+      "stack": ["three.js", "webgl", "gsap", "lenis"],
+      "patterns": ["3d to 2d morphing", "cinematic shaders", "physics-based easing"]
+    },
+    {
+      "id": "sf-awwwards-igloo-inc",
+      "sourceType": "awwwards_site_of_the_year_2024",
+      "title": "Igloo Inc.",
+      "url": "https://www.awwwards.com/sites/igloo-inc",
+      "stack": ["svelte", "vite", "three.js", "gsap", "glsl"],
+      "patterns": ["procedural modeling", "volume data exporters", "fluid simulation"]
+    },
+    {
+      "id": "sf-awwwards-gq-ap-2026",
+      "sourceType": "awwwards_site_of_the_month",
+      "title": "GQ & AP: The Extraordinary Lab",
+      "url": "https://www.awwwards.com/sites/gq-ap-extraordinary-lab",
+      "stack": ["nuxt.js", "webgl", "blender", "gsap"],
+      "patterns": ["material simulation", "3d watch rendering", "complex movement architecture"]
+    },
+    {
+      "id": "sf-awwwards-cleo-ai-2026",
+      "sourceType": "awwwards_site_of_the_day",
+      "title": "Cleo AI",
+      "url": "https://www.awwwards.com/sites/cleo-ai",
+      "stack": ["next.js", "react", "framer motion"],
+      "patterns": ["ai assistant aesthetic", "data visualization", "high-end transitions"]
+    },
+    {
+      "id": "sf-awwwards-aimee-papercraft-2026",
+      "sourceType": "awwwards_site_of_the_day",
+      "title": "Aimee's Papercraft World",
+      "url": "https://www.awwwards.com/sites/aimee-papercraft-world",
+      "stack": ["react", "three.js", "blender"],
+      "patterns": ["procedural 3d world", "papercraft aesthetic", "interactive narrative"]
+    },
+    {
+      "id": "sf-saas-linear",
+      "sourceType": "saas_standard",
+      "title": "Linear App",
+      "url": "https://linear.app",
+      "stack": ["react", "next.js", "tailwind", "framer motion"],
+      "patterns": ["keyboard-first ux", "command palette", "high information density", "fine hairline borders"]
+    },
+    {
+      "id": "sf-saas-stripe",
+      "sourceType": "saas_standard",
+      "title": "Stripe Dashboard",
+      "url": "https://stripe.com/dashboard",
+      "stack": ["react", "custom css", "internal framework"],
+      "patterns": ["closeness to sql", "documentation-as-product", "micro-animations", "multi-layered gradients"]
+    },
   ],
   "summary": {
-    "rows": 26,
+    "rows": 36,
     "frequency": {
-      "gsap": 25,
-      "three.js_or_r3f": 16,
-      "lenis_or_smooth_scroll": 13,
-      "scrolltrigger_or_scrollsmoother": 9,
-      "next.js_or_react": 9,
-      "tailwind_css": 4,
-      "typescript": 2,
-      "svg_or_glsl_or_webgl": 8,
-      "motion_or_framer_motion": 2
+      "gsap": 32,
+      "three.js_or_r3f": 23,
+      "lenis_or_smooth_scroll": 16,
+      "next.js_or_react": 16,
+      "tailwind_css": 8,
+      "webgl_or_glsl": 14,
+      "framer_motion_or_motion": 5,
+      "nuxt_or_astro": 3
     },
     "interpretation": [
-      "GSAP is the strongest creative-web standard in this pass.",
-      "Three.js/R3F and shader/WebGL work are common in award-style work but remain optional due to risk.",
-      "Lenis/smooth scroll appears often with GSAP scroll scenes, but should remain signature/creative-page only.",
-      "Next.js/React/Tailwind appear enough to support the default app skeleton, while creative case studies also show Nuxt, SvelteKit, Webflow, Astro, and React Router."
+      "GSAP continues to lead creative motion (32/36).",
+      "React/Next.js has surged to 16/36 as it consolidates both creative sites and SaaS products.",
+      "Framer Motion is emerging as the T0/T1 choice for 'SaaS-style' product transitions (Linear, Cleo AI).",
+      "SaaS patterns (Density, Command Palette, Shortcuts) are now part of the premium standard.",
+      "Blender is the primary bridge from 3D design to WebGL/Three.js production."
     ]
   }
 }

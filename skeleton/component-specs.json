@@ -176,6 +176,36 @@
       "states": ["default", "hover", "focus", "active", "disabled", "mobile", "desktop", "reduced-motion"],
       "motionIds": ["scroll-reveal"],
       "visual": "Quiet, structured, scannable; never a second hero."
+    },
+    {
+      "id": "skeleton-loading",
+      "interactionId": "feedback.skeleton",
+      "standardIds": ["component-skeleton-shimmer", "principle-performance-budget"],
+      "layer": "base",
+      "purpose": "Placeholder shapes matching expected content layout during data fetching.",
+      "states": ["default", "mobile", "desktop", "reduced-motion"],
+      "motionIds": [],
+      "visual": "Gray shapes matching final content dimensions. Shimmer gradient animation via CSS. Reduced-motion: static gray blocks without shimmer. Must prevent CLS."
+    },
+    {
+      "id": "marquee-ticker",
+      "interactionId": "section.marquee",
+      "standardIds": ["component-marquee-ticker", "motion-reduced-motion"],
+      "layer": "signature",
+      "purpose": "Infinitely scrolling horizontal strip for logos, testimonials, or text as social proof.",
+      "states": ["default", "hover", "mobile", "desktop", "reduced-motion"],
+      "motionIds": [],
+      "visual": "CSS animation with requestAnimationFrame fallback. Pause on hover. Reduced-motion: static grid or single row. No GSAP needed for basic marquee."
+    },
+    {
+      "id": "command-palette",
+      "interactionId": "navigation.command-palette",
+      "standardIds": ["component-command-palette", "pkg-radix-shadcn"],
+      "layer": "base",
+      "purpose": "Global search/action modal triggered by keyboard shortcut (Cmd+K / Ctrl+K).",
+      "states": ["default", "focus", "loading", "empty", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["modal-transition"],
+      "visual": "Centered modal with search input, categorized results, recent items. Focus trap via Radix Dialog. Keyboard navigation for results. Escape to close."
     }
   ]
 }

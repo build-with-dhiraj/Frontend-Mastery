@@ -112,6 +112,17 @@
       "to": "Lenis scroll only on creative pages",
       "reducedMotion": "native browser scroll always",
       "notes": "Disable for dashboards, forms, data grids, dialogs, and touch-heavy workflows."
+    },
+    {
+      "id": "page-transition",
+      "standardIds": ["motion-page-transition", "motion-reduced-motion"],
+      "layer": "signature",
+      "durationMs": 300,
+      "easing": "standard",
+      "from": "old page content",
+      "to": "new page content with cross-fade and optional shared element morph",
+      "reducedMotion": "instant navigation, no animation",
+      "notes": "Use native View Transitions API with Next.js experimental.viewTransition. React ViewTransition component for declarative control. view-transition-name CSS for shared elements. Progressive enhancement: graceful fallback to instant navigation."
     }
   ]
 }
