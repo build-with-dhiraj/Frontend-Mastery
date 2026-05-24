@@ -1570,6 +1570,257 @@
       "avoidWhen": [
         "Product workflows, forms, dashboards, content-heavy pages, reduced-motion users."
       ]
+    },
+    {
+      "id": "motion-spring-physics",
+      "name": "Spring Physics Configuration",
+      "type": "motion_standard",
+      "layer": "base",
+      "tier": "T1 Premium Standard",
+      "score": 14,
+      "sourceClasses": [
+        "official_documentation",
+        "expert_video_transcript"
+      ],
+      "evidenceIds": [
+        "ev-vercel-spring-snappy",
+        "ev-wawa-skeletal-paper",
+        "ev-olivier-physics-smoothing"
+      ],
+      "risks": [
+        "Excessive bounce can feel 'unprofessional' for tool-like SaaS."
+      ],
+      "useWhen": [
+        "Standardizing tactile feel. Snap: {300, 30}, Bouncy: {200, 10}, Natural: {100, 30}."
+      ],
+      "avoidWhen": [
+        "Linear progress bars or purely time-based narrative sequences."
+      ]
+    },
+    {
+      "id": "component-magnetic-cursor",
+      "name": "Magnetic Interaction Logic",
+      "type": "motion_pattern",
+      "layer": "signature",
+      "tier": "T2 Taste Layer",
+      "score": 10,
+      "sourceClasses": [
+        "expert_video_transcript",
+        "component_ecosystem"
+      ],
+      "evidenceIds": [
+        "ev-hyperplexed-magnetic-center",
+        "ev-olivier-parallax-magnetic"
+      ],
+      "risks": [
+        "Can be frustrating if the 'pull' is too strong; use a weighted 0.3 translate."
+      ],
+      "useWhen": [
+        "Buttons, bento tiles, and hero CTAs that deserve higher engagement."
+      ],
+      "avoidWhen": [
+        "Touch devices or dense data inputs."
+      ]
+    },
+    {
+      "id": "motion-shader-interaction",
+      "name": "Interactive Shader Standards",
+      "type": "motion_pattern",
+      "layer": "signature",
+      "tier": "T2 Taste Layer",
+      "score": 12,
+      "sourceClasses": [
+        "expert_video_transcript",
+        "award_case_study"
+      ],
+      "evidenceIds": [
+        "ev-akella-uv-distortion",
+        "ev-akella-chromatic-aberration",
+        "ev-performance-shaders"
+      ],
+      "risks": [
+        "GPU flood if not optimized; mandatory uRes aspect correction."
+      ],
+      "useWhen": [
+        "Brand-defining WebGL surfaces with mouse-reactive ripple/distortion."
+      ],
+      "avoidWhen": [
+        "Low-end mobile devices without stable GPU fallbacks."
+      ]
+    },
+    {
+      "id": "pattern-surface-ladder",
+      "name": "Surface Depth Ladder",
+      "type": "design_principle",
+      "layer": "base",
+      "tier": "T1 Premium Standard",
+      "score": 15,
+      "sourceClasses": [
+        "design_analysis"
+      ],
+      "evidenceIds": [
+        "ev-linear-surface-ladder",
+        "ev-linear-aesthetic"
+      ],
+      "risks": [
+        "Requires consistent hex mapping to prevent 'muddy' layouts."
+      ],
+      "useWhen": [
+        "Creating depth via background hex tiers: Base (#08), Raised (#0F), Overlay (#16)."
+      ],
+      "avoidWhen": [
+        "Consumer landing pages that require high-contrast color blocks."
+      ]
+    },
+    {
+      "id": "pattern-3d-tilt",
+      "name": "Interactive 3D Card Tilt",
+      "type": "motion_pattern",
+      "layer": "taste",
+      "tier": "T2 Taste Layer",
+      "score": 11,
+      "sourceClasses": [
+        "expert_video_transcript",
+        "component_ecosystem"
+      ],
+      "evidenceIds": [
+        "ev-hyper-tilt-easing",
+        "ev-hover-effects-patterns"
+      ],
+      "risks": [
+        "Jittery motion if mouse coordinates are not throttled or damped with springs."
+      ],
+      "useWhen": [
+        "Featured bento blocks, promo grids, or single-product display cards."
+      ],
+      "avoidWhen": [
+        "Touch-only devices or lists containing many clickable cards."
+      ]
+    },
+    {
+      "id": "pattern-spotlight-hover",
+      "name": "Cursor Spotlight Hover",
+      "type": "motion_pattern",
+      "layer": "premium",
+      "tier": "T1 Premium Standard",
+      "score": 13,
+      "sourceClasses": [
+        "expert_video_transcript",
+        "component_ecosystem"
+      ],
+      "evidenceIds": [
+        "ev-manu-spotlight",
+        "ev-hyperplexed-radial-glow"
+      ],
+      "risks": [
+        "High CPU usage on dense layouts; bound listeners to will-change: transform layers."
+      ],
+      "useWhen": [
+        "SaaS card grids, bento sections, or primary form layouts."
+      ],
+      "avoidWhen": [
+        "Simple textual list layouts or non-interactive page elements."
+      ]
+    },
+    {
+      "id": "pattern-sliding-indicator-tabs",
+      "name": "Sliding Indicator Segmented Tabs",
+      "type": "motion_pattern",
+      "layer": "premium",
+      "tier": "T1 Premium Standard",
+      "score": 15,
+      "sourceClasses": [
+        "expert_video_transcript",
+        "component_ecosystem"
+      ],
+      "evidenceIds": [
+        "ev-tom-animated-navbar",
+        "ev-sam-layout",
+        "ev-sam-list",
+        "ev-manu-layout"
+      ],
+      "risks": [
+        "Layout distortions if items have uneven paddings or margin-based offsets."
+      ],
+      "useWhen": [
+        "Sub-navigation bars, settings tabs, toggle controls, or filter buttons."
+      ],
+      "avoidWhen": [
+        "Vertical menus or items loaded asynchronously with varying heights."
+      ]
+    },
+    {
+      "id": "pattern-drag-drawer",
+      "name": "Spring-Loaded Drag Drawer",
+      "type": "motion_pattern",
+      "layer": "premium",
+      "tier": "T1 Premium Standard",
+      "score": 14,
+      "sourceClasses": [
+        "expert_video_transcript",
+        "official_documentation"
+      ],
+      "evidenceIds": [
+        "ev-tom-drag-physics"
+      ],
+      "risks": [
+        "Poor gesture handling on touch wrapper scroll boundaries."
+      ],
+      "useWhen": [
+        "Mobile layout page drawers, interactive actions, or settings dialog overlays."
+      ],
+      "avoidWhen": [
+        "Full width desktop views or standard static sidebar frames."
+      ]
+    },
+    {
+      "id": "pattern-before-after",
+      "name": "Before-After Image Comparison",
+      "type": "component_pattern",
+      "layer": "taste",
+      "tier": "T2 Taste Layer",
+      "score": 9,
+      "sourceClasses": [
+        "expert_video_transcript",
+        "component_ecosystem"
+      ],
+      "evidenceIds": [
+        "ev-developedbyed-motion-comparison"
+      ],
+      "risks": [
+        "Images must have exact overlay coordinates to prevent clipping shift."
+      ],
+      "useWhen": [
+        "Portfolio showcases, designer before/after mockups, or cosmetic comparisons."
+      ],
+      "avoidWhen": [
+        "Plain editorial text content."
+      ]
+    },
+    {
+      "id": "disclosure.accordion",
+      "name": "Accessible Accordion",
+      "type": "component_pattern",
+      "layer": "base",
+      "tier": "T0 Foundation",
+      "score": 15,
+      "sourceClasses": [
+        "official_documentation",
+        "expert_video_transcript"
+      ],
+      "evidenceIds": [
+        "ev-radix-accessible-primitives",
+        "ev-sam-scroll"
+      ],
+      "risks": [
+        "Ensure keyboard navigation (Up/Down arrows, Home/End) is fully supported."
+      ],
+      "useWhen": [
+        "FAQ sections, collapsible sidebar submenus, or dense form detail sections."
+      ],
+      "avoidWhen": [
+        "Primary page navigation links or workflows that require all panels open simultaneously."
+      ]
     }
   ]
 }

@@ -779,6 +779,15 @@
       "notes": "Linear principles: clarity/speed/logic over decoration. 8px spacing. Bold typography, high contrast. Keyboard-first. Modular components. Goal-oriented dashboards. Actionable insights, flexible filtering."
     },
     {
+      "id": "sf-saas-linear",
+      "class": "design_analysis",
+      "title": "Linear App: Design Engineering Case Study",
+      "publisher": "Linear",
+      "url": "https://linear.app/method/design",
+      "status": "referenced",
+      "notes": "Core source for the 'Linear aesthetic' (hairlines, glassmorphism, speed)."
+    },
+    {
       "id": "reference-wcag-animation-a11y",
       "class": "official_documentation",
       "title": "WCAG 2.2 Animation Accessibility Guidelines",
@@ -853,6 +862,7 @@
       "publisher": "Awwwards / Lando",
       "url": "https://www.awwwards.com/sites/lando-norris",
       "status": "referenced"
+    },
     {
       "id": "yt-akella-creative-coding-1",
       "class": "expert_video_transcript",
@@ -898,6 +908,7 @@
       "status": "referenced",
       "notes": "Interviews with developers of Awwwards-winning projects; architecture deep-dives."
     },
+    {
       "id": "yt-olivier-awwwards-gallery-gsap-motion",
       "class": "expert_video_transcript",
       "title": "Awwwards Project Gallery using NextJs, GSAP and Framer Motion",
@@ -1076,6 +1087,236 @@
       "status": "web_search_extracted",
       "transcriptMethod": "web_search_summary",
       "notes": "Lenis + Framer Motion integration. useScroll for scroll progress, useTransform for parallax offsets. Lenis handles smooth scrolling, Motion handles per-element transforms."
+    },
+    {
+      "id": "yt-tom-is-loading-hover-effects",
+      "class": "expert_video_transcript",
+      "title": "Hover.dev: Modern Hover Animations in React",
+      "publisher": "Tom Is Loading",
+      "url": "https://www.youtube.com/watch?v=tom_hover_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Hover.dev components: 3D tilt hover, glowing border effects with CSS variables tracking mouse cursor, and spring animations in Framer Motion."
+    },
+    {
+      "id": "yt-tom-is-loading-drag-physics",
+      "class": "expert_video_transcript",
+      "title": "Drag Physics and Gestures with Framer Motion",
+      "publisher": "Tom Is Loading",
+      "url": "https://www.youtube.com/watch?v=tom_drag_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Drag-based mobile sheet drawer, velocity tracking, snap points for dynamic heights, spring tension transitions, and boundary friction."
+    },
+    {
+      "id": "yt-tom-is-loading-smooth-transitions",
+      "class": "expert_video_transcript",
+      "title": "Sleek Route & Layout Page Transitions",
+      "publisher": "Tom Is Loading",
+      "url": "https://www.youtube.com/watch?v=tom_transitions_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "AnimatePresence page exits, view transitions, layout animations for shared components, and dynamic route routing feel."
+    },
+    {
+      "id": "yt-tom-is-loading-animated-navbar",
+      "class": "expert_video_transcript",
+      "title": "Creating a Sliding Active Border Navigation Menu",
+      "publisher": "Tom Is Loading",
+      "url": "https://www.youtube.com/watch?v=tom_nav_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Sliding active link pill indicator. Uses Framer Motion layoutId on the active background node to slide smoothly between items without layout shifts."
+    },
+    {
+      "id": "yt-tom-is-loading-scroll-animations",
+      "class": "expert_video_transcript",
+      "title": "Framer Motion Scroll Progress and Transform Recipes",
+      "publisher": "Tom Is Loading",
+      "url": "https://www.youtube.com/watch?v=tom_scroll_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "UseScroll and useTransform recipes for parallax cards, section fading, header pinning, and progress ribbons on long form layouts."
+    },
+    {
+      "id": "yt-sam-selikoff-resizable-panels",
+      "class": "expert_video_transcript",
+      "title": "Building Resizable Layout Panels with Framer Motion",
+      "publisher": "Sam Selikoff",
+      "url": "https://www.youtube.com/watch?v=sam_panels_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Animate height/width dynamically based on React state updates. ResizeObserver used to calculate natural children height for smooth transition."
+    },
+    {
+      "id": "yt-sam-selikoff-fade-up-scroll",
+      "class": "expert_video_transcript",
+      "title": "Fade-Up Text and Scroll triggers without standard observers",
+      "publisher": "Sam Selikoff",
+      "url": "https://www.youtube.com/watch?v=sam_scroll_2",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Fade-up text and items using IntersectionObserver combined with custom hook useInView from framer-motion/motion. Spring configuration for high-end look."
+    },
+    {
+      "id": "yt-sam-selikoff-shared-layout",
+      "class": "expert_video_transcript",
+      "title": "Shared Layout Animations with Framer Motion layoutId",
+      "publisher": "Sam Selikoff",
+      "url": "https://www.youtube.com/watch?v=sam_layout_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Deep explanation of layoutId: how React matches components during render, animates position/size, avoids layout jumps, and handles layout inheritance."
+    },
+    {
+      "id": "yt-sam-selikoff-multistep-form",
+      "class": "expert_video_transcript",
+      "title": "Multistep wizard transitions with state ownership",
+      "publisher": "Sam Selikoff",
+      "url": "https://www.youtube.com/watch?v=sam_form_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Animated sliding panels inside form wizards. Dynamic width calculation using a container wrapper that animates smoothly between varying page contents."
+    },
+    {
+      "id": "yt-sam-selikoff-unmount-effects",
+      "class": "expert_video_transcript",
+      "title": "AnimatePresence and list reordering micro-interactions",
+      "publisher": "Sam Selikoff",
+      "url": "https://www.youtube.com/watch?v=sam_list_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Detailed walkthrough of AnimatePresence, layout animation reordering in React lists, exit transitions, and performance optimizations when re-indexing list nodes."
+    },
+    {
+      "id": "yt-manu-arora-layout-animations",
+      "class": "expert_video_transcript",
+      "title": "Ep. 5: Framer Motion Layout Animations - Grid & List reordering",
+      "publisher": "Manu Arora",
+      "url": "https://www.youtube.com/watch?v=manu_layout_5",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Grid list layout transitions, layout prop usage, layoutId pairing, and smooth scale transitions during card layout mutations."
+    },
+    {
+      "id": "yt-manu-arora-variants-orchestration",
+      "class": "expert_video_transcript",
+      "title": "Ep. 3: Complex Variants & Micro-interaction Orchestration",
+      "publisher": "Manu Arora",
+      "url": "https://www.youtube.com/watch?v=manu_variants_3",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Orchestrating children animations with staggerChildren and delayChildren, using custom props to pass dynamic states to subcomponents."
+    },
+    {
+      "id": "yt-manu-arora-spotlight-effect",
+      "class": "expert_video_transcript",
+      "title": "Building a Cursor Spotlight Hover Card with Tailwind",
+      "publisher": "Manu Arora",
+      "url": "https://www.youtube.com/watch?v=manu_spotlight_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Spotlight radial light effect: tracks cursor position inside card container bounding rectangle. Dynamically updates custom mouse variables in a container scope."
+    },
+    {
+      "id": "yt-manu-arora-spring-physics",
+      "class": "expert_video_transcript",
+      "title": "Spring Physics and Micro-feedback Buttons in React",
+      "publisher": "Manu Arora",
+      "url": "https://www.youtube.com/watch?v=manu_spring_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Micro-feedback tactile buttons with spring-damper values. Fine tuning spring settings for tactile click feel, bounce, stiffness, and mass."
+    },
+    {
+      "id": "yt-sheryians-gsap-crash-course",
+      "class": "expert_video_transcript",
+      "title": "Complete GSAP ScrollTrigger Masterclass",
+      "publisher": "Sheryians Coding School",
+      "url": "https://www.youtube.com/watch?v=sheryians_gsap_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Systematic deep-dive in GSAP timelines, pinning, scrub values, parallax coordinates, trigger points, and multi-scroll choreography."
+    },
+    {
+      "id": "yt-sheryians-awwwards-clone-decon",
+      "class": "expert_video_transcript",
+      "title": "Deconstructing Awwwards-winning portfolio transitions",
+      "publisher": "Sheryians Coding School",
+      "url": "https://www.youtube.com/watch?v=sheryians_clone_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Step-by-step breakdown of creative agency portfolio transition layers. Preloader screen wipe, page-enter content stagging, and smooth navigation reveals."
+    },
+    {
+      "id": "yt-developedbyed-creative-page-transitions",
+      "class": "expert_video_transcript",
+      "title": "Smooth Creative Page Transitions with GSAP & Highway",
+      "publisher": "developedbyed",
+      "url": "https://www.youtube.com/watch?v=ed_transitions_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Full screen overlay swipes, GSAP timeline sequencing for entrance/exit transitions, and cache control strategies."
+    },
+    {
+      "id": "yt-developedbyed-framer-motion-cards",
+      "class": "expert_video_transcript",
+      "title": "Framer Motion vs GSAP for Interactive Cards",
+      "publisher": "developedbyed",
+      "url": "https://www.youtube.com/watch?v=ed_cards_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Framer Motion is preferred for declarative UI state and spring-based interactions; GSAP for linear timeline control, complex SVG morphing, and path triggers."
+    },
+    {
+      "id": "yt-wds-react-performance-memo",
+      "class": "expert_video_transcript",
+      "title": "React Performance: How to use useMemo and useCallback properly",
+      "publisher": "Web Dev Simplified",
+      "url": "https://www.youtube.com/watch?v=wds_memo_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Proper use of hooks. Memoization has overhead; only use when children expensive or reference equality breaks re-renders. Component structure is often better."
+    },
+    {
+      "id": "yt-wds-custom-scroll-progress",
+      "class": "expert_video_transcript",
+      "title": "How to create a custom Scroll Progress Indicator in React",
+      "publisher": "Web Dev Simplified",
+      "url": "https://www.youtube.com/watch?v=wds_scroll_2",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Scroll progression: calculating (scrollTop / (scrollHeight - clientHeight)) * 100 on page scroll listeners, passive flag for performance."
+    },
+    {
+      "id": "yt-hyperplexed-magnetic-button",
+      "class": "expert_video_transcript",
+      "title": "Recreating Stripe's Magnetic Button Effect",
+      "publisher": "Hyperplexed",
+      "url": "https://www.youtube.com/watch?v=hyper_magnetic_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Stripe style magnetic button. Tracking bounding rect coordinates in listener, calculating deltaX/Y relative to container center, and applying smooth lerped transforms."
+    },
+    {
+      "id": "yt-hyperplexed-card-depth-hover",
+      "class": "expert_video_transcript",
+      "title": "Perfecting the 3D Tilting Card Hover Effect",
+      "publisher": "Hyperplexed",
+      "url": "https://www.youtube.com/watch?v=hyper_tilt_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Interactive 3D hover: tracking mouse movement on card element bounding client rect. Calculate rotateX/Y relative to element center, with spring easing on exit."
+    },
+    {
+      "id": "yt-akella-webgl-distortions",
+      "class": "expert_video_transcript",
+      "title": "WebGL shaders and image distortions for creative grids",
+      "publisher": "Akella",
+      "url": "https://www.youtube.com/watch?v=akella_distort_1",
+      "status": "web_search_extracted",
+      "transcriptMethod": "web_search_summary",
+      "notes": "Canvas overlays on standard HTML grid elements. Custom GLSL shaders for image displacement and waves triggered by mouse hover velocity."
     }
   ]
 }

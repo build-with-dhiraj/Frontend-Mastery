@@ -123,6 +123,61 @@
       "to": "new page content with cross-fade and optional shared element morph",
       "reducedMotion": "instant navigation, no animation",
       "notes": "Use native View Transitions API with Next.js experimental.viewTransition. React ViewTransition component for declarative control. view-transition-name CSS for shared elements. Progressive enhancement: graceful fallback to instant navigation."
+    },
+    {
+      "id": "magnetic-attraction",
+      "standardIds": ["component-magnetic-cursor", "pkg-motion", "motion-reduced-motion"],
+      "layer": "signature",
+      "durationMs": 350,
+      "easing": "spring-physics",
+      "from": "resting center point of trigger element",
+      "to": "translated offset mapping to cursor delta, capped at 35px threshold",
+      "reducedMotion": "no translation, standard hover state colors only",
+      "notes": "Stiffness: 80, damping: 15, mass: 0.8. Return to center on cursor exit."
+    },
+    {
+      "id": "3d-spring-tilt",
+      "standardIds": ["pattern-3d-tilt", "pkg-motion", "motion-reduced-motion"],
+      "layer": "signature",
+      "durationMs": 400,
+      "easing": "spring-physics",
+      "from": "flat card surface",
+      "to": "3D rotated surface along X/Y axes proportional to cursor offset, capped at 12deg",
+      "reducedMotion": "flat card hover style without 3D rotation",
+      "notes": "Stiffness: 120, damping: 25. Couple with perspective wrapper and will-change: transform."
+    },
+    {
+      "id": "accordion-expand-collapse",
+      "standardIds": ["pkg-radix-shadcn", "pkg-motion", "motion-reduced-motion"],
+      "layer": "base",
+      "durationMs": 240,
+      "easing": "snappy",
+      "from": "height: 0, opacity: 0, overflow: hidden",
+      "to": "height: auto, opacity: 1",
+      "reducedMotion": "instant swap height: auto/0, opacity: 1/0, duration 0s",
+      "notes": "Framer Motion animate={{ height: isOpen ? 'auto' : 0 }}. Prevent content clipping jumps."
+    },
+    {
+      "id": "tab-active-slide",
+      "standardIds": ["pattern-sliding-indicator-tabs", "pkg-motion", "motion-reduced-motion"],
+      "layer": "signature",
+      "durationMs": 280,
+      "easing": "spring-physics",
+      "from": "background active indicator container position",
+      "to": "slid to new selected trigger item bounding rect layout",
+      "reducedMotion": "instant background highlight toggle without slide animation",
+      "notes": "Stiffness: 220, damping: 28. Standard layoutId transition in Framer Motion."
+    },
+    {
+      "id": "drawer-drag-snap",
+      "standardIds": ["pattern-drag-drawer", "pkg-motion", "motion-reduced-motion"],
+      "layer": "signature",
+      "durationMs": 350,
+      "easing": "spring-physics",
+      "from": "y: 100% viewport bottom sheet placement",
+      "to": "y: 0% active docked layout. Supports dragging down to dismiss.",
+      "reducedMotion": "standard mobile modal bottom-up translation on enter, instant exit",
+      "notes": "Stiffness: 200, damping: 25. Snap coordinates at 20%, 50%, and 90% heights. Drag constraints: top: 0, bottom: viewportHeight."
     }
   ]
 }

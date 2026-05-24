@@ -911,7 +911,9 @@
         "pkg-motion",
         "principle-performance-budget"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     },
     {
       "id": "ev-marquee-implementation",
@@ -922,7 +924,9 @@
         "pkg-gsap",
         "pkg-lenis"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     },
     {
       "id": "ev-locomotive-v5-is-lenis",
@@ -933,7 +937,9 @@
         "pkg-gsap",
         "principle-performance-budget"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     },
     {
       "id": "ev-micro-interactions-5-secrets",
@@ -944,7 +950,9 @@
         "principle-product-design",
         "motion-reduced-motion"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     },
     {
       "id": "ev-landing-page-structure",
@@ -955,7 +963,9 @@
         "principle-signature-layer",
         "principle-typography-scale"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     },
     {
       "id": "ev-vw-font-accessibility-violation",
@@ -966,7 +976,9 @@
         "principle-wcag-compliance",
         "principle-responsive-breakpoints"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     },
     {
       "id": "ev-css-clamp-min-max-magic",
@@ -976,7 +988,9 @@
         "principle-responsive-breakpoints",
         "principle-typography-scale"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     },
     {
       "id": "ev-uiux-fundamentals-compressed",
@@ -987,7 +1001,9 @@
         "principle-signature-layer",
         "principle-product-design"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     },
     {
       "id": "ev-3d-perfect-duo-gsap-threejs",
@@ -997,7 +1013,9 @@
         "pkg-gsap",
         "pkg-three-r3f"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     },
     {
       "id": "ev-hover-effects-patterns",
@@ -1007,7 +1025,9 @@
         "motion-card-hover-depth",
         "principle-performance-budget"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     },
     {
       "id": "ev-svg-animation-css-first",
@@ -1016,7 +1036,9 @@
       "supports": [
         "principle-performance-budget"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     },
     {
       "id": "ev-bruno-simon-immersion-philosophy",
@@ -1026,17 +1048,500 @@
         "pkg-three-r3f",
         "principle-signature-layer"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     },
     {
       "id": "ev-react-performance-measure-first",
       "sourceId": "yt-wds-react-performance",
-      "claim": "React performance: measure first with DevTools Profiler. Re-renders aren't inherently bad (<16ms is fine). memo/useMemo/useCallback are surgical tools with memory cost \u2014 don't use by default. Component composition > memoization. Avoid premature optimization. React Compiler reduces manual memo need.",
+      "claim": "React performance: measure first with DevTools Profiler. Re-renders aren't inherently bad (<16ms is fine). memo/useMemo/useCallback are surgical tools with memory cost — don't use by default. Component composition > memoization. Avoid premature optimization. React Compiler reduces manual memo need.",
       "supports": [
         "principle-performance-budget",
         "pkg-react"
       ],
-      "confidence": "strong"
+      "confidence": "strong",
+      "risk": "low",
+      "sourceClass": "expert_video_transcript"
+    },
+    {
+      "id": "ev-akella-uv-distortion",
+      "sourceId": "yt-akella-creative-coding-1",
+      "claim": "High-end WebGL ripple/distortion effects rely on distance-based UV math in fragment shaders to offset texture sampling coordinates relative to cursor position.",
+      "supports": [
+        "pattern-shaders",
+        "motion-mouse-follow"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-akella-chromatic-aberration",
+      "sourceId": "yt-akella-creative-coding-1",
+      "claim": "A cinematic 'analog' feel is achieved by slightly offsetting R, G, and B channel sampling in post-processing shaders.",
+      "supports": [
+        "pattern-shaders"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-wrong-akram-camera-state",
+      "sourceId": "yt-wrong-akram-spatial-ui",
+      "claim": "World-class 3D navigation treats the camera as a state machine, using lerp or damp within the useFrame loop for smooth, cinematic transitions between viewpoints.",
+      "supports": [
+        "pkg-three-r3f",
+        "pattern-camera-orchestration"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-wrong-akram-xray-pattern",
+      "sourceId": "yt-wrong-akram-spatial-ui",
+      "claim": "The 'X-Ray' UI pattern uses dynamic opacity lowering (ghosting) of 3D models to reveal high-fidelity 2D data overlays without losing spatial context.",
+      "supports": [
+        "pattern-hybrid-ui",
+        "component-overlay"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-hyperplexed-distance-threshold",
+      "sourceId": "yt-hyperplexed-viral-interactions",
+      "claim": "Performance-sensitive micro-interactions (like particles or trails) should use a distance threshold between spawn events to prevent DOM/GPU flooding.",
+      "supports": [
+        "principle-performance-budget",
+        "pattern-particle-trails"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-hyperplexed-deterministic-random",
+      "sourceId": "yt-hyperplexed-viral-interactions",
+      "claim": "A 'curated natural' feel is achieved by picking from deterministic arrays of colors/shapes rather than using pure math-based randomness.",
+      "supports": [
+        "principle-signature-layer"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-wawa-skeletal-paper",
+      "sourceId": "yt-wawa-3d-book-slider",
+      "claim": "Realistic book page flipping requires skeletal animation (SkinnedMesh/Bones) rather than simple plane rotation to simulate paper bending.",
+      "supports": [
+        "pkg-three-r3f",
+        "pattern-skeletal-ui"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-wawa-roughness-pop",
+      "sourceId": "yt-wawa-3d-book-slider",
+      "claim": "Material 'pop' is achieved by using high-contrast roughness maps that treat ink/icons as glossy (0.0) and paper as matte (1.0).",
+      "supports": [
+        "pattern-pbr-materials"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-codegrid-scrub-logic",
+      "sourceId": "yt-codegrid-3d-scroll-product",
+      "claim": "Direct scrub-linking between GSAP ScrollTrigger and R3F animation progress creates the smoothest interactive product storytelling.",
+      "supports": [
+        "pkg-gsap",
+        "pkg-three-r3f",
+        "motion-scroll-reveal"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-codegrid-3d-projection",
+      "sourceId": "yt-codegrid-3d-scroll-product",
+      "claim": "Sticking 2D HTML labels to 3D objects requires projecting the 3D world coordinates onto the 2D screen coordinate system every frame.",
+      "supports": [
+        "pattern-hybrid-ui"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-powell-round-font",
+      "sourceId": "yt-kevin-powell-fluid-type-2025",
+      "claim": "Sub-pixel text jitter in fluid layouts is eliminated by wrapping clamp() calculations in the CSS round() function to snap to 1px increments.",
+      "supports": [
+        "principle-typography-scale"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-powell-container-style",
+      "sourceId": "yt-kevin-powell-modern-responsive",
+      "claim": "Container Style Queries allow components to adapt their visual state (e.g., dark/light) based on parent-defined custom properties rather than just viewport size.",
+      "supports": [
+        "principle-responsive-breakpoints"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-linear-surface-ladder",
+      "sourceId": "analysis-linear-design",
+      "claim": "The 'Surface Ladder' pattern creates depth through a hierarchy of hex-defined background levels rather than traditional drop shadows.",
+      "supports": [
+        "principle-signature-layer"
+      ],
+      "confidence": "strong",
+      "sourceClass": "design_analysis",
+      "risk": "low"
+    },
+    {
+      "id": "ev-linear-hairline-borders",
+      "sourceId": "analysis-linear-design",
+      "claim": "Hairline borders (1px with <15% opacity white) provide structural definition without adding the visual clutter of high-contrast dividers.",
+      "supports": [
+        "principle-signature-layer"
+      ],
+      "confidence": "strong",
+      "sourceClass": "design_analysis",
+      "risk": "low"
+    },
+    {
+      "id": "ev-stripe-bezier-snappy",
+      "sourceId": "analysis-linear-design",
+      "claim": "Stripe's characteristic feel comes from aggressive cubic-bezier curves (0.165, 0.84, 0.44, 1) that favor rapid initial movement followed by long deceleration.",
+      "supports": [
+        "principle-motion-tokens"
+      ],
+      "confidence": "strong",
+      "sourceClass": "design_analysis",
+      "risk": "low"
+    },
+    {
+      "id": "ev-vercel-spring-snappy",
+      "sourceId": "official-shadcn-components-json",
+      "claim": "Tool-like interactions in Geist/Vercel design use snappy spring parameters (stiffness: 300, damping: 30) to provide immediate tactile response without bounce.",
+      "supports": [
+        "principle-motion-tokens"
+      ],
+      "confidence": "strong",
+      "sourceClass": "official_documentation",
+      "risk": "low"
+    },
+    {
+      "id": "ev-hyperplexed-magnetic-center",
+      "sourceId": "yt-hyperplexed-hover-effect",
+      "claim": "Magnetic button effects require calculating the cursor's offset from the element's center and applying a weighted translate to simulate physical attraction.",
+      "supports": [
+        "motion-magnetic-cursor"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-hyperplexed-radial-glow",
+      "sourceId": "yt-hyperplexed-hover-effect",
+      "claim": "Dynamic hover glows are implemented using radial-gradients on pseudo-elements, with the gradient center driven by CSS variables updated on mousemove.",
+      "supports": [
+        "pattern-cursor-glow"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-akella-shader-aspect",
+      "sourceId": "yt-akella-creative-coding-1",
+      "claim": "Standardizing texture aspect ratio inside custom shaders is mandatory to prevent image stretching across responsive WebGL planes.",
+      "supports": [
+        "pattern-shaders"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-tom-hover-effects",
+      "sourceId": "yt-tom-is-loading-hover-effects",
+      "claim": "Tactile hover effects are optimized using pure CSS custom variables coupled with will-change: transform to run in high-performance compositor thread.",
+      "supports": [
+        "motion-card-hover-depth",
+        "principle-performance-budget"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-tom-drag-physics",
+      "sourceId": "yt-tom-is-loading-drag-physics",
+      "claim": "Gestures and bottom sheets require dynamic drag boundary constraints and snappy springs (stiffness 200, damping 25) to feel physically alive rather than mechanical.",
+      "supports": [
+        "pattern-drag-drawer",
+        "motion-reduced-motion"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-tom-transitions",
+      "sourceId": "yt-tom-is-loading-smooth-transitions",
+      "claim": "Page transitions work best when utilizing absolute layouts for exiting items to prevent layout shifting of entrance animations.",
+      "supports": [
+        "motion-page-transition"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-tom-animated-navbar",
+      "sourceId": "yt-tom-is-loading-animated-navbar",
+      "claim": "Active link border/pill transitions are flawlessly animated without layout shift using Framer Motion's layoutId on a single moving background node.",
+      "supports": [
+        "pattern-sliding-indicator-tabs"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-tom-scroll-animations",
+      "sourceId": "yt-tom-is-loading-scroll-animations",
+      "claim": "Premium scroll transitions utilize declarative scroll progress mappings (useScroll + useTransform) to link viewport entry to translation and rotation properties.",
+      "supports": [
+        "motion-scroll-reveal"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-sam-panels",
+      "sourceId": "yt-sam-selikoff-resizable-panels",
+      "claim": "Resizable dialogs/panels require measuring raw children via ResizeObserver to dynamically animate height/width containers without hardcoded clipping.",
+      "supports": [
+        "principle-performance-budget"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-sam-scroll",
+      "sourceId": "yt-sam-selikoff-fade-up-scroll",
+      "claim": "Fade-up and viewport animations are elegantly structured via clean useInView React hooks rather than polluting page components with heavy scroll event listeners.",
+      "supports": [
+        "motion-scroll-reveal",
+        "principle-performance-budget"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-sam-layout",
+      "sourceId": "yt-sam-selikoff-shared-layout",
+      "claim": "Shared layout layoutId transitions avoid scale-skewing by applying proper transform-origins and decoupling container width bounds from nested child content.",
+      "supports": [
+        "pattern-sliding-indicator-tabs"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-sam-form",
+      "sourceId": "yt-sam-selikoff-multistep-form",
+      "claim": "Multi-step form wizard layout shifts are resolved by housing subcomponents in an overflow-hidden parent that smoothly transitions heights across dynamic content steps.",
+      "supports": [
+        "principle-performance-budget"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-sam-list",
+      "sourceId": "yt-sam-selikoff-unmount-effects",
+      "claim": "AnimatePresence list item exit animations require layout prop on list nodes to trigger smooth slide-up/down reordering of adjacent nodes.",
+      "supports": [
+        "pattern-sliding-indicator-tabs",
+        "principle-performance-budget"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-manu-layout",
+      "sourceId": "yt-manu-arora-layout-animations",
+      "claim": "Grid-to-list layout morphing is handled declaratively in Framer Motion by applying layout prop on cards, allowing the framework to interpolate bounding client boxes.",
+      "supports": [
+        "pattern-sliding-indicator-tabs"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-manu-variants",
+      "sourceId": "yt-manu-arora-variants-orchestration",
+      "claim": "Complex orchestration of child nodes (e.g. grids or staggering menus) is cleanly managed via variants staggerChildren (.05s) and delayChildren (.1s).",
+      "supports": [
+        "principle-motion-tokens"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-manu-spotlight",
+      "sourceId": "yt-manu-arora-spotlight-effect",
+      "claim": "Dynamic cursor spotlights are constructed by updating custom properties (--mouse-x, --mouse-y) on mousemove listeners on parent bounds, masking a radial glow.",
+      "supports": [
+        "pattern-spotlight-hover"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-manu-spring",
+      "sourceId": "yt-manu-arora-spring-physics",
+      "claim": "Tool-like micro-interactions achieve tactile feel by specifying high stiffness (300) and moderate damping (25) to deliver instant visual response without excessive bounce.",
+      "supports": [
+        "principle-motion-tokens"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-sheryians-gsap-scrub",
+      "sourceId": "yt-sheryians-gsap-crash-course",
+      "claim": "High-end creative pinning scroll animations rely on ScrollTrigger scrub settings (1-2s) to smoothly interpolate content rather than hard snap.",
+      "supports": [
+        "pkg-gsap",
+        "motion-scroll-reveal"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-sheryians-awwwards-wipe",
+      "sourceId": "yt-sheryians-awwwards-clone-decon",
+      "claim": "Awwwards-level page transitions use multi-layered GSAP timelines with ease: 'power4.inOut' to wipe screen overlays, preloading assets simultaneously.",
+      "supports": [
+        "motion-page-transition",
+        "pkg-gsap"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-developedbyed-transition-swipe",
+      "sourceId": "yt-developedbyed-creative-page-transitions",
+      "claim": "Overlay swipe page transitions use a three-step timeline: 1) entrance curtain cover, 2) instant DOM load, 3) exit curtain reveal, ensuring no visual gap.",
+      "supports": [
+        "motion-page-transition",
+        "pkg-gsap"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-developedbyed-motion-comparison",
+      "sourceId": "yt-developedbyed-framer-motion-cards",
+      "claim": "Tactile components (toggles, sliders) are best coded in Framer Motion due to physics engine, while complex SVG shape morphing must use GSAP's MorphSVG.",
+      "supports": [
+        "pkg-gsap",
+        "pkg-motion"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-wds-react-memoization",
+      "sourceId": "yt-wds-react-performance-memo",
+      "claim": "Avoid wrapping simple components in memo/useMemo by default; instead, lift state up or pass heavy items as children primitives to prevent re-renders.",
+      "supports": [
+        "pkg-react",
+        "principle-performance-budget"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-wds-scroll-calculation",
+      "sourceId": "yt-wds-custom-scroll-progress",
+      "claim": "Custom scroll progression bars are built with high performance using passive scroll listeners, calculating percentage via scrollTop divided by total scrollable height.",
+      "supports": [
+        "principle-performance-budget"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-hyper-magnetic-lerp",
+      "sourceId": "yt-hyperplexed-magnetic-button",
+      "claim": "Magnetic cursors/buttons use a threshold (40px) tracking cursor coordinates, applying weighted lerp translation, resetting instantly when mouse exits threshold.",
+      "supports": [
+        "pattern-magnetic-hover"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-hyper-tilt-easing",
+      "sourceId": "yt-hyperplexed-card-depth-hover",
+      "claim": "Interactive 3D card tilt uses a bounding client coordinate ratio, applying rotateX/Y, backed by a will-change: transform layer to execute on GPU.",
+      "supports": [
+        "pattern-3d-tilt",
+        "principle-performance-budget"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
+    },
+    {
+      "id": "ev-akella-displacement-shader",
+      "sourceId": "yt-akella-webgl-distortions",
+      "claim": "High-end image distortion grids map canvas textures, using WebGL displacement shaders that read cursor velocity vector fields to distort pixel coordinates.",
+      "supports": [
+        "pattern-shaders"
+      ],
+      "confidence": "strong",
+      "sourceClass": "expert_video_transcript",
+      "risk": "low"
     }
   ]
 }

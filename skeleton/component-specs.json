@@ -206,6 +206,76 @@
       "states": ["default", "focus", "loading", "empty", "mobile", "desktop", "reduced-motion"],
       "motionIds": ["modal-transition"],
       "visual": "Centered modal with search input, categorized results, recent items. Focus trap via Radix Dialog. Keyboard navigation for results. Escape to close."
+    },
+    {
+      "id": "magnetic-button",
+      "interactionId": "action.magnetic-button",
+      "standardIds": ["component-canonical-base", "component-magnetic-cursor"],
+      "layer": "taste",
+      "purpose": "High-engagement command trigger that physically follows the cursor when inside hover bounds.",
+      "states": ["default", "hover", "focus", "active", "disabled", "loading", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["magnetic-attraction"],
+      "visual": "Dampened translation based on bounding client coordinates. Smooth lerped return to center on cursor exit."
+    },
+    {
+      "id": "3d-card",
+      "interactionId": "surface.3d-card",
+      "standardIds": ["component-canonical-base", "pattern-3d-tilt"],
+      "layer": "taste",
+      "purpose": "Interactive surface that rotates in 3D perspective space based on cursor coordinates relative to its center.",
+      "states": ["default", "hover", "focus", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["3d-spring-tilt"],
+      "visual": "Perspective wrapper, will-change: transform, rotateX/Y spring-dampened to prevent coordinate jitter."
+    },
+    {
+      "id": "spotlight-card",
+      "interactionId": "surface.spotlight-card",
+      "standardIds": ["component-canonical-base", "pattern-spotlight-hover"],
+      "layer": "premium",
+      "purpose": "SaaS card surface featuring a subtle glowing radial background mask tracking cursor coordinates.",
+      "states": ["default", "hover", "focus", "mobile", "desktop", "reduced-motion"],
+      "motionIds": [],
+      "visual": "Parent container updating --mouse-x and --mouse-y CSS properties. Pseudo-element with radial-gradient mask."
+    },
+    {
+      "id": "accordion",
+      "interactionId": "disclosure.accordion",
+      "standardIds": ["component-canonical-base", "pkg-radix-shadcn"],
+      "layer": "base",
+      "purpose": "Accessible accordion collapsible panels with fluid height-expanding content sections.",
+      "states": ["default", "hover", "focus", "active", "disabled", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["accordion-expand-collapse"],
+      "visual": "Hairline border separators, chevrons animating 180deg, focus ring around triggers, no page jump on expand."
+    },
+    {
+      "id": "animated-tabs",
+      "interactionId": "navigation.animated-tabs",
+      "standardIds": ["component-canonical-base", "pattern-sliding-indicator-tabs"],
+      "layer": "premium",
+      "purpose": "Segmented navigational controls sharing a single active background pill indicator sliding smoothly on click.",
+      "states": ["default", "hover", "focus", "active", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["tab-active-slide"],
+      "visual": "Relative button triggers inside absolute container frame. Slide pill using Framer Motion layoutId."
+    },
+    {
+      "id": "drawer-sheet",
+      "interactionId": "overlay.drawer-sheet",
+      "standardIds": ["component-dialog-sheet", "pattern-drag-drawer"],
+      "layer": "premium",
+      "purpose": "Mobile-native interactive dialog wrapper snapping to sheet height snap-points and drag to dismiss.",
+      "states": ["default", "hover", "focus", "active", "mobile", "desktop", "reduced-motion"],
+      "motionIds": ["drawer-drag-snap"],
+      "visual": "Bottom sheet anchor, backdrop blur, grab handle indicator, snap boundary damping."
+    },
+    {
+      "id": "before-after",
+      "interactionId": "interaction.before-after",
+      "standardIds": ["component-canonical-base", "pattern-before-after"],
+      "layer": "taste",
+      "purpose": "Visual comparison surface with a sliding divider to crop overlapping before/after images.",
+      "states": ["default", "hover", "active", "focus", "mobile", "desktop", "reduced-motion"],
+      "motionIds": [],
+      "visual": "Dual layered identical sizing wrappers, top wrapper clipped horizontally relative to cursor percentage slider."
     }
   ]
 }
