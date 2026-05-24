@@ -5,10 +5,12 @@ import * as schema from "./db/schema";
 
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
-    provider: "sqlite",
+    provider: "pg",
     schema: schema,
   }),
   emailAndPassword: {
     enabled: true,
   },
+  secret: process.env.BETTER_AUTH_SECRET,
+  baseURL: process.env.BETTER_AUTH_URL || (process.env.NODE_ENV === "production" ? "https://frontend-mastery-opal.vercel.app" : "http://localhost:3000"),
 });
